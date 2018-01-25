@@ -1,6 +1,6 @@
 
-import webspyder.helper_functions as hf
-import webspyder.helper_functions.urls_function as uf
+import webSpyder.helper_functions as hf
+import webSpyder.helper_functions.urls_function as uf
 import bs4
 from tqdm import tqdm
 
@@ -15,7 +15,7 @@ class Spyder():
     settings = {
         "mode":"wget",
         "start_url":"",
-        "directory":"%s/pagecaches/"%package_path,
+        "directory":"%s/pagecaches/"%package_path[0],
         "cache":True
     }
 
