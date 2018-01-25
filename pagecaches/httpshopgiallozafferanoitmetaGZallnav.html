@@ -1,0 +1,3093 @@
+<!DOCTYPE html><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><script>
+                 function GetMarketPlaceUrl(){ return location.protocol + '//services.banzaicommerce.it/mpfo/'};
+                var userID = "00000000-0000-0000-0000-000000000000";
+
+                function GetToken(){
+                return "";
+                }
+              </script><link rel="stylesheet" href="http://shop.giallozafferano.it/layout/css/area_personale.css?v=00208" type="text/css"><meta http-equiv="X-UA-Compatible" content="chrome=1"><meta property="fb:admins" content="100003089088949"><meta property="og:image" content="http://shop.giallozafferano.it/layout/images/logo.png"><link rel="stylesheet" href="http://shop.giallozafferano.it/layout/css/stylecore.css?v=00208" type="text/css"><link rel="stylesheet" type="text/css" href="http://shop.giallozafferano.it/js/ModalBox/jquery.fancybox-1.3.4.css?v=00208"><link rel="stylesheet" href="http://shop.giallozafferano.it/layout/css/style_print.css?v=00208" type="text/css" media="print"><link rel="stylesheet" href="http://shop.giallozafferano.it/layout/css/slick.css?v=00208" type="text/css"><link rel="stylesheet" href="http://shop.giallozafferano.it/layout/css/bsp.css" type="text/css"><link rel="stylesheet" href="http://shop.giallozafferano.it/layout/css/prepara_appuntamento.css" type="text/css"><link rel="stylesheet" href="http://shop.giallozafferano.it/layout/css/marketplace.css" type="text/css"><script type="text/javascript" xmlns:fb="http://ogp.me/ns/fb#" xmlns:g="http://base.google.com/ns/1.0">
+      var svgIcoCart = '<svg class="icoCart" width="35" height="28" version="1.1" baseProfile="full" viewBox="0 0 35 28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g class="fill" fill="#AEAEAE" opacity="0.9" fill-rule="evenodd"><path d="M 30.42 20.43 L 12.42 20.43 C 11.95 20.43 11.54 20.13 11.39 19.7 L 6.47 4.8 L 0.81 2.38 C 0.26 2.18 -0.02 1.56 0.19 1.02 C 0.4 0.47 1.02 0.19 1.57 0.4 L 7.72 3 C 8.02 3.11 8.26 3.36 8.36 3.66 L 13.2 18.31 L 29.57 18.31 L 32.18 7.64 L 11.71 7.64 C 11.12 7.64 10.63 7.17 10.63 6.58 C 10.63 5.99 11.12 5.52 11.71 5.52 L 33.55 5.52 C 33.88 5.52 34.19 5.67 34.39 5.92 C 34.6 6.18 34.67 6.51 34.6 6.83 L 31.47 19.62 C 31.35 20.09 30.92 20.43 30.42 20.43" /><path d="M 13.86 27.76 C 12.16 27.76 10.78 26.4 10.78 24.73 C 10.78 23.06 12.16 21.7 13.86 21.7 C 15.56 21.7 16.94 23.06 16.94 24.73 C 16.94 26.4 15.56 27.76 13.86 27.76 L 13.86 27.76 Z M 13.86 23.82 C 13.35 23.82 12.93 24.23 12.93 24.73 C 12.93 25.23 13.35 25.64 13.86 25.64 C 14.37 25.64 14.79 25.23 14.79 24.73 C 14.79 24.23 14.37 23.82 13.86 23.82 L 13.86 23.82 Z M 13.86 23.82" /><path d="M 28.05 27.76 C 26.35 27.76 24.97 26.4 24.97 24.73 C 24.97 23.06 26.35 21.7 28.05 21.7 C 29.75 21.7 31.13 23.06 31.13 24.73 C 31.13 26.4 29.75 27.76 28.05 27.76 L 28.05 27.76 Z M 28.05 23.82 C 27.54 23.82 27.12 24.23 27.12 24.73 C 27.12 25.23 27.54 25.64 28.05 25.64 C 28.56 25.64 28.98 25.23 28.98 24.73 C 28.98 24.23 28.56 23.82 28.05 23.82 L 28.05 23.82 Z M 28.05 23.82" /></g><g class="stroke" stroke-width="6" stroke="#FFFFFF"><line x1="24" y1="5" x2="35" y2="5" /><line x1="30" y1="0" x2="30" y2="11" /></g><g class="stroke" stroke-width="3" stroke="#f5963c"><line x1="25" y1="5" x2="35" y2="5" /><line x1="30" y1="0" x2="30" y2="10" /></g></svg>';
+    </script><script type="text/javascript" xmlns:fb="http://ogp.me/ns/fb#" xmlns:g="http://base.google.com/ns/1.0">
+      var svgIcoCartMenu = '<svg class="icoCart" width="35" height="28" version="1.1" baseProfile="full" viewBox="0 0 35 28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g class="fill" fill="#AEAEAE" opacity="0.9" fill-rule="evenodd"><path d="M 30.42 20.43 L 12.42 20.43 C 11.95 20.43 11.54 20.13 11.39 19.7 L 6.47 4.8 L 0.81 2.38 C 0.26 2.18 -0.02 1.56 0.19 1.02 C 0.4 0.47 1.02 0.19 1.57 0.4 L 7.72 3 C 8.02 3.11 8.26 3.36 8.36 3.66 L 13.2 18.31 L 29.57 18.31 L 32.18 7.64 L 11.71 7.64 C 11.12 7.64 10.63 7.17 10.63 6.58 C 10.63 5.99 11.12 5.52 11.71 5.52 L 33.55 5.52 C 33.88 5.52 34.19 5.67 34.39 5.92 C 34.6 6.18 34.67 6.51 34.6 6.83 L 31.47 19.62 C 31.35 20.09 30.92 20.43 30.42 20.43" /><path d="M 13.86 27.76 C 12.16 27.76 10.78 26.4 10.78 24.73 C 10.78 23.06 12.16 21.7 13.86 21.7 C 15.56 21.7 16.94 23.06 16.94 24.73 C 16.94 26.4 15.56 27.76 13.86 27.76 L 13.86 27.76 Z M 13.86 23.82 C 13.35 23.82 12.93 24.23 12.93 24.73 C 12.93 25.23 13.35 25.64 13.86 25.64 C 14.37 25.64 14.79 25.23 14.79 24.73 C 14.79 24.23 14.37 23.82 13.86 23.82 L 13.86 23.82 Z M 13.86 23.82" /><path d="M 28.05 27.76 C 26.35 27.76 24.97 26.4 24.97 24.73 C 24.97 23.06 26.35 21.7 28.05 21.7 C 29.75 21.7 31.13 23.06 31.13 24.73 C 31.13 26.4 29.75 27.76 28.05 27.76 L 28.05 27.76 Z M 28.05 23.82 C 27.54 23.82 27.12 24.23 27.12 24.73 C 27.12 25.23 27.54 25.64 28.05 25.64 C 28.56 25.64 28.98 25.23 28.98 24.73 C 28.98 24.23 28.56 23.82 28.05 23.82 L 28.05 23.82 Z M 28.05 23.82" /></g></svg>';
+    </script><script type="text/javascript" xmlns:fb="http://ogp.me/ns/fb#" xmlns:g="http://base.google.com/ns/1.0">
+      var svgBgNum = '<svg class="bgNum" height="36" width="44" version="1.1" baseProfile="full" viewBox="0 0 44 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path class="fill" fill="#f5963c" fill-rule="evenodd" d="M 41.7 0 L 8.34 0 C 7.46 0 6.75 0.71 6.75 1.59 L 6.75 11.23 L 6.64 11.23 L 0 17.78 L 6.75 24.45 L 6.75 34.3 C 6.75 35.17 7.46 35.89 8.34 35.89 L 41.7 35.89 C 42.58 35.89 43.3 35.17 43.3 34.3 L 43.3 1.59 C 43.3 0.71 42.58 0 41.7 0" /></svg>';
+    </script><script type="text/javascript" xmlns:fb="http://ogp.me/ns/fb#" xmlns:g="http://base.google.com/ns/1.0">
+      var svgIcoStar = '<svg class="icoStar" width="26" height="24" version="1.1" baseProfile="full" viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path class="fill" fill="#adadad" opacity="0.9" fill-rule="evenodd" d="M 5.73 15.86 L 4.47 22.95 C 4.39 23.43 4.59 23.91 5.01 24.21 C 5.41 24.49 5.98 24.53 6.41 24.3 L 13 20.96 L 19.59 24.3 C 19.78 24.4 19.99 24.45 20.21 24.45 C 20.49 24.45 20.76 24.37 20.99 24.21 C 21.41 23.92 21.61 23.43 21.53 22.94 L 20.27 15.86 L 25.6 10.84 C 25.96 10.5 26.09 9.98 25.93 9.53 C 25.78 9.06 25.36 8.71 24.85 8.65 L 17.49 7.61 L 14.2 1.17 C 13.97 0.73 13.51 0.45 13 0.45 C 12.49 0.45 12.02 0.74 11.8 1.17 L 8.51 7.61 L 1.15 8.64 C 0.64 8.72 0.23 9.05 0.07 9.52 C -0.09 9.99 0.04 10.5 0.41 10.85 L 5.73 15.86 L 5.73 15.86 Z M 9.94 9.5 L 13 3.51 L 16.06 9.5 L 22.91 10.46 L 17.95 15.13 L 19.12 21.71 L 13 18.6 L 6.88 21.71 L 8.05 15.13 L 3.09 10.46 L 9.94 9.5 L 9.94 9.5 Z M 9.94 9.5" /></svg>';
+    </script><script type="text/javascript" xmlns:fb="http://ogp.me/ns/fb#" xmlns:g="http://base.google.com/ns/1.0">
+      var svgIcoX = '<svg class="ico_x" height="12" width="12" version="1.1" baseProfile="full" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g class="stroke" stroke-width="1" stroke="#FFFFFF"><line x1="0" y1="0" x2="12" y2="12" /><line x1="12" y1="0" x2="0" y2="12" /></g></svg>';
+    </script><script type="text/javascript" xmlns:fb="http://ogp.me/ns/fb#" xmlns:g="http://base.google.com/ns/1.0">
+      var svgLoading = '<svg class="loading" width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g class="stroke" fill="none" stroke="#7A6BA3" stroke-width="3" stroke-linecap="round"><line opacity="0.8" stroke-miterlimit="10" x1="25" y1="2.4" x2="25" y2="11.3" /><line opacity="0.4" stroke-miterlimit="10" x1="25" y1="38.7" x2="25" y2="47.6" /><line stroke-miterlimit="10" x1="47.6" y1="25" x2="38.7" y2="25" /><line opacity="0.6" stroke-miterlimit="10" x1="11.3" y1="25" x2="2.4" y2="25" /><line opacity="0.9" stroke-miterlimit="10" x1="41" y1="9" x2="34.7" y2="15.3" /><line opacity="0.5" stroke-miterlimit="10" x1="15.3" y1="34.7" x2="9" y2="41" /><line opacity="0.3" stroke-miterlimit="10" x1="41" y1="41" x2="34.7" y2="34.7" /><line opacity="0.7" stroke-miterlimit="10" x1="15.3" y1="15.3" x2="9" y2="9" /></g></svg>';
+    </script><script type="text/javascript">
+			//PRICE INT: 
+			
+			var dataOraServer = new Date('2018/01/25 17:24:12');
+			
+      var PushNotificationMode = "0";
+      var HTTPSvalue = "http:";
+			var IdVertical = "50";
+			var IdVerticalePRICE = "0";
+			var usaShortNameProdotto = "1";
+			var omnitureChiaveAmbiente = "epriceproduction";
+			var numeroLock = "299";
+			var numeroPick = "133";
+			var numeroCitta = "233";
+			var numeroPunti = "432";
+			var speJsonp = "True";
+			var jsVersion = "?v=00208";
+			var buoniAcquistoAttivati = true;
+			var marketPlaceEnabled = true;
+			var _getShippingMethodFast = false;
+			var _getPickAndPayClient = false;
+			var _getBuyBoxShippingTypesServer = true;
+			var _getBuyBoxShopInfoServer = true;
+			var _codEnabled = false;
+			var _getActiveRulesDetailClient = false;
+			var _getDDEListingSearchClient = false;
+			var _getDDEListingDetailClient = true
+      
+      var sogliaMinTasso=0;
+			var _arr_findomestic_prf = {};
+			
+				var _key = 'Findomestic_Prf_0_10';
+				var _value = '6300';
+				_arr_findomestic_prf[_key] = _value;
+			
+				var _key = 'Findomestic_Prf_0_20';
+				var _value = '6301';
+				_arr_findomestic_prf[_key] = _value;
+			
+				var _key = 'Findomestic_Prf_1_10';
+				var _value = '6751';
+				_arr_findomestic_prf[_key] = _value;
+			
+				var _key = 'Findomestic_Prf_1_20';
+				var _value = '6752';
+				_arr_findomestic_prf[_key] = _value;
+			
+			var _isBuyBoxEstesa = false;
+			var _latestShippingPP = '';
+			var _latestShippingLocker = '';
+			var PathImagesCarteRegalo = "https://www.eprice.it/images/cartaregalo/";
+			
+            
+                    var docsFolder='';
+                
+            
+				var consentGiven=true;
+				
+				var f2TUrl = "continuity.banzaicommerce.it/banzai";
+				var f2En = "true";
+				var f2TimelineInFooterEnabled = "False" == "True";
+				var f2TimelineInSearchEnabled = "False" == "True";
+                var f2NotificationEnabled = "False" == "True";
+                var f2MostraNoteLegali = "False" == "True";
+                var f2TimelineChannels = "GZM,GZA,GZD";
+				var timelineServerUrl = "//services.banzaicommerce.it/mpfo/";
+				var sessionGuid = "a2cf8a39-fb12-4fba-ae3d-85dec61149e1";
+				var userGuid = "00000000-0000-0000-0000-000000000000";
+				var showPopUpTera = "";
+				var _bspEnabled = "True" == "True";
+				var _tealiumEnabled = "false" == "true";
+				var _getGaranzieClient = "True" == "True";
+				var _intervalBFPull = 0;
+				
+				//Oggetto per scambio dati e funzioni con ABTasty
+				var objAbTasty = {};
+				//Oggetto per scambio dati e funzioni con Cms
+				var objCms = {};
+			
+        </script><link rel="stylesheet" href="http://shop.giallozafferano.it/layout/css/iubenda_cs.css?v=00208" type="text/css"><script type="text/javascript">
+		
+            consentGiven=false;
+			var _iub = _iub || [];
+			_iub.csConfiguration = {
+				cookiePolicyId: 923967,
+				siteId: 259491,
+				skipSaveConsent: false,
+				banner: {
+                    applyStyles: false,
+					content: "<p>I siti eprice.it e shop.giallozafferano.it utilizzano cookie, anche di terzi, per offrire servizi in linea con le tue preferenze e inviarti pubblicit&agrave;.<br />Per maggiori informazioni o negare il consenso a tutti i cookie %{cookie_policy_link}.<br />Se chiudi questo banner, scorri o clicchi la pagina su qualunque suo elemento acconsenti all’uso dei cookie.</p>",
+					cookiePolicyLinkCaption: "clicca qui"
+                },
+				callback: {
+					onConsentGiven: function(){
+          if(_tealiumEnabled){
+            if (typeof TealiumConsent == "function") TealiumConsent();
+          }
+          else{
+						dataLayer.push({'event': 'iubenda_consent_given'});
+						_satellite.track('iubenda_consent_given');
+            }
+                        consentGiven=true;
+                        for (i = 0; i < arrrelaunch.length; i++) {
+                            window[arrrelaunch[i]]();
+                        }
+					}
+				}
+			};
+			(function (w, d) {
+				var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "http://shop.giallozafferano.it/js/Iubenda/iubenda_cs.min.js?v=00208"; tag.parentNode.insertBefore(s, tag); };
+				if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; }
+			})(window, document);
+		
+		</script><base href="http://shop.giallozafferano.it/"><script src="http://shop.giallozafferano.it/js/jquery-1.8.3.min.js" type="text/javascript"></script><script src="http://shop.giallozafferano.it/js/jquery-ui.min.js"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/jquery.ui.touch-punch.min.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/ext/decorator.js?v=00208"></script><script src="http://shop.giallozafferano.it/js/slick.min.js" type="text/javascript"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/json.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/ModalBox/jquery.fancybox-1.3.4.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/ModalBox/jquery.easing-1.3.pack.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/ModalBox/jquery.mousewheel-3.0.4.pack.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/jqueryTimers.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/JqueryUrlEncode.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/JTemplates.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/newePrice/GlobalFunction.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/newePrice/vfcore.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/newePrice/wdginfoprodotti.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/newePrice/RequestInfo.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/newePrice/CarrelloHeader.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/newePrice/PreferitiHeader.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/PsRendererVH.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/newePrice/Comparatori.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/newePrice/Timeline.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/newePrice/gallery_GZ.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/linq.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/newePrice/jquery.jsonp-2.4.0.min.js?v=00208"></script><script type="text/javascript">
+				
+				var _ProdAttribute = null;
+					
+			</script><script type="text/javascript">
+			function resizeSuggest(){
+			 var $search =  $("#inputBg");
+			 $("#inputSearch").css("width", ($search.width() - $("input.right", $search).width() - $("#catList", $search).width() - 45) );
+			 $("#resSuggest").css("width", $("#inputSearch").outerWidth(true)+"px");
+			}
+			
+					
+			var _nomeParametroListing = 'articoli';
+		</script><script type="text/javascript" src="http://shop.giallozafferano.it/js/newePrice/facebookLogin.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/newePrice/googleLogin.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/newePrice/chatRightNow.js?v=00208"></script><script type="text/javascript">
+						var basketService = 'https://services.banzaicommerce.it/res/BasketService.svc/';
+			
+			var basketServiceTimeout = '0';
+			var basketServiceAlternative = 'https://services.banzaicommerce.it/res/BasketService.svc/';
+			var basketServiceAlternativeTimeout = '0';
+			var ruleEngineService = '';
+			var ruleEngineServiceAlternative = '';
+			var ruleEngineServiceTimeout = 10000;
+			var ruleEngineServiceAlternativeTimeout = 10000;
+			
+				var hasNewBasket = true;
+			
+			
+			var ServiceSPEParam = {"Name" : "//services.banzaicommerce.it/SPE/Sperest.svc/" , "Host":"shop.giallozafferano.it"};
+			var ServiceDDE = {"Name" : "//services.banzaicommerce.it/dde/ddeservice.svc/" , "Host":"shop.giallozafferano.it"};
+			var ServiceVF = "//services.banzaicommerce.it/SPE/Sperest.svc/";
+			var ServiceSuggest = "suggestion.eprice.it/";
+			var ServiceBOSS = "";
+			var ServiceSuggestPickLocker = "suggestion.eprice.it/PuntiRitiro/pdr.do";
+			var ServiceSoba = "http://services.banzaicommerce.it/mpfo/";
+			var prefissi = ["330", "331", "333", "334", "335", "336", "337", "338", "339", "360", "361", "362", "363", "366", "368", "340", "341", "342", "343", "345", "346", "347", "348", "349", "383", "320", "322", "323", "324", "327", "328", "329", "380", "383", "388", "389", "390", "391", "392", "393", "397", "313", "351", "350", "377"];
+			var _ProductInfo = { 
+						"list_price" : "", 
+						"sku" : 0, 
+						"codven" : "", 
+						"manufacturer" : "" , 
+						"Image_File_Path" : "", 
+            "Image_File_Dam" : "", 
+            "ean" : "", 
+						"Description" : "" ,
+						"idSito" : 0 ,
+						"idListino" : 2 ,
+						"idRicarico" : 6,
+	          "offer_id" : 0,
+	          "shop_id" : 0,
+	          "cod_skillo" : ""
+						};
+			//var protocollo = (("https:" == document.location.protocol) ? "https:" : "http:"); Rimetto il protocollo flessibile al posto di https fisso 
+			var protocollo = (("https:" == document.location.protocol) ? "https:" : "http:");
+      var _imgServ=new Array(protocollo+"//images",protocollo+"//images",protocollo+"//images",protocollo+"//images");
+			$(document).ready(function() {
+			
+			
+			
+			
+				
+				
+				//$('#inputBg').click(function (){
+					//alert("configura url per ricerca");
+					//var url = "Search.aspx?Search=" +  $('#txtSearch').val();
+					//document.location.href = url;
+				//}) ;
+				$('#frmAction').submit(function(event) {
+					return search();
+				});
+			});
+			
+			function RenderCarrelloVuoto() {
+				var _div = $('div #contCarrello');
+				$(_div).removeClass('full');
+				$(_div).find('div#carrello').append('<div class="bottomCarrello centered">Il tuo carrello &egrave; vuoto</div>');
+        var cartSection = "";
+        if(IdVertical == "50"){
+          cartSection = '<svg class="icoCart" width="35" height="28" version="1.1" baseProfile="full" viewBox="0 0 35 28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:fb="http://ogp.me/ns/fb#" xmlns:g="http://base.google.com/ns/1.0"><g class="fill" fill="#AEAEAE" opacity="0.9" fill-rule="evenodd"><path d="M 30.42 20.43 L 12.42 20.43 C 11.95 20.43 11.54 20.13 11.39 19.7 L 6.47 4.8 L 0.81 2.38 C 0.26 2.18 -0.02 1.56 0.19 1.02 C 0.4 0.47 1.02 0.19 1.57 0.4 L 7.72 3 C 8.02 3.11 8.26 3.36 8.36 3.66 L 13.2 18.31 L 29.57 18.31 L 32.18 7.64 L 11.71 7.64 C 11.12 7.64 10.63 7.17 10.63 6.58 C 10.63 5.99 11.12 5.52 11.71 5.52 L 33.55 5.52 C 33.88 5.52 34.19 5.67 34.39 5.92 C 34.6 6.18 34.67 6.51 34.6 6.83 L 31.47 19.62 C 31.35 20.09 30.92 20.43 30.42 20.43" /><path d="M 13.86 27.76 C 12.16 27.76 10.78 26.4 10.78 24.73 C 10.78 23.06 12.16 21.7 13.86 21.7 C 15.56 21.7 16.94 23.06 16.94 24.73 C 16.94 26.4 15.56 27.76 13.86 27.76 L 13.86 27.76 Z M 13.86 23.82 C 13.35 23.82 12.93 24.23 12.93 24.73 C 12.93 25.23 13.35 25.64 13.86 25.64 C 14.37 25.64 14.79 25.23 14.79 24.73 C 14.79 24.23 14.37 23.82 13.86 23.82 L 13.86 23.82 Z M 13.86 23.82" /><path d="M 28.05 27.76 C 26.35 27.76 24.97 26.4 24.97 24.73 C 24.97 23.06 26.35 21.7 28.05 21.7 C 29.75 21.7 31.13 23.06 31.13 24.73 C 31.13 26.4 29.75 27.76 28.05 27.76 L 28.05 27.76 Z M 28.05 23.82 C 27.54 23.82 27.12 24.23 27.12 24.73 C 27.12 25.23 27.54 25.64 28.05 25.64 C 28.56 25.64 28.98 25.23 28.98 24.73 C 28.98 24.23 28.56 23.82 28.05 23.82 L 28.05 23.82 Z M 28.05 23.82" /></g><g class="stroke" stroke-width="6" stroke="#FFFFFF"><line x1="24" y1="5" x2="35" y2="5" /><line x1="30" y1="0" x2="30" y2="11" /></g><g class="stroke" stroke-width="3" stroke="#f5963c"><line x1="25" y1="5" x2="35" y2="5" /><line x1="30" y1="0" x2="30" y2="10" /></g></svg>';
+        }
+        else {
+          cartSection = "<span class=\"icoImg icoCarrello\">&nbsp;</span>";
+        }
+				$('div#contCarrello .btn_head').html(cartSection);
+			}
+			
+			function getCookie(c_name)
+			{
+			var i,x,y,ARRcookies=document.cookie.split(";");
+			for (i=0;i<ARRcookies.length;i++)
+			{
+			  x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+			  y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+			  x=x.replace(/^\s+|\s+$/g,"");
+			  if (x==c_name)
+				{
+				return unescape(y);
+				}
+			  }
+			}
+			function search () {
+				var inputSearch = $('#inputSearch').val(); 
+				
+				if (inputSearch == "Che cosa stai cercando?"){return false;}
+				
+				if (inputSearch == "!" || inputSearch == "\"" || inputSearch == "$" || inputSearch == "%" ||
+					inputSearch == "&" || inputSearch == "/" || inputSearch == "(" || inputSearch == ")" || inputSearch == "=" || 
+					inputSearch == "?" || inputSearch == "\'" || inputSearch == "^" || inputSearch == "*" || inputSearch == "|" || 
+					inputSearch == "\\" || inputSearch == "[" || inputSearch == "+" || inputSearch == "]" || inputSearch == "@" || 
+					inputSearch == "#" || inputSearch == ";" || inputSearch == "," || inputSearch == ":" || inputSearch == "." || 
+					inputSearch == "-" || inputSearch == "_") {
+					alert("Ricerca non consentita");
+					return false;
+				}
+				inputSearch = inputSearch.replace(/\%/g, '%25');
+				inputSearch = inputSearch.replace(/\&/g, '%26');
+				inputSearch = inputSearch.replace(/\+/g, '%2B');
+				inputSearch = inputSearch.replace(/\?/g, '%3F');
+				inputSearch = inputSearch.replace(/\#/g, '%23');
+				// #PG# #7996 - ricerca con spazio : trim buca di search.
+				inputSearch = inputSearch.replace(/^\s+|\s+$/g,"");
+				var url = $('#pathSearch').val() + inputSearch + '?mets=' + inputSearch;
+				
+				
+				
+				if($("#frmAction input[name='sp']").val().length>0)
+				{
+					url=url  + (url.indexOf('?') > -1 ? '&':'?') +'sp=' + $("#frmAction input[name='sp']").val();
+				}
+				
+				var inputFsfe = $("#frmAction input[name='fsfe']");
+				if(inputFsfe.length > 0 && inputFsfe.val().length>0)
+				{
+					url=url + (url.indexOf('?') > -1 ? '&':'?') +'fsfe=' + inputFsfe.val();
+				}
+				
+				if($("#frmAction input[name='br']").val().length>0)
+				{
+					url=url + (url.indexOf('?') > -1 ? '&':'?') +'br=' + $("#frmAction input[name='br']").val();
+				}
+				
+				if($("#frmAction input[name='sug']").val().length>0)
+				{
+					url=url + (url.indexOf('?') > -1 ? '&':'?') + 'sug=' + encodeURIComponent ( $("#frmAction input[name='sug']").val() );
+				}
+				
+				
+				
+				
+				document.location.href = url;
+				return false;
+			}
+            
+             /*
+      *function di ricerca tramite la textbox della colonna sinistra della pagina sellercatalogue
+      */
+      function searchSellerCatalogue () {
+      var inputSearch = $('#inputSearchSx').val();
+
+      if (inputSearch == "Cerca in questo negozio"){return false;}
+
+      if (inputSearch == "!" || inputSearch == "\"" || inputSearch == "$" || inputSearch == "%" ||
+      inputSearch == "&" || inputSearch == "/" || inputSearch == "(" || inputSearch == ")" || inputSearch == "=" ||
+      inputSearch == "?" || inputSearch == "\'" || inputSearch == "^" || inputSearch == "*" || inputSearch == "|" ||
+      inputSearch == "\\" || inputSearch == "[" || inputSearch == "+" || inputSearch == "]" || inputSearch == "@" ||
+      inputSearch == "#" || inputSearch == ";" || inputSearch == "," || inputSearch == ":" || inputSearch == "." ||
+      inputSearch == "-" || inputSearch == "_") {
+      alert("Ricerca non consentita");
+      return false;
+      }
+      inputSearch = inputSearch.replace(/\%/g, '%25');
+      inputSearch = inputSearch.replace(/\&/g, '%26');
+      inputSearch = inputSearch.replace(/\+/g, '%2B');
+      inputSearch = inputSearch.replace(/\?/g, '%3F');
+      inputSearch = inputSearch.replace(/\#/g, '%23');
+      // #PG# #7996 - ricerca con spazio : trim buca di search.
+      inputSearch = inputSearch.replace(/^\s+|\s+$/g,"");
+      var url = $('#pathSearchSx').val() + inputSearch + '?mets=' + inputSearch + '&shop_id=' + $("#frmActionSx input[name ='shop_id']").val();
+      
+            
+                
+				if($("#frmAction input[name='sp']").val().length>0)
+				{
+					url=url +'&sp=' + $("#frmAction input[name='sp']").val();
+				}
+
+				var inputFsfe = $("#frmAction input[name='fsfe']");
+				if(inputFsfe.length > 0 && inputFsfe.val().length>0)
+				{
+					url=url +'&fsfe=' + inputFsfe.val();
+				}
+				
+				if($("#frmAction input[name='br']").val().length>0)
+				{
+					url=url +'&br=' + $("#frmAction input[name='br']").val();
+				}
+				
+				if($("#frmAction input[name='sug']").val().length>0)
+				{
+					url=url +'?sug=' + encodeURIComponent ( $("#frmAction input[name='sug']").val() );
+				}
+				
+            
+            
+				
+				document.location.href = url;
+				return false;
+			}
+      
+			
+			
+			
+			//////////////////////////
+			// suggestion sulla ricerca
+			var initSearch;
+			/* Restituisce il valore di una variabile da un indirizzo (GET)
+			* Param -> URL: indirizzo, name: nome variabile da ricercare
+			*/
+			function getUrlVar (url, name){
+				var vars = [], hash;
+				var hashes = url.slice(url.indexOf('?') + 1).split('&');
+				for(var i = 0; i < hashes.length; i++) {
+					hash = hashes[i].split('=');
+					vars.push(hash[0]);
+					vars[hash[0]] = hash[1];
+				}
+				return vars[name];
+			}
+			function setHiddenVal(urlRes, name){
+				var valName = getUrlVar(urlRes, name);
+				valName = (valName != "undefined")? valName : "";
+				$("#frmAction input[name='"+name+"']").val(valName);
+			}
+			function changeRowSugg(index){
+				var newTxt;
+				var $resSugg = $("#resSuggest a");
+				var currId = $("#resSuggest a.sel").index();
+				var nextId = currId + index;
+				var sug = '';
+				$resSugg.removeClass("sel");
+				if (nextId == -1 || nextId >= $resSugg.length ){
+					newTxt = initSearch;
+				} else {
+					if(nextId < -1) nextId = $resSugg.length - 1;
+					newTxt = $(".keySugg", $resSugg[nextId]).text();
+					$($resSugg[nextId]).addClass("sel");
+					sug = $resSugg[nextId].innerHTML;
+					sug = $("<div/>").html(sug.replace(/<\/?[^>]+(>|$)/g, "")).text();
+				}
+				var urlRes = $($resSugg[nextId]).attr("href");
+				$("#frmAction input[name='sug']").val(sug);
+				
+				setHiddenVal(urlRes, "sp");
+				setHiddenVal(urlRes, "br");
+				$('#inputSearch').val(newTxt);
+			}
+
+			
+			
+			$(function(){
+				/*controllo su protocollo, se https usare la ricerca standard senza suggestion*/
+				var protocollo = (("https:" == document.location.protocol) ? "https://" : "http://");
+				
+					$('#inputSearch').bind({
+						focus : function(){
+             resizeSuggest();
+             if( $(this).val() == $(this).attr("alt") ) $(this).val('');
+            },
+						blur : function(){
+							if( $(this).val() == "" ) $(this).val($(this).attr("alt"));
+						},
+						keyup : function(event){
+							if(event.keyCode == 40){ // 40 -> freccia in giu'
+								changeRowSugg(+1);
+							} else if(event.keyCode == 38){ // 38 -> freccia in su
+								changeRowSugg(-1);
+							} else{
+								if($(this).val() != ""){
+									$("#contTimeLine").removeClass("open");
+									initSearch = encodeURIComponent($(this).val());
+									/* DA QUI INSERIRE CODICE CHE CREI LE RIGHE E POI FACCIA UNO SHOW DEL RESSUGGEST */
+									var SuggestUrl=protocollo + ServiceSuggest + "/a/?q=" + initSearch +"&id_sito=0&v=" + IdVertical;
+                  if (typeof gruppoTestSuggestion !== 'undefined' && gruppoTestSuggestion !== null) {
+										SuggestUrl=SuggestUrl+'&abtest='+gruppoTestSuggestion
+									}
+									$.jsonp({
+									url: SuggestUrl,
+									callback: "suggest",
+									cache: true,
+										success: function(res) {
+											$("#resSuggest").html('');
+											if(res.status=="ok")
+											{
+												for(var i=0;i<res.d.length;i++)
+												{
+													var string=res.d[i].kl;
+													
+													var em='';
+													if (typeof(res.d[i].bl) != 'undefined' && res.d[i].bl.length>0)
+													em=em+"<em> di " +res.d[i].bl+ "</em>";
+													if (typeof(res.d[i].nl) != 'undefined' && res.d[i].nl.length>0)
+													em=em+"<em> in " +res.d[i].nl+ "</em>";
+													var finalrow=""
+													var sug = string.replace(/<\/?[^>]+(>|$)/g, "") ;
+													if (em != '') sug = sug + ' ' + em.replace(/<\/?[^>]+(>|$)/g, "") ;
+													if(typeof(res.d[i].tu) != 'undefined' && res.d[i].tu.length>0)
+													{
+														finalrow='<a href="'+ encodeURIComponent(res.d[i].tu) +'?sug=' + encodeURIComponent ( sug ) + '" ><span class="keySugg">'+string+'</span>'+em+'</a>';
+													}
+													else
+													{
+														var link='/search/qs='+ encodeURIComponent(res.d[i].kl.replace(/<\/?[^>]+(>|$)/g, ""))+'?sug=' + encodeURIComponent ( sug );
+														if(typeof(res.d[i].ns) != 'undefined' && res.d[i].ns.length>0)
+															link=link+'&sp='+ res.d[i].ns
+														if(typeof(res.d[i].bf) != 'undefined' && res.d[i].bf.length>0)
+															link=link+'&br='+ res.d[i].bf
+														finalrow='<a href="'+ link +'"><span class="keySugg">'+string+'</span>'+em+'</a>';
+													}
+													$('#resSuggest').append(finalrow);
+												}
+											}
+										},
+										error: function(xhr, ajaxOptions, thrownError) {
+											//alert(xhr.status);
+											//alert(thrownError);
+										}
+									});
+									
+									$("#resSuggest").show()
+									/* FINE CODICE DA FARE */
+								} else {
+									$("#resSuggest").hide();
+								}
+							}
+						}
+					});
+					
+					$('#inputSearch').keypress(function(event){ if(event.keyCode == 40 && $.browser.opera) {changeRowSugg(+1);} });
+					$("#resSuggest a").live("mouseenter", function(){
+						$("#resSuggest a").removeClass("sel")
+						$(this).addClass("sel");
+					});
+					$(window).resize(function() {resizeSuggest()});
+					resizeSuggest();
+				
+			}); 
+			//fine suggestion su ricerca
+			////////////////////////////
+            
+            //////////////////////////
+			// suggestion sulla ricerca  box lato sinistro sellerCatalogue
+      // Dupilica la zezione script suggestion per il box di sinistra
+			var initSearchSX;
+			/* Restituisce il valore di una variabile da un indirizzo (GET)
+			* Param -> URL: indirizzo, name: nome variabile da ricercare
+			*/
+				
+			function changeRowSuggSX(index){
+      // mi appoggio sugli stessi Hiddendella ricerca principale, dato che fa la stessa cosa
+				var newTxt;
+				var $resSugg = $("#resSuggestSx a");
+				var currId = $("#resSuggestSx a.sel").index();
+				var nextId = currId + index;
+				var sug = '';
+				$resSugg.removeClass("sel");
+				if (nextId == -1 || nextId >= $resSugg.length ){
+					newTxt = initSearchSx;
+				} else {
+					if(nextId < -1) nextId = $resSugg.length - 1;
+					newTxt = $(".keySugg", $resSugg[nextId]).text();
+					$($resSugg[nextId]).addClass("sel");
+					sug = $resSugg[nextId].innerHTML;
+					sug = $("<div/>").html(sug.replace(/<\/?[^>]+(>|$)/g, "")).text();
+				}
+				var urlRes = $($resSugg[nextId]).attr("href");
+				$("#frmAction input[name='sug']").val(sug);
+				
+				setHiddenVal(urlRes, "sp");
+				setHiddenVal(urlRes, "br");
+				$('#inputSearchSx').val(newTxt);
+			}
+
+			
+			
+			$(function(){
+				/*controllo su protocollo, se https usare la ricerca standard senza suggestion*/
+				var protocollo = (("https:" == document.location.protocol) ? "https://" : "http://");
+				
+					$('#inputSearchSx').bind({
+						focus : function(){
+							if( $(this).val() == $(this).attr("alt") ) $(this).val('');
+						},
+						blur : function(){
+							if( $(this).val() == "" ) $(this).val($(this).attr("alt"));
+						},
+						keyup : function(event){
+							if(event.keyCode == 40){ // 40 -> freccia in giu'
+								//changeRowSuggSx(+1);
+							} else if(event.keyCode == 38){ // 38 -> freccia in su
+								//changeRowSuggSx(-1);
+							} else{
+								if($(this).val() != ""){
+									initSearchSx = $(this).val();
+									/* DA QUI INSERIRE CODICE CHE CREI LE RIGHE E POI FACCIA UNO SHOW DEL RESSUGGEST */
+									var SuggestUrl=protocollo + ServiceSuggest + "/a/?q=" + initSearchSx +"&id_sito=0&v=" + IdVertical;
+									$.jsonp({
+									url: SuggestUrl,
+									callback: "suggest",
+									cache: true,
+										success: function(res) {
+											$("#resSuggestSx").html('');
+											if(res.status=="ok")
+											{
+												for(var i=0;i<res.d.length;i++)
+												{
+													var string=res.d[i].kl;
+													
+													var em='';
+													if (typeof(res.d[i].bl) != 'undefined' && res.d[i].bl.length>0)
+													em=em+"<em> di " +res.d[i].bl+ "</em>";
+													if (typeof(res.d[i].nl) != 'undefined' && res.d[i].nl.length>0)
+													em=em+"<em> in " +res.d[i].nl+ "</em>";
+													var finalrow=""
+													var sug = string.replace(/<\/?[^>]+(>|$)/g, "") ;
+													if (em != '') sug = sug + ' ' + em.replace(/<\/?[^>]+(>|$)/g, "") ;
+													if(typeof(res.d[i].tu) != 'undefined' && res.d[i].tu.length>0)
+													{
+														finalrow='<a href="'+ encodeURIComponent(res.d[i].tu) +'?sug=' + encodeURIComponent ( sug ) + '" ><span class="keySugg">'+string+'</span>'+em+'</a>';
+													}
+													else
+													{
+														var link='/seller/qs='+ encodeURIComponent(res.d[i].kl.replace(/<\/?[^>]+(>|$)/g, ""))+'?sug=' + encodeURIComponent ( sug )+'&shop_id=' + $("#frmActionSx input[name ='shop_id']").val();
+														if(typeof(res.d[i].ns) != 'undefined' && res.d[i].ns.length>0)
+															link=link+'&sp='+ res.d[i].ns
+														if(typeof(res.d[i].bf) != 'undefined' && res.d[i].bf.length>0)
+															link=link+'&br='+ res.d[i].bf
+														finalrow='<a href="'+ link +'"><span class="keySugg">'+string+'</span>'+em+'</a>';
+													}
+													
+													
+													$('#resSuggestSx').append(finalrow);
+												}
+											}
+										},
+										error: function(xhr, ajaxOptions, thrownError) {
+											//alert(xhr.status);
+											//alert(thrownError);
+										}
+									});
+									
+									$("#resSuggestSx").show()
+									/* FINE CODICE DA FARE */
+								} else {
+									$("#resSuggestSx").hide();
+								}
+							}
+						}
+					});
+					
+				//	$('#inputSearchSx').keypress(function(event){ if(event.keyCode == 40 && $.browser.opera) {changeRowSuggSx(+1);} });
+					$("#resSuggestSx a").live("mouseenter", function(){
+						$("#resSuggestSx a").removeClass("sel")
+						$(this).addClass("sel");
+					});
+					$(window).resize(function() {resizeSuggestSx()});
+					resizeSuggestSx();
+				
+			}); 
+      function resizeSuggestSx(){
+			  $("#resSuggestSx").css("width", $("#inputBgSx").css("width"));
+			}
+			//fine suggestion su ricerca box lato sinistro sellerCatalogue
+			////////////////////////////
+
+      
+      
+			
+			
+			
+			function FormatNumberBy3(num, sep, decpoint) {
+  // check for missing parameters and use defaults if so
+  if (arguments.length == 2) {
+    sep = ",";
+  }
+  if (arguments.length == 1) {
+    sep = ",";
+    decpoint = ".";
+  }
+  // need a string for operations
+  num = num.toString();
+  // separate the whole number and the fraction if possible
+  a = num.split(decpoint);
+  x = a[0]; // decimal
+  y = a[1]; // fraction
+  z = "";
+
+
+  if (typeof(x) != "undefined") {
+    // reverse the digits. regexp works from left to right.
+    for (i=x.length-1;i>=0;i--)
+      z += x.charAt(i);
+    // add seperators. but undo the trailing one, if there
+    z = z.replace(/(\d{3})/g, "$1" + sep);
+    if (z.slice(-sep.length) == sep)
+      z = z.slice(0, -sep.length);
+    x = "";
+    // reverse again to get back the number
+    for (i=z.length-1;i>=0;i--)
+      x += z.charAt(i);
+    // add the fraction back in, if it was there
+    if (typeof(y) != "undefined" && y.length > 0)
+      x += decpoint + y;
+  }
+  return x;
+}
+
+		</script>
+		<script type="text/javascript" >
+			function OpenModalPanel (v_name, p) { //p = spazio contenuto - bordo
+				$.fancybox(
+					$("#" + v_name).html(),
+					{
+						'autoDimensions'		: 'true',
+						'transitionIn'			: 'none',
+						'transitionOut'			: 'none',
+						'padding'  : (p != "undefined")?p:10
+					}
+				);	
+			}
+      
+      function OpenModalPanelRecesso (v_name) {
+				$.fancybox(
+					$("#" + v_name).html(),
+					{
+						'autoDimensions'		: 'true',
+						'transitionIn'			: 'none',
+						'transitionOut'			: 'none',
+                        'onClosed'               : function(){window.location.href='/default.aspx?zona=5';}
+          }
+				);	
+			}
+      
+      function OpenModalPanelDetailScroll (v_name, p) { //p = spazio contenuto - bordo
+				$.fancybox(
+					$("#" + v_name).html(),
+					{
+						'autoDimensions'		: 'true',
+						'transitionIn'			: 'none',
+						'transitionOut'			: 'none',
+            'padding'           : (p != "undefined")?p:10,
+            'onComplete'        : function(){
+                                    $('#fancybox-wrap').unbind('mousewheel.fb');
+                                   }
+          }
+				);	
+			}
+            
+            function OpenModalPanelMktInfo (v_name, link) {
+				$.fancybox(
+					$("#" + v_name).html(),
+					{
+						'autoDimensions'		: 'true',
+						'transitionIn'			: 'none',
+						'transitionOut'			: 'none',
+                        'onComplete'			: function(){
+                            $('#fancybox-content').find('p').last().append('<a href="'+link+'">Maggiori informazioni</a>');
+                        }
+					}
+				);	
+			}
+			
+			function OpenModalPanelLogin (v_name, title,sku,prezzo,noBorder) {
+				
+				
+				if (!sku){
+					sku="";
+				}
+				
+				if (!prezzo){
+					prezzo="";
+				}
+				
+				var padd = "0";
+				if (!noBorder){
+					padd="10";
+				}
+				
+				$.fancybox(
+					$("#" + v_name).html(),
+					{
+						'autoDimensions'		: 'true',
+						'transitionIn'			: 'none',
+						'transitionOut'			: 'none',
+						padding: padd,
+						'onComplete'			: function(){
+							$('#fancybox-content').find('.tit:first-child').html(title);
+							$('#fancybox-content').find('#submitForm').click(function() {
+								EffettuaLogin(v_name, sku, prezzo, GetCurrentPage());
+							});
+							
+							$('#fancybox-content').find('#pwd_in').bind('keypress', function(e) {
+						        if(e.keyCode==13){
+									EffettuaLogin(v_name, sku, prezzo, GetCurrentPage());
+								}
+							});
+							
+							}
+					}
+				);	
+			}
+			
+      function OpenModalPanelLoginNew (v_name, title,sku,prezzo,noBorder) {
+				
+				
+				if (!sku){
+					sku="";
+				}
+				
+				if (!prezzo){
+					prezzo="";
+				}
+				
+				var padd = "0";
+				if (!noBorder){
+					padd="10";
+				}
+				
+        //#71798 - sito errore su richiedi maggiori info se non loggato
+        // Modifica temporanea fino a sito https
+        EffettuaLoginMaggioriInfo();
+        /*
+				$.fancybox(
+					$("#" + v_name).html(),
+					{
+						'autoDimensions'		: 'true',
+						'transitionIn'			: 'none',
+						'transitionOut'			: 'none',
+						padding: padd,
+						'onComplete'			: function(){
+							$('#fancybox-content').find('h2.centered').eq(0).html(title);
+							$('#fancybox-content').find('#submitForm').click(function() {
+								EffettuaLogin(v_name, sku, prezzo, GetCurrentPage());
+							});
+							
+							$('#fancybox-content').find('#pwd_in').bind('keypress', function(e) {
+						        if(e.keyCode==13){
+									EffettuaLogin(v_name, sku, prezzo, GetCurrentPage());
+								}
+							});
+							
+							}
+					}
+				);	
+        */
+			}
+      
+			function EffettuaLogin(v_name, sku, prezzo, paginaDiRitornoSso){
+				var email=$('#fancybox-content').find('#formLogin #user').val();
+				var password=$('#fancybox-content').find('#formLogin #pwd_in').val();
+				if(email!='' && password!='')
+				{
+					if(checkemail(email)){
+						$('#fancybox-content').find('#formLogin #pwd').val(MD5(MD5($('#fancybox-content').find('#formLogin #pwd_in').val()) + '3c50ceed570846b3a2238c6536b4e2dc'));
+						$('#fancybox-content').find('#formLogin #sku4wish').val(sku);
+						$('#fancybox-content').find('#formLogin #price').val(prezzo);
+						var _cgc = $('#fancybox-content').find('#formLogin #codiceGiftCard').val(); 
+						if (_cgc !== undefined) {
+							if (paginaDiRitornoSso.indexOf("?") != -1)
+								paginaDiRitornoSso += '&codiceGiftCard=' + _cgc;
+							else
+								paginaDiRitornoSso += '?codiceGiftCard=' + _cgc;
+						}
+						if (v_name == "overLogin" || v_name == "loginOverlayer"  || v_name == "OverLoginNew" ) {
+							LoginSsoDaFancy(paginaDiRitornoSso); //In GlobaFunction.js
+						} else { 
+							$('#fancybox-content').find('#formLogin').submit();
+						}
+					}else{
+						if (v_name == "overLogin") 
+							ShowLoginError("Formato e-mail non valido");
+						else 
+							$('#fancybox-content').find('#formLogin #user').parent().addClass('error');
+					}
+				}else{
+					if (v_name == "overLogin") 
+						ShowLoginError("I campi nome e password sono obbligatori");
+					else {
+						if (email == '') $('#fancybox-content').find('#formLogin #user').parent().addClass('error');
+						if (password == '') $('#fancybox-content').find('#formLogin #pwd_in').parent().addClass('error');
+					}
+				}
+			}
+			
+			function ShowLoginError(message){
+				if ($('#fancybox-content').find('#formLogin #loginError').length >0){ $('#fancybox-content').find('#formLogin #loginError').remove(); }
+				$('#fancybox-content').find('#formLogin #pwd_in').after('<strong class="red" id="loginError">' + message + '</strong>');			
+			}
+			
+			//#MG# 10/04/2013 non è più usata
+			function LoginAjax(){
+				var postData = {};
+				$("#fancybox-content input").each(function(index){ postData[$(this).attr("name")] = $(this).val(); });
+				ChiamaLoginAjax(postData, function() {ShowLoginError(data);});
+			}
+						
+			//#MG# 10/04/2013 non è più usata
+			function ChiamaLoginAjax(postData, azioneKo){
+				$.ajax({
+					type: "POST",
+					url: "login.aspx",
+					data: postData,
+					success: function(data){
+									if (data=="OK")
+										RicaricaPagina();
+									else
+										azioneKo();
+								},
+					error: function (xhr, ajaxOptions, thrownError){
+						//alert("error");
+						azioneKo();
+					}
+				});
+			}
+			
+			function RicaricaPagina(){
+				var location = window.location.href.toLowerCase().replace(/lastsku/,'llastsku');
+				window.location.href=location;
+			}
+			
+			function OpenModalPanelLoginWPrice (v_name, sku, price) {
+				$.fancybox(
+					$("#" + v_name).html(),
+					{
+						'autoDimensions'		: 'true',
+						'transitionIn'			: 'none',
+						'transitionOut'			: 'none',
+						'onComplete'			: function(){
+							$('#fancybox-content').find('#price').val(price);
+							$('#fancybox-content').find('#sku').val(sku);
+							
+							}
+					}
+				);	
+			}
+
+			function SetShortCookie(name, value, expires, sPath)
+			{
+				var today = new Date();
+				today.setTime(today.getTime());
+				if (expires) {
+					expires = expires * 1000 * 60;// conversione da minuti a milisecondi
+				}
+				var expires_date = new Date(today.getTime() + (expires));
+				document.cookie = name +"="+ escape(value) +
+					(expires ? ";expires="+ expires_date.toGMTString() : "") + (sPath ? "; path=" + sPath : "; path=/");
+					
+			}
+			
+			var testresults
+			function checkemail(email){
+				var str=email;
+				var filter = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+				
+				if (filter.test(str))
+					testresults=true
+				else{
+					testresults=false
+				}
+				return (testresults)
+			}
+		
+		</script><script type="text/javascript">
+      
+       var userInfo = 	{"Sku":"0","UserName":"","Email":"","DDEServiceName":"//services.banzaicommerce.it/dde/ddeservice.svc/","Cognome":""} ;	
+       
+       
+			
+            
+            function loadScript(url, callback){
+                var script = document.createElement("script")
+                script.type = "text/javascript";
+                
+                if (script.readyState){  //IE
+                    script.onreadystatechange = function(){
+                        if (script.readyState == "loaded" ||
+                                script.readyState == "complete"){
+                            script.onreadystatechange = null;
+                            callback();
+                        }
+                    };
+                } else {  //Others
+                    script.onload = function(){
+                        callback();
+                    };
+                }
+                
+                script.src = url;
+                document.getElementsByTagName("head")[0].appendChild(script);
+            }
+            
+			$(document).ready(function() {
+				InitHeadPrecart();
+				
+                    
+                        
+					InitHeadPreferiti();
+					
+                    
+                    
+          $("#menu .voiceMenu").live("mouseenter", function(){
+
+            $("#menu .voiceMenu").removeClass("on");
+
+            $(this).addClass("on");
+
+          });
+					if ($('#prudsyssearch').length >0)
+					{
+						$.jsonp({
+							url: $('#prudsyssearch').html().replace(/^\s+|\s+$/g,""),
+							callback: "recdata",
+							cache: true,
+							error: function() {
+									//alert('error')
+							}
+						});
+					}
+			    
+					function reqListener () {
+					  //console.log(this.responseText);
+					}
+				
+                    
+                                
+						            if (typeof(getCookie('_iub_cs-local'))!=='undefined')
+						            {
+							            if (f2En=='true') TraceTimeline();
+						            }
+					            
+                            
+					
+                    
+			});
+			
+			if (typeof facebookLogin == "object") {
+				facebookLogin.Enabled = "True" == "False";
+				facebookLogin.AppId = "";
+				facebookLogin.ReturnUrl = "";
+			}
+      
+			if (typeof googleLogin == "object") {
+				googleLogin.Enabled = "True" == "False";
+				googleLogin.ClientId = "";
+				googleLogin.ReturnUrl = "";
+			}
+      
+      if (typeof chatRightNow == "object") {
+        chatRightNow.catExclude = [];
+        chatRightNow.custHelpDomain = "";
+        chatRightNow.cart_tot_threshold = parseInt("0");
+      }
+      
+			
+            
+                var hashu= ReadCookie('hashu');
+            </script><script src="https://assets.adobedtm.com/ea439639a1c280b984f17811a98e595154e5ba2a/satelliteLib-a8086011005875cb061af8fc4d0fdf17611c0443.js"></script><script>var s = new Object();</script><script type="text/javascript">
+				
+				var kt = { site: "gzshop" };
+				
+		kt.page = "Homepage";
+	</script><script type="text/javascript">
+            var _priceBySpe=true;
+            
+                    var ShopId='';
+                </script><script type="text/javascript">
+						var products = [ { sku: "", price: "", currency: "", itemID: "", category: "" } ]; 
+					
+				dataLayer = [
+					{ 
+						"categoria": "",
+						"listaCategorie": "",
+						"marca": "",
+						"ord": Math.floor(Math.random()*9999999999999),
+						"setCustomerId": "00000000-0000-0000-0000-000000000000", 
+						"setSiteType": "d", 
+						"keywords": "", 
+						"transactionProducts": products 
+					}
+				];
+			</script><script type="text/javascript" src="http://shop.giallozafferano.it/js/md5.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/newePrice/navigation.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/newePrice/vfcore.js?v=00208"></script><script type="text/javascript" src="http://shop.giallozafferano.it/js/newePrice/telone.js?v=00208"></script><script type="text/javascript">
+            
+        		var _PATH_IMG_FILE = "https://images.banzaicommerce.it/images/prodotti/100/";
+		        var _PATH_IMG_FILE_52 = "https://images.banzaicommerce.it/images/prodotti/75/";
+		        //var _PATH_IMG_FILE_NODISPO = "https://images.banzaicommerce.it/img/_b/img_nodispo125.gif";
+		        var _PATH_IMG_FILE_NODISPO = "https://images.banzaicommerce.it/img/img_nodispo100.gif";
+				
+						$(document).ready(function() {
+						    InitService ('div.InfoProdotto_2011');  
+                
+						});
+					
+        </script><title>GZ Shop</title><meta name="robots" content="noodp,noydir"><meta name="description" content=""><script type="text/javascript">
+				// se e' un ipad, aggiungo la nav del menu al click
+				if(navigator.userAgent.indexOf("iPad") > 0){
+				$(function(){
+				$("#listMenu .contListMenu").append('<div class="icoClose"></div>')
+				$("#listMenu .voce").bind("click", function(){
+				var $thisCont = $(".contListMenu", $(this).parents(".voiceMenu"));
+				if($thisCont.css("display") != "block"){
+				$(".contListMenu").css("display", "none");
+				$thisCont.css("display", "block");
+				}
+				});
+				$("#listMenu .icoClose").bind("click", function(){$(".contListMenu").css("display", "none");});
+				});
+				}
+				</script>
+				<link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.shop.giallozafferano.it/?meta=GZ_all_nav"><script type="text/javascript">
+				
+					function GetMpfoUrl(){
+						return location.protocol + "//services.banzaicommerce.it/mpfo/";
+					}
+					
+					$(function(){GetNotification2016();});
+				</script></head><body><div id="main" class="sezHome"><div id="header" xmlns:fb="http://ogp.me/ns/fb#"><div class="bgGz"><div class="container cont3step"><a class="right" href="/p/consigli-stellati"><img src="/layout/images/head_cons_stellati.png" alt="Consigli stellati"></a><a class="arrLeft" href="http://www.giallozafferano.it"><svg class="arrowSx" height="13" width="26" version="1.1" baseProfile="full" viewBox="0 0 26 13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:g="http://base.google.com/ns/1.0"><path class="fill" fill="#ffffff" fill-rule="evenodd" d="M5 13 L 6 12 L 1.83 7 L 26 7 L 26 6 L 1.83 6 L 6 1 L 5 0 L 0 6 L 0 7 L 5 13" /></svg><span class="logoGZext">Vai al sito GialloZafferano</span></a></div></div><div id="menu" class="container cont3step"><div id="allShop" class="menuItem"><span class="btn_head arrDwn"><span class="spMenu"><svg class="icoMenu" width="21px" height="18px" version="1.1" baseProfile="full" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:g="http://base.google.com/ns/1.0"><g class="stroke" stroke-linejoin="miter" stroke-linecap="square" stroke-width="3" stroke="#adadad" fill="none" opacity="0.9" fill-rule="evenodd"><path d="M 1.5 1.5 L 22.12 1.5" /><path d="M 1.5 8.5 L 22.12 8.5" /><path d="M 1.5 15.5 L 22.12 15.5" /></g></svg></span><span class="tit">
+          Tutto per <strong>Cucinare</strong></span></span><div id="subMenu">
+        <ul id="listMenu" class="subMenu">
+                
+                        
+                                <li class="voiceMenu">
+   <span class="voce"><a href="/s/pentole">Pentole</a></span>
+	<div class="contListMenu">
+		<div class="contList" style="background-image:url(https://images.banzaicommerce.it/layout/images/test/bg_menu_pentole.jpg)">
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul>
+  <li><a href="/articoli/pentole/bastardelle">Bastardelle</a></li>
+  <li><a href="/articoli/pentole/bollitori">Bollitori</a></li>
+  <li><a href="/articoli/pentole/brasiere">Brasiere</a></li>
+  <li><a href="/articoli/pentole/bricchi-e-creamer">Bricchi e Creamer</a></li>
+  <li><a href="/articoli/pentole/casseruole">Casseruòle</a></li>
+  <li><a href="/articoli/pentole/cocotte">Cocotte</a></li>
+  <li><a href="/articoli/pentole/coperchi">Coperchi</a></li>
+  <li><a href="/articoli/pentole/fonduta">Fonduta</a></li>
+  <li><a href="/articoli/pentole/girafrittata">Girafrittata</a></li>
+  <li><a href="/articoli/pentole/infarinapesce">Infarinapesce</a></li> 
+  <li><a href="/articoli/pentole/multipentole">Multipentole</a></li>
+  <li><a href="/articoli/pentole/padella-lionese">Padella Lionese</a></li>  
+  <li><a href="/articoli/pentole/padelle">Padelle</a></li>
+  <li><a href="/articoli/pentole/padelle-elettriche">Padelle Elettriche</a></li>
+  <li><a href="/articoli/pentole/padelle-per-friggere">Padelle per Friggere</a></li> 
+  <li><a href="/articoli/pentole/padelle-per-mantecare">Padelle per Mantecare</a></li>
+  <li><a href="/articoli/pentole/padellini-e-pentolini">Padellini e Pentolini</a></li>         
+  <li><a href="/articoli/pentole/paellere">Paellere</a></li>
+  <li><a href="/articoli/pentole/pentole">Pentole</a></li>
+  <li><a href="/articoli/pentole/pentole-a-pressione">Pentole a pressione</a></li>
+
+</ul>
+<a href="/s/pentole">Vedi il negozio Pentole</a>
+			</div>
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul>
+  <li><a href="/articoli/pentole/pentole-per-asparagi">Pentole per asparagi</a></li>
+  <li><a href="/articoli/pentole/pentole-per-crepes">Pentole per crèpes</a></li>
+  <li><a href="/articoli/pentole/pentole-per-grigliare">Pentole per grigliare</a></li>
+  <li><a href="/articoli/pentole/pentole-per-pesce">Pentole per pesce</a></li>
+  <li><a href="/articoli/pentole/pietre-ollari">Pietre ollari</a></li>  
+  <li><a href="/articoli/pentole/pirofile">Pirofile</a></li>
+  <li><a href="/articoli/pentole/pirofile-monoporzione">Pirofile monoporzione</a></li>
+  <li><a href="/articoli/pentole/recipienti">Recipienti</a></li>
+  <li><a href="/articoli/pentole/rostiere">Rostiere</a></li>
+  <li><a href="/articoli/pentole/saltapasta">Saltapasta</a></li>
+  <li><a href="/articoli/pentole/sauteuse">Sauteuse</a></li>
+  <li><a href="/articoli/pentole/scodello-e-cestelli">Scodelli e cestelli</a></li>
+  <li><a href="/articoli/pentole/set-di-pentole">Set di Pentole</a></li>
+  <li><a href="/articoli/pentole/tajine">Tajine</a></li>
+  <li><a href="/articoli/pentole/tegamini">Tegamini</a></li>
+  <li><a href="/articoli/pentole/teglie">Teglie</a></li>
+  <li><a href="/articoli/pentole/terrecotte">Terrecotte</a></li>
+  <li><a href="/articoli/pentole/testo-romagnolo">Testo Romagnolo</a></li>
+  <li><a href="/articoli/pentole/umidiere">Umidiere</a></li>
+  <li><a href="/articoli/pentole/woks">Woks</a></li>
+</ul>
+			</div>
+		</div>
+	</div>
+                        
+                                <li class="voiceMenu">
+ <!--  <span class="voce">Preparare gli ingredienti</span>-->
+  <span class="voce"><a href="/articoli/utensili-da-cucina">Utensili da Cucina</a></span> 
+	<div class="contListMenu">
+		<div class="contList" style="background-image:url(https://images.banzaicommerce.it/layout/images/test/gz_bg_utensili.jpg)">
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<h4>Tagliare e Mescolare</h4>-->  
+<ul>
+  <li><a href="/articoli/utensili-da-cucina/affetta-e-pelaverdura">Affetta e pelaverdura</a></li>
+  <li><a href="/articoli/utensili-da-cucina/apriscatole">Apriscatole</a></li>
+  <li><a href="/articoli/utensili-da-cucina/batticarne">Batticarne</a></li>
+  <li><a href="/articoli/utensili-da-cucina/bilance">Bilance</a></li>
+  <li><a href="/articoli/utensili-da-cucina/colapasta">Colapasta</a></li>
+  <li><a href="/articoli/utensili-da-cucina/colini-e-filtri">Colini e filtri</a></li>
+  <li><a href="/articoli/utensili-da-cucina/contenitori">Contenitori</a></li>
+  <li><a href="/articoli/utensili-da-cucina/cucchiai-per-rimestare">Cucchiai per rimestare</a></li>
+  <li><a href="/articoli/utensili-da-cucina/dosatori-gelato">Dosatori Gelato</a></li>
+  <li><a href="/articoli/utensili-da-cucina/forchettoni">Forchettoni</a></li>       
+  <li><a href="/articoli/utensili-da-cucina/fruste-e-frullini">Fruste e Frullini</a></li>
+  <li><a href="/articoli/utensili-da-cucina/grattugie">Grattugie</a></li>
+  <li><a href="/articoli/utensili-da-cucina/imbuti">Imbuti</a></li>
+  <li><a href="/articoli/utensili-da-cucina/libri-di-gastronomia">Libri di Gastronomia</a></li>
+  <li><a href="/articoli/utensili-da-cucina/mandoline">Mandoline</a></li>
+  <li><a href="/articoli/utensili-da-cucina/mestoli">Mestoli</a></li>
+  <li><a href="/articoli/utensili-da-cucina/misurini-e-dosatori">Misurini e dosatori</a></li>
+  <li><a href="/articoli/utensili-da-cucina/mortai-e-schiacciaglio">Mortai e schiacciaglio</a></li>
+</ul>
+<a href="/articoli/utensili-da-cucina">Vedi il negozio Utensili da Cucina</a>
+			</div>
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<h4>Cotture speciali</h4>-->
+<ul>
+  <li><a href="/articoli/utensili-da-cucina/palette">Palette</a></li>
+  <li><a href="/articoli/utensili-da-cucina/passaverdure">Passaverdure</a></li>
+  <li><a href="/articoli/utensili-da-cucina/pinze">Pinze</a></li>
+  <li><a href="/articoli/utensili-da-cucina/schiaccianoci">Schiaccianoci</a></li>
+  <li><a href="/articoli/utensili-da-cucina/schiacciapatate">Schiacciapatate</a></li>       
+  <li><a href="/articoli/utensili-da-cucina/schiumarole">Schiumarole</a></li>
+  <li><a href="/articoli/utensili-da-cucina/scolainsalata">Scolainsalata</a></li>
+  <li><a href="/articoli/utensili-da-cucina/servispaghetti">Servispaghetti</a></li>
+  <li><a href="/articoli/utensili-da-cucina/shaker">Shaker</a></li>
+  <li><a href="/articoli/utensili-da-cucina/spatole">Spatole</a></li>
+  <li><a href="/articoli/utensili-da-cucina/spremiagrumi-manuali">Spremiagrumi Manuali</a></li>  
+  <li><a href="/articoli/utensili-da-cucina/strumenti-utili">Strumenti utili</a></li>
+  <li><a href="/articoli/utensili-da-cucina/taglieri">Taglieri</a></li>
+  <li><a href="/articoli/utensili-da-cucina/termometri-e-timers">Termometri e Timer</a></li>
+  <li><a href="/articoli/utensili-da-cucina/trinciapollo">Trinciapollo</a></li>
+  <li><a href="/articoli/utensili-da-cucina/tritatutto">Tritatutto</a></li>
+  <li><a href="/articoli/utensili-da-cucina/vasetti-per-conserve">Vasetti per conserve</a></li>
+</ul>
+			</div>
+		</div>
+	</div>	
+</li>
+                        
+                                <li class="voiceMenu">
+  <span class="voce"><a href="/s/strumenti-pasta">Strumenti Pasta, Pizza e Dolci</a></span>
+	<div class="contListMenu">
+		<div class="contList" style="background-image:url(https://images.banzaicommerce.it/layout/images/test/gz_bg_dolci.jpg)">
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul>
+  <li><a href="/articoli/strumenti-pasta-pizza-e-dolci/alzate">Alzate</a></li>
+  <li><a href="/articoli/strumenti-pasta-pizza-e-dolci/mattarelli">Mattarelli</a></li>
+  <li><a href="/articoli/strumenti-pasta-pizza-e-dolci/pasticceria">Pasticceria</a></li>
+  <li><a href="/articoli/strumenti-pasta-pizza-e-dolci/pennelli-da-cucina">Pennelli da cucina</a></li>
+  <li><a href="/articoli/strumenti-pasta-pizza-e-dolci/porzionatori-e-coppapasta">Porzionatori e coppapasta</a></li>
+  <li><a href="/articoli/strumenti-pasta-pizza-e-dolci/raviolatori">Raviolatori</a></li>        
+  <li><a href="/articoli/strumenti-pasta-pizza-e-dolci/rigagnocchi">Rigagnocchi</a></li>
+  <li><a href="/articoli/strumenti-pasta-pizza-e-dolci/sac-poche">Sac à poche</a></li>
+  <li><a href="/articoli/strumenti-pasta-pizza-e-dolci/setacci">Setacci</a></li>
+  <!--<li><a href="/articoli/strumenti-pasta-pizza-dolci/teglie-e-pirofile">Teglie e Pirofile</a></li>-->
+</ul>
+<a href="/s/strumenti-pasta">Vedi il negozio Strumenti pasta, pizza e dolci</a>
+			</div>
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<h4>Cotture speciali</h4>-->
+<ul>
+  <li><a href="/articoli/strumenti-pasta-pizza-e-dolci/sfogliatrici">Sfogliatrici</a></li>
+  <li><a href="/articoli/strumenti-pasta-pizza-e-dolci/spatole">Spatole</a></li>
+  <li><a href="/articoli/strumenti-pasta-pizza-e-dolci/spianatoie-e-stendipasta">Spianatoie e Stendipasta</a></li>
+  <li><a href="/articoli/strumenti-pasta-pizza-e-dolci/stampi-dolci">Stampi per dolci</a></li>
+  <li><a href="/articoli/strumenti-pasta-pizza-e-dolci/tagliabiscotti">Tagliabiscotti</a></li>
+  <li><a href="/articoli/strumenti-pasta-pizza-e-dolci/tagliapasta">Tagliapasta</a></li>
+  <li><a href="/articoli/strumenti-pasta-pizza-e-dolci/tagliapizza">Tagliapizza</a></li>
+  <li><a href="/articoli/strumenti-pasta-pizza-e-dolci/tortiere">Tortiere</a></li>
+</ul>
+			</div>	
+		</div>
+	</div>
+                        
+                                <li class="voiceMenu">
+  <span class="voce"><a href="/articoli/coltelli-e-posate">Coltelli e Posate</a></span>
+	<div class="contListMenu">
+		<div class="contList" style="background-image:url(https://images.banzaicommerce.it/layout/images/test/gz_bg_posate.jpg)">
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul>
+  <li><a href="/articoli/coltelli-e-posate/affilacoltelli">Affilacoltelli</a></li>
+  <li><a href="/articoli/coltelli-e-posate/appendino-magnetico">Appendino magnetico</a></li>
+  <li><a href="/articoli/coltelli-e-posate/ceppi">Ceppi</a></li>
+  <li><a href="/articoli/coltelli-e-posate/coltelli-apriscatole">Coltello apriscatole</a></li>
+  <li><a href="/articoli/coltelli-e-posate/coltelli-da-cucina">Coltelli da cucina</a></li>
+  <li><a href="/articoli/coltelli-e-posate/coltelli-da-cuoco">Coltelli da cuoco</a></li>
+  <li><a href="/articoli/coltelli-e-posate/coltelli-da-macellaio">Coltelli da macellaio</a></li>   
+  <li><a href="/articoli/coltelli-e-posate/coltelli-formaggio-e-polenta">Coltelli per formaggi e polenta</a></li>
+  <li><a href="/articoli/coltelli-e-posate/coltelli-frutta-e-agrumi">Coltelli frutta e agrumi</a></li>
+  <li><a href="/articoli/coltelli-e-posate/coltelli-orientali">Coltelli orientali</a></li>
+  <li><a href="/articoli/coltelli-e-posate/coltelli-ostriche">Coltelli per ostriche</a></li>
+  <li><a href="/articoli/coltelli-e-posate/coltelli-pasta">Coltelli per pasta</a></li>
+  <li><a href="/articoli/coltelli-e-posate/coltelli-per-arrosto">Coltelli per arrosto</a></li>
+  <li><a href="/articoli/coltelli-e-posate/coltelli-per-bistecca">Coltelli per bistecca</a></li>
+  <li><a href="/articoli/coltelli-e-posate/coltelli-per-disossare">Coltelli per disossare</a></li>
+</ul>
+<a href="/articoli/coltelli-e-posate">Vedi il negozio coltelli e posate</a>
+			</div>
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<h4>Elettrodomestici</h4>-->
+<ul>
+  <li><a href="/articoli/coltelli-e-posate/coltelli-per-pesce">Coltelli per pesce</a></li>
+  <li><a href="/articoli/coltelli-e-posate/coltelli-per-salumi">Coltelli per salumi</a></li>
+  <li><a href="/articoli/coltelli-e-posate/coltelli-per-sfilettare">Coltelli per sfilettare</a></li>
+  <li><a href="/articoli/coltelli-e-posate/coltelli-per-surgelati">Coltelli per surgelati</a></li>
+  <li><a href="/articoli/coltelli-e-posate/coltelli-per-verdure">Coltelli per verdure</a></li>
+  <li><a href="/articoli/coltelli-e-posate/coltelli-seghettati">Coltelli seghettati</a></li>
+  <li><a href="/articoli/coltelli-e-posate/coltelli-trinciaossa">Coltelli trinciaossa</a></li>
+  <li><a href="/articoli/coltelli-e-posate/coltello-danese">Coltelli danesi</a></li>  
+  <li><a href="/articoli/coltelli-e-posate/mezzelune">Mezzelune</a></li>
+  <li><a href="/articoli/coltelli-e-posate/posate-da-tavola">Posate da tavola</a></li>      
+  <li><a href="/articoli/coltelli-e-posate/set-coltelli">Set di coltelli</a></li>     
+  <li><a href="/articoli/coltelli-e-posate/spatole">Spatole</a></li>
+  <li><a href="/articoli/coltelli-e-posate/spelucchini">Spelucchini</a></li>
+  <li><a href="/articoli/coltelli-e-posate/coltelli-elettrici">Coltelli elettrici</a></li>
+</ul>
+			</div>
+		</div>
+	</div>	
+</li>
+                        
+                                <li class="voiceMenu">
+  <span class="voce"><a href="/articoli/in-cucina">In Cucina</a></span>
+	<div class="contListMenu">
+		<div class="contList" style="background-image:url(https://images.banzaicommerce.it/layout/images/test/gz_bg_cucina.jpg)">
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul>
+  <li><a href="/articoli/in-cucina/accendigas">Accendigas</a></li>
+  <li><a href="/articoli/in-cucina/arredo">Arredo</a></li>
+  <li><a href="/articoli/in-cucina/barattoli">Barattoli</a></li>
+  <li><a href="/articoli/in-cucina/cappe-cucina">Cappe aspiranti</a></li>
+  <li><a href="/articoli/in-cucina/carrelli-portavivande">Carrelli Portavivande</a></li>
+  <li><a href="/articoli/in-cucina/contenitori-per-rifiuti">Contenitori per Rifiuti</a></li>
+  <li><a href="/articoli/in-cucina/cucine">Cucine</a></li>
+  <li><a href="/articoli/in-cucina/filtrazione-e-depurazione-acqua">Filtrazione e depurazione acqua</a></li>
+  <li><a href="/p/forni-sconto-10">Forni</a></li>
+  <!--<li><a href="/articoli/in-cucina/forni">Forni</a></li>-->
+  <!--<li><a href="/articoli/in-cucina/frigoriferi">Frigoriferi</a></li>-->
+  <li><a href="/p/frigo-sconto-10">Frigoriferi</a></li>
+  <li><a href="/p/congelatori">Congelatori da Incasso</a></li>
+</ul>
+<a href="/articoli/in-cucina">Vedi il negozio In cucina</a>
+			</div>
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<h4>Cotture speciali</h4>-->
+<ul>
+  <li><a href="/articoli/in-cucina/lavastoviglie">Lavastoviglie</a></li>
+  <li><a href="/articoli/in-cucina/lavelli-e-miscelatori">Lavelli e Miscelatori</a></li>
+  <li><a href="/articoli/in-cucina/piani-cottura">Piani Cottura</a></li>        
+  <li><a href="/articoli/in-cucina/porta-utensili">Porta Utensili</a></li>
+  <li><a href="/articoli/in-cucina/portaposate">Portaposate</a></li>
+  <li><a href="/articoli/in-cucina/presine-e-guanti-da-forno">Presine e Guanti da Forno</a></li>
+  <li><a href="/articoli/in-cucina/scolapiatti">Scolapiatti</a></li>
+  <li><a href="/articoli/in-cucina/strofinacci">Strofinacci</a></li>
+  <li><a href="/articoli/in-cucina/tablet-e-stand">Tablet e Stand</a></li>
+</ul>
+			</div>	
+		</div>
+	</div>	
+</li>
+                        
+                                <li class="voiceMenu">
+  <span class="voce"><a href="/articoli/piccoli-elettrodomestici">Piccoli Elettrodomestici</a></span>
+	<div class="contListMenu">
+		<div class="contList" style="background-image:url(https://images.banzaicommerce.it/layout/images/test/bg_menu_ped.jpg)">
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul>
+  <li><a href="/articoli/piccoli-elettrodomestici/accessori">Accessori</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/affettatrici">Affettatrici</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/bollitori">Bollitori</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/centrifughe">Centrifughe</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/cotton-candy">Cotton Candy</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/cuoci-uova">Cuoci Uova</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/cuociriso">Cuociriso</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/essicatori?sd=rank">Essiccatori</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/estrattori">Estrattori di succo</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/food-processor">Food Processor</a></li>
+  <li><a href="/p/forni-sconto-10">Fornetti e Forni Pizza</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/forni-microonde">Forni Microonde</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/friggitrici">Friggitrici</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/frullatori">Frullatori</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/fruste-elettriche">Fruste Elettriche</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/grattugie-elettriche">Grattugie elettriche</a></li>  
+  <li><a href="/articoli/piccoli-elettrodomestici/hot-dog-maker">Hot Dog Maker</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/macchina-da-ghiaccio">Macchina da Ghiaccio</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/macchina-per-pop-corn">Macchina per Pop Corn</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/macchine-da-caff">Macchine da Caffè</a></li>
+</ul>
+<!--<a href="/articoli/piccoli-elettrodomestici">Vedi il negozio Piccoli Elettrodomestici</a>-->
+			</div>
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<h4>Cotture speciali</h4>-->
+<ul>
+  <li><a href="/articoli/piccoli-elettrodomestici/macchine-per-pane">Macchine per Pane</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/macchine-per-pasta">Macchine per Pasta</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/mixer-ad-immersione">Mixer ad Immersione</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/paioli">Paioli</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/passapomodoro">Passapomodoro</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/piastra-per-crepes">Piastra per Crepes</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/piastre-e-fornelli">Piastre e Fornelli</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/piastre-per-dolci">Piastre per dolci</a></li>  
+  <li><a href="/articoli/piccoli-elettrodomestici/piastre-per-grigliare">Piastre per grigliare</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/scaldavivande">Scaldavivande</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/slow-cooker">Slow Cooker</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/sorbetti-e-gelati">Sorbetti e Gelati</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/sottovuoto">Sottovuoto</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/spremiagrumi">Spremiagrumi</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/tostapane">Tostapane</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/tritacarne">Tritacarne</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/tritatutto">Tritatutto</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/vaporiere">Vaporiere</a></li>
+  <li><a href="/articoli/piccoli-elettrodomestici/yogurtiere">Yogurtiere</a></li>
+</ul>
+			</div>
+		</div>
+	</div>	
+</li>
+                        
+                                <li class="voiceMenu">
+   <span class="voce"><a href="/s/in-tavola">In Tavola</a></span>
+	<div class="contListMenu">
+		<div class="contList" style="background-image:url(https://images.banzaicommerce.it/layout/images/test/gz_bg_tavola.jpg)">
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul>
+  <li><a href="/articoli/in-tavola/antipastiere">Antipastiere</a></li> 
+  <li><a href="/articoli/in-tavola/bicchieri">Bicchieri</a></li>
+  <li><a href="/articoli/in-tavola/bottiglie-di-vetro">Bottiglie di vetro</a></li>
+  <li><a href="/articoli/in-tavola/brocche-e-caraffe">Brocche e caraffe</a></li>
+  <li><a href="/articoli/in-tavola/caffettiere">Caffettiere</a></li>
+  <li><a href="/articoli/in-tavola/cavatappi">Cavatappi</a></li>
+  <li><a href="/articoli/in-tavola/coprivivande">Coprivivande</a></li>
+  <li><a href="/articoli/in-tavola/decanter">Decanter</a></li>
+  <li><a href="/articoli/in-tavola/insalatiere">Insalatiere</a></li>  
+  <li><a href="/articoli/in-tavola/macina-sale-e-pepe">Macina sale e pepe</a></li>
+  <li><a href="/articoli/in-tavola/oliere">Oliere</a></li>
+  <li><a href="/articoli/in-tavola/piatti">Piatti</a></li>
+  <li><a href="/articoli/in-tavola/piatti-da-portata">Piatti da portata</a></li> 
+  <li><a href="/articoli/in-tavola/portaformaggio">Portaformaggio</a></li>
+</ul>
+<a href="/s/in-tavola">Vedi il negozio In Tavola</a>
+			</div>
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul>
+  <li><a href="/articoli/in-tavola/portatovaglioli-e-rotoli">Portatovaglioli e rotoli</a></li>
+  <li><a href="/articoli/in-tavola/portauovo">Portauovo</a></li>
+  <li><a href="/articoli/in-tavola/secchiello-portaghiaccio">Secchiello portaghiaccio</a></li>
+  <li><a href="/articoli/in-tavola/servizi-da-caff">Servizi da caffe'</a></li>
+  <li><a href="/articoli/in-tavola/servizi-di-posate">Servizi di posate</a></li>
+  <li><a href="/articoli/in-tavola/sottopentole">Sottopentole</a></li>
+  <li><a href="/articoli/in-tavola/sottopiatti">Sottopiatti</a></li>
+  <li><a href="/articoli/in-tavola/tappi-bottiglie">Tappi bottiglie</a></li>
+  <li><a href="/articoli/in-tavola/tazze-mug-e-scodelle">Tazze, mug e scodelle</a></li>
+  <li><a href="/articoli/in-tavola/teiere-e-infusori">Teiere e infusori</a></li>
+  <li><a href="/articoli/in-tavola/tovaglie-e-set-americano">Tovaglie e set americano</a></li>  
+  <li><a href="/articoli/in-tavola/vassoi">Vassoi</a></li>
+  <li><a href="/articoli/in-tavola/zuccheriere">Zuccheriere</a></li>
+  <li><a href="/articoli/in-tavola/porta-pane">Porta pane</a></li>
+</ul>
+			</div>
+		</div>
+	</div>
+                        
+                                <li class="voiceMenu">
+  <span class="voce"><a href="/articoli/allaperto">All'aperto</a></span>
+	<div class="contListMenu">
+		<div class="contList" style="background-image:url(https://images.banzaicommerce.it/layout/images/test/gz_bg_aperto.jpg)">
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul>
+  <li><a href="/articoli/allaperto/affumicatori">Affumicatori</a></li>
+  <li><a href="/articoli/allaperto/amache-e-dondoli">Amache e Dondoli</a></li>
+  <li><a href="/articoli/allaperto/barbecue">Barbecue</a></li>
+  <li><a href="/articoli/allaperto/bidoni-e-compost">Bidoni e Compost</a></li>
+  <li><a href="/articoli/allaperto/contenitori">Contenitori</a></li>
+  <li><a href="/articoli/allaperto/decori">Decori</a></li>
+  <li><a href="/articoli/allaperto/gazebo">Gazebo</a></li>
+  <li><a href="/articoli/allaperto/il-tuo-piccolo-orto">Il tuo piccolo orto</a></li>
+</ul>
+
+<a href="/articoli/allaperto">Vedi il negozio All'aperto</a>
+			</div>
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul>
+  <li><a href="/articoli/allaperto/illuminazione?sd=rank">Illuminazione</a></li>  
+  <li><a href="/articoli/allaperto/padelle-per-grigliare">Padelle per Grigliare</a></li>  
+  <li><a href="/articoli/allaperto/tavoli-da-pranzo">Tavoli da pranzo</a></li>
+  <li><a href="/articoli/allaperto/tende-parasole">Tende parasole</a></li>
+  <li><a href="/articoli/allaperto/termos">Termos</a></li>
+  <li><a href="/articoli/allaperto/torchio">Torchio</a></li>
+  <li><a href="/articoli/allaperto/utensili-per-cucinare">Utensili per cucinare</a></li>
+  <li><a href="/articoli/allaperto/zona-relax">Zona relax</a></li>
+</ul>
+			</div>
+		</div>
+	</div>	
+</li>
+                        
+                                <li class="voiceMenu">
+ <!--  <span class="voce">Preparare gli ingredienti</span>-->
+  <span class="voce"><a href="/articoli/microimpresa-domestica">Microimpresa Domestica</a></span> 
+	<div class="contListMenu">
+		<div class="contList" style="background-image:url(https://images.banzaicommerce.it/layout/images/test/gz_bg_microimpresa.jpg)">
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<h4>Tagliare e Mescolare</h4>-->  
+<ul>
+  <li><a href="/articoli/microimpresa-domestica/abbigliamento-da-cucina">Abbigliamento da cucina</a></li>
+  <li><a href="/articoli/microimpresa-domestica/bagnomaria">Bagnomaria</a></li>
+  <li><a href="/articoli/microimpresa-domestica/banchi-lavoro">Banchi Lavoro</a></li>
+  <li><a href="/articoli/microimpresa-domestica/banchi-refrigerati">Banchi Refrigerati</a></li>
+  <li><a href="/articoli/microimpresa-domestica/barbecue">Barbecue</a></li>
+  <li><a href="/articoli/microimpresa-domestica/barbecue-da-tavolo">Barbecue da Tavolo</a></li>
+  <li><a href="/articoli/microimpresa-domestica/bollitori">Bollitori</a></li>
+  <li><a href="/articoli/microimpresa-domestica/caff-e-accessori">Caffe' e Accessori</a></li>
+  <li><a href="/articoli/microimpresa-domestica/cappe">Cappe</a></li>
+  <li><a href="/articoli/microimpresa-domestica/carrelli">Carrelli</a></li>
+  <li><a href="/p/congelatori">Congelatori</a></li>
+  <li><a href="/articoli/microimpresa-domestica/crepiere">Crepiere</a></li>
+  <li><a href="/articoli/microimpresa-domestica/cucine">Cucine</a></li>
+  <li><a href="/articoli/microimpresa-domestica/cuoci-wurstel">Cuoci Wurstel</a></li>
+  <li><a href="/articoli/microimpresa-domestica/cuocipasta">Cuocipasta</a></li>
+  <li><a href="/articoli/microimpresa-domestica/cuociriso">Cuociriso</a></li>
+  <li><a href="/articoli/microimpresa-domestica/cutter-e-pelapatate">Cutter e Pelapatate</a></li>
+  <li><a href="/articoli/microimpresa-domestica/dispencer">Dispencer</a></li>
+  <li><a href="/articoli/microimpresa-domestica/fabbricatori-ghiaccio">Fabbricatori di Ghiaccio</a></li>
+  <li><a href="/articoli/microimpresa-domestica/forni">Forni</a></li>
+  <li><a href="/articoli/microimpresa-domestica/forni-pizza">Forni Pizza</a></li>
+  <li><a href="/articoli/microimpresa-domestica/friggitrici">Friggitrici</a></li>
+  <li><a href="/articoli/microimpresa-domestica/frigoriferi">Frigoriferi</a></li>
+</ul>
+<!--<a href="/articoli/microimpresa-domestica">Vedi il negozio Microimpresa Domestica</a>-->
+			</div>
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<h4>Cotture speciali</h4>-->
+<ul>
+  <li><a href="/articoli/microimpresa-domestica/frullatori">Frullatori</a></li>
+  <li><a href="/articoli/microimpresa-domestica/gelatiere">Gelatiere</a></li>
+  <li><a href="/articoli/microimpresa-domestica/impastatrici">Impastatrici</a></li>
+  <li><a href="/articoli/microimpresa-domestica/lavastoviglie">Lavastoviglie</a></li>
+  <li><a href="/articoli/microimpresa-domestica/lavelli">Lavelli</a></li>
+  <li><a href="/articoli/microimpresa-domestica/macchine-sottovuoto">Macchine Sottovuoto</a></li>
+  <li><a href="/articoli/microimpresa-domestica/minipimer">Minipimer</a></li>
+  <li><a href="/articoli/microimpresa-domestica/mobili-e-pensili">Mobili e Pensili</a></li>
+  <li><a href="/articoli/microimpresa-domestica/piani-cottura">Piani Cottura</a></li>
+  <li><a href="/articoli/microimpresa-domestica/pale-per-pizza">Pale per pizza</a></li>
+  <li><a href="/articoli/microimpresa-domestica/piastre">Piastre</a></li>
+  <li><a href="/articoli/microimpresa-domestica/salamandre">Salamandre</a></li>
+  <li><a href="/articoli/microimpresa-domestica/scaldapiatti">Scaldapiatti</a></li>
+  <li><a href="/articoli/microimpresa-domestica/scaldavivande">Scaldavivande</a></li>
+  <li><a href="/articoli/microimpresa-domestica/spremiagrumi-e-centrifughe">Spremiagrumi e centrifughe</a></li>
+  <li><a href="/articoli/microimpresa-domestica/tostiere">Tostiere</a></li>
+  <li><a href="/articoli/microimpresa-domestica/tritacarne-e-grattugie">Tritacarne e Grattugie</a></li>
+  <li><a href="/articoli/microimpresa-domestica/tritaghiaccio">Tritaghiaccio</a></li>
+  <li><a href="/articoli/microimpresa-domestica/vetrine-refrigerate">Vetrine Refrigerate</a></li>
+  <li><a href="/articoli/microimpresa-domestica/vetrine-riscaldate">Vetrine Riscaldate</a></li>
+  <li><a href="/articoli/microimpresa-domestica/vetrinette">Vetrinette</a></li>
+  <li><a href="/articoli/microimpresa-domestica/zuppiere">Zuppiere</a></li>
+</ul>
+			</div>
+		</div>
+	</div>	
+</li>
+                        
+                                <li class="voiceMenu">
+ <!--  <span class="voce">Preparare gli ingredienti</span>-->
+  <span class="voce"><a href="/p/marmellate-conserve">Marmellate e Conserve</a></span> 
+	<div class="contListMenu">
+		<div class="contList" style="background-image:url(https://images.banzaicommerce.it/layout/images/test/gz_bg_marmellate.jpg)">
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<h4>Tagliare e Mescolare</h4>-->  
+<ul>
+<li><a href="/articoli/in-tavola/bottiglie-di-vetro">Bottiglie di vetro</a></li>
+<li><a href="/articoli/in-tavola/tappi-bottiglie?sd=nov">Tappi bottiglie</a></li>
+<li><a href="/articoli/pentole/multipentole?pp=1">Multipentole</a></li>
+<li><a href="/articoli/utensili-da-cucina/pinze?sd=promo">Pinze</a></li>
+<li><a href="/articoli/in-cucina/presine-e-guanti-da-forno?sa=promo">Presine e guanti</a></li>
+<li><a href="/articoli/piccoli-elettrodomestici/passapomodoro?sd=rank">Passapomodoro</a></li>
+<li><a href="/articoli/utensili-da-cucina/passaverdure">Passaverdure</a></li>
+<li><a href="/articoli/utensili-da-cucina/affetta-e-pelaverdura">Affetta e pelaverdura</a></li>
+<li><a href="/articoli/utensili-da-cucina/imbuti?pp=2">Imbuti</a></li>
+<li><a href="/articoli/utensili-da-cucina/mestoli">Mestoli</a></li>
+<li><a href="/articoli/piccoli-elettrodomestici/food-processor/robot-con-cottura?sd=rank">Robot con cottura</a></li>
+</ul>
+<a href="/p/marmellate-conserve">Vedi il negozio Marmellate e Conserve</a>
+			</div>
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<h4>Cotture speciali</h4>-->
+<ul>
+<li><a href="/articoli/utensili-da-cucina/strumenti-utili?sd=promo">Strumenti utili</a></li>
+<li><a href="/articoli/utensili-da-cucina/colini-e-filtri">Colini e filtri</a></li>
+<li><a href="/articoli/utensili-da-cucina/grattugie?sa=promo">Grattugie</a></li>
+<li><a href="/articoli//pentole-a-pressione-MORPHY%20RICHARDS/prod-4IFNK">Pentola a pressione</a></li>
+<li><a href="/articoli/utensili-da-cucina/spremiagrumi-manuali?sd=rank">Spremiagrumi</a></li>
+<li><a href="/articoli/utensili-da-cucina/bilance?sa=dispo_ordinamento">Bilance</a></li>
+<li><a href="/articoli/utensili-da-cucina/termometri-e-timers?sa=dispo_ordinamento">Termometri e timers</a></li>
+<li><a href="/articoli/in-cucina/tablet-e-stand">Tablet e stand</a></li>
+</ul>
+			</div>
+		</div>
+	</div>	
+</li>
+                        
+                                <li class="voiceMenu">
+ <!--  <span class="voce">Preparare gli ingredienti</span>-->
+  <span class="voce"><a href="/p/buffet-finger-food">Buffet e Finger Food</a></span> 
+	<div class="contListMenu">
+		<div class="contList" style="background-image:url(https://images.banzaicommerce.it/layout/images/test/gz_bg_buffet.jpg)">
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<h4>Tagliare e Mescolare</h4>-->  
+<ul>
+<li><a href="/articoli/allaperto/tavoli-da-pranzo?sa=dispo_ordinamento">Tavoli</a></li>
+<li><a href="/search/sp=/pentole?qs=terracotta&ee=QlpoOTFBWSZTWU-tpCMAAAgbgBAAQBBACisCmAogACKMm0hk9BTAATSCF8BBkd-Z/NVYu5IpwoSCfW0hG/&oq=terracotta&sa=promo">Terrecotte</a></li>
+<li><a href="/articoli/strumenti-pasta-pizza-e-dolci/alzate">Alzate</a></li>
+<li><a href="/articoli/in-tavola/piatti-da-portata?sd=man">Piatti da portata</a></li>
+<li><a href="/articoli/in-tavola/antipastiere">Antipastiere</a></li>
+<li><a href="/articoli/pentole/pirofile-monoporzione">Ramequin</a></li>
+<li><a href="/articoli/in-tavola/portatovaglioli-e-rotoli?sd=promo&br=ILSA@OR@BRANDANI">Brandani Tavola</a></li>
+<li><a href="/articoli/in-tavola/piatti/ciotoline?sd=rank">Ciotoline Snack</a></li>
+<li><a href="/articoli//tagliabiscotti-TESCOMA/prod-19GS7F">Foodstyle</a></li>
+<li><a href="/articoli/utensili-da-cucina/shaker">Shaker</a></li>
+<li><a href="/search/sp=/microimpresa-domestica?qs=dispenser%20bevande&ee=QlpoOTFBWSZTWU-tpCMAAAgbgBAAQBBACisCmAogACKMm0hk9BTAATSCF8BBkd-Z/NVYu5IpwoSCfW0hG/&oq=dispenser%20bevande">Dispenser</a></li>
+<li><a href="/articoli/in-tavola/bicchieri?attrid_15=Bicchiere@:@9">Bicchieri Doppia Parete</a></li>
+<li><a href="/articoli/in-tavola/bicchieri?attrid_15=Bicchiere%20Acqua@:@138&sa=promo">Bicchieri Acqua</a></li>
+<li><a href="/articoli/in-tavola/bicchieri&attrid_15=Bicchiere%20Birra@:@16?sa=promo">Boccali Birra</a></li>
+</ul>
+<a href="/p/buffet-finger-food">Vedi il negozio Buffet e Finger Food</a>
+			</div>
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<h4>Tagliare e Mescolare</h4>-->  
+<ul>
+<li><a href="/articoli/in-tavola/bicchieri&attrid_15=Calice@:@110?sa=promo">Calici</a></li>
+<li><a href="/articoli/in-tavola/bicchieri&attrid_15=Flute@:@10?sa=promo">Flute</a></li>
+<li><a href="/articoli/in-tavola/bicchieri&attrid_15=Bicchiere%20Vino@:@28?sa=promo">Bicchieri Vino</a></li>
+<li><a href="/articoli/in-tavola/brocche-e-caraffe">Caraffe</a></li>
+<li><a href="/articoli/pentole/teglie">Teglie</a></li>
+<li><a href="/articoli/pentole/pirofile?pp=1">Pirofile</a></li>
+<li><a href="/search/qs=raclette?ee=QlpoOTFBWSZTWU-tpCMAAAgbgBAAQBBACisCmAogACKMm0hk9BTAATSCF8BBkd-Z/NVYu5IpwoSCfW0hG/&oq=raclette&pp=1">Raclette</a></li>
+<li><a href="/articoli/utensili-da-cucina/taglieri">Taglieri</a></li>
+<li><a href="/p/speciale-fritto">Tutto per friggere</a></li>
+<li><a href="/articoli/piccoli-elettrodomestici/piastre-per-dolci?sd=rank">Macchine per dolci</a></li>
+<li><a href="/articoli//grattugie-MASTRAD/prod-198JBA">Chipsmaker</a></li>
+<li><a href="/articoli/piccoli-elettrodomestici/piastra-per-crepes">Crepes e Cialde</a></li>
+<li><a href="/articoli/piccoli-elettrodomestici/estrattori">Estrattori di succo</a></li>
+<li><a href="/articoli//minipimer-BARTSCHER/prod-1993II">Mixer Bar Cocktail</a></li>
+  <li><a href="/articoli/?attrid_905=Entity">Serie Entity</a></li>
+</ul>
+			</div>
+		</div>
+	</div>	
+</li>
+                        
+                                <li class="bg_line"></li>
+                        
+                                <li class="voiceMenu">
+  <span class="voce"><a href="/media/"><strong>Speciali e Guide all'acquisto</strong></a></span>
+	<div class="contListMenu">
+		<div class="contList" style="background-image:url(https://images.banzaicommerce.it/layout/images/test/bg_menu_speciali.jpg)">
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h4>Speciali</h4>
+<ul>
+  <!-- <li><a href="/media/guide/fare-il-pane">Il pane fatto in casa</a></li>
+  <li><a href="/media/guide/il-set-di-coltelli-perfetto">Il set di coltelli perfetto</a></li>-->
+  <li><a href="/media/speciali/decorare-una-torta">L'arte del cake design</a></li>
+  <li><a href="/media/speciali/la-pasticceria">La pasticceria</a></li>
+  <li><a href="/media/speciali/fare-la-pasta-fresca">Fare la pasta fresca</a></li>
+  <li><a href="/media/speciali/la-pizza-che-passione">La pizza, che passione!</a></li>
+  <li><a href="/media/speciali/cucinare-al-forno">Al forno!</a></li> 
+  <li><a href="/media/speciali/crepe-e-pancake">Crepe e pancake</a></li>
+  <li><a href="/media/speciali/l-ora-del-te">L'ora del The</a></li>
+  <li><a href="/media/speciali/la-magia-del-cioccolato">La magia del cioccolato</a></li>
+</ul>
+<a href="/media/">Vedi tutti</a>
+			</div>
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h4>Guide all'acquisto</h4>
+<ul>
+  <li><a href="/media/guide/fare-il-pane">Il pane fatto in casa</a></li>
+  <li><a href="/media/guide/conservare-e-trasortare-il-cibo">Conservare il cibo</a></li>
+  <li><a href="/media/guide/le-mie-prime-pentole">Le mie prime pentole</a></li>
+  <li><a href="/media/guide/il-set-di-coltelli-perfetto">Il set di coltelli perfetto</a></li>
+  <!-- <li><a href="/media/speciali/la-pasticceria">La pasticceria</a></li>
+  <li><a href="/media/speciali/fare-la-pasta-fresca">Fare la pasta fresca</a></li>
+  <li><a href="/media/speciali/la-pizza-che-passione">La pizza, che passione!</a></li>
+  <li><a href="/media/speciali/crepe-e-pancake">Crepe e pancake</a></li>
+  <li><a href="/media/speciali/cucinare-al-forno">Al forno!</a></li> -->
+</ul>
+<!-- <a href="/media/media/">Vedi tutti</a> -->
+			</div>
+		</div>
+	</div>	
+</li>
+                        
+                                <li class="voiceMenu">
+  <span class="voce"><a href="/p/consigli-stellati"><strong>Consigli Stellati</strong></a></span>
+	<div class="contListMenu">
+		<div class="contList" style="background-image:url(https://images.banzaicommerce.it/layout/images/test/gz_bg_chef.jpg)">
+			<div class="col">
+				
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h4>I Grandi Chef parlano di:</h4>
+<ul>
+  <!-- <li><a href="/media/guide/fare-il-pane">Il pane fatto in casa</a></li>
+  <li><a href="/media/guide/il-set-di-coltelli-perfetto">Il set di coltelli perfetto</a></li>-->
+  <li><a href="/p/chef-davide-brovelli">Cocotte</a></li>
+  <li><a href="/p/chef-salvatore-quarto">Estrattori di succo</a></li>
+  <li><a href="/p/chef-raffaele-ros#chef-sottovuoto">Sottovuoto</a></li>
+  <li><a href="/p/chef-salvatore-quarto">Abbattitori</a></li>
+  <li><a href="/p/chef-salvatore-quarto">Frullatori ad immersione</a></li>
+  <li><a href="/p/davide-di-corato">Microonde</a></li>
+  <li><a href="/p/chef-raffaele-ros#chef-piani">Piani Cottura</a></li>
+  <li><a href="/p/davide-di-corato-essiccatori">Essiccatori</a></li>
+  <li><a href="/p/chef-raffaele-ros#chef-congelatore">Congelatori</a></li>
+  <li><a href="/p/chef-davide-brovelli-casseruole">Casseruòle</a></li>
+  <li><a href="/p/chef-raffaele-ros#chef-frigo">Frigoriferi</a></li>
+  <li><a href="/p/chef-raffaele-ros#chef-forno">Forni a vapore</a></li>
+  <li><a href="/p/chef-raffaele-ros#chef-robot">Multi Cooker</a></li>
+  <li><a href="/p/chef-marco-sacco-barbecue">Grill & Barbecue</a></li>
+  <li><a href="/p/chef-marco-sacco-cottura-bassa-temperatura">Cottura a bassa temperatura</a></li>
+   <li><a href="/p/valeria-di-giacomo">Planetarie</a></li>
+</ul>
+			</div>
+          <div class="col">
+				
+			</div>
+		</div>
+	</div>	
+</li>
+                        
+                                <li class="bg_line" style="height:195px"></li>
+                        
+                                <li class="bg_line"></li>
+                        
+                
+        </ul>
+</div>
+
+
+<link href="https://images.banzaicommerce.it/img/_b/gzshop/widget.css" rel="stylesheet" type="text/css" /> 
+<!-- <link href="//fonts.googleapis.com/css?family=Lato:400,400italic,700|Cookie|Roboto+Slab:400,700" rel="stylesheet" type="text/css" />
+<style>
+#negoziInEvidenza h2.title span {bottom:0; font-family: "Roboto Slab"; font-size: 30px;}
+</style>--></div><h1 id="logo"><a href="/"><svg class="logo" height="59" width="143" version="1.1" baseProfile="full" viewBox="0 0 143 59" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:g="http://base.google.com/ns/1.0"><path class="fill" fill="#f7972c" fill-rule="evenodd" d="M 52.22 42.66 L 57.34 42.66 C 58.05 44.72 59.12 45.62 60.82 45.62 C 61.93 45.62 62.63 45.06 62.63 44.16 C 62.63 43.73 62.5 43.4 62.06 42.96 C 60.59 41.5 56.57 40.87 54.13 38.45 C 52.69 37.02 52.05 35.53 52.05 33.73 C 52.05 29.75 54.93 27.06 59.18 27.06 C 61.12 27.06 62.9 27.66 64.24 28.75 L 64.24 27.36 L 69.36 27.36 L 69.36 33.77 L 64.24 33.77 L 64.14 33.47 C 63.47 31.88 62.46 31.11 60.96 31.11 C 59.92 31.11 59.28 31.64 59.28 32.51 C 59.28 32.87 59.45 33.27 59.68 33.5 C 60.72 34.53 65.64 35.86 68.29 38.48 C 69.16 39.35 70.26 41.17 70.26 43.36 C 70.26 47.25 67.05 50.2 62.8 50.2 C 60.92 50.2 58.88 49.54 57.34 48.41 L 57.34 49.9 L 52.22 49.9 L 52.22 42.66" /><path class="fill" fill="#f7972c" fill-rule="evenodd" d="M 71.46 44.96 L 73.54 44.96 L 73.54 32.31 L 71.46 32.31 L 71.46 27.36 L 81.77 27.36 L 81.77 36.09 C 83.88 34.66 86.19 33.9 88.37 33.9 C 91.75 33.9 94.29 35.83 94.29 40.64 L 94.29 44.96 L 96.16 44.96 L 96.16 49.9 L 86.06 49.9 L 86.06 41.5 C 86.06 40.11 85.42 39.21 84.08 39.21 C 83.35 39.21 82.68 39.44 81.77 39.88 L 81.77 44.96 L 83.98 44.96 L 83.98 49.9 L 71.46 49.9 L 71.46 44.96" /><path class="fill" fill="#f7972c" fill-rule="evenodd" d="M 107.37 33.7 C 112.46 33.7 118.49 36.09 118.49 42.03 C 118.49 47.45 113.16 50.37 107.37 50.37 C 101.55 50.37 96.26 47.51 96.26 42.03 C 96.26 36.59 101.62 33.7 107.37 33.7 L 107.37 33.7 Z M 107.31 45.72 C 109.12 45.72 110.15 44.36 110.15 41.94 C 110.15 39.68 109.15 38.35 107.44 38.35 C 105.63 38.35 104.6 39.71 104.6 42.07 C 104.6 44.39 105.57 45.72 107.31 45.72 L 107.31 45.72 Z M 107.31 45.72" /><path class="fill" fill="#f7972c" fill-rule="evenodd" d="M 129.03 34.17 L 129.03 35.59 C 129.53 35.2 131.34 33.9 134.38 33.9 C 139.33 33.9 142.98 37.39 142.98 42.13 C 142.98 47.05 139.4 50.2 134.15 50.2 C 132.01 50.2 130.33 49.74 129.03 48.91 L 129.03 52.19 L 131.1 52.19 L 131.1 57.14 L 118.89 57.14 L 118.89 52.19 L 120.79 52.19 L 120.79 39.11 L 118.89 39.11 L 118.89 34.17 L 129.03 34.17 L 129.03 34.17 Z M 131.74 45.55 C 133.24 45.55 134.65 44.62 134.65 41.9 C 134.65 39.71 133.68 38.58 131.84 38.58 C 130.03 38.58 129.03 39.88 129.03 42.07 C 129.03 44.26 130 45.55 131.74 45.55 L 131.74 45.55 Z M 131.74 45.55" /><path class="fill" fill="#7b69a3" fill-rule="evenodd" d="M 49.1 49.87 L 32.95 49.9 L 32.91 45.23 L 42.34 32.46 L 37.66 32.5 L 36.65 36.98 L 32.84 37.01 L 32.77 27.48 L 51.89 27.48 L 51.93 32.15 L 42.44 44.92 L 47.05 44.88 L 48.29 39.76 L 52.23 38.9 L 52.21 45.77 C 56.38 39.47 59.06 31.25 55.43 21.88 C 51.73 12.3 50.16 8.24 50.16 8.24 C 50.16 8.24 40.25 12.32 34.83 21.42 L 36.16 5.96 C 37.07 5.47 37.68 4.51 37.65 3.4 C 37.62 1.84 36.32 0.6 34.74 0.63 C 33.16 0.66 31.9 1.95 31.94 3.52 C 31.96 4.64 32.63 5.58 33.58 6.03 L 33.82 22.84 L 29.15 11.43 C 29.85 10.65 30.1 9.52 29.68 8.48 C 29.1 7.03 27.43 6.32 25.97 6.9 C 24.5 7.48 23.79 9.13 24.37 10.58 C 24.78 11.6 25.72 12.26 26.75 12.36 L 31.15 20.65 C 23.44 14.17 13.56 13.15 13.56 13.15 C 13.56 13.15 13.31 16.4 12.73 23.89 C 5.9 22.87 0.28 24.14 0.28 24.14 C 0.28 24.14 1.37 28.35 3.94 38.3 C 9.69 60.56 38.95 58.94 38.95 58.94 C 38.95 58.94 38.92 58.83 38.87 58.63 C 38.92 58.76 38.94 58.83 38.94 58.83 C 38.94 58.83 44.22 55.53 49.1 49.87 L 49.1 49.87 Z M 27.15 50.13 L 26.55 48.75 C 25.31 50.07 23.71 50.6 20.97 50.63 C 17.57 50.65 14.75 49.74 12.75 48.04 C 10.27 45.89 8.78 42.35 8.75 38.63 C 8.69 31.7 13.34 26.8 20.08 26.75 C 22.27 26.73 23.56 27.1 24.85 28.13 L 25.33 27.16 L 29.91 27.12 L 30 36.81 L 25.89 36.84 L 25.89 36.39 C 25.87 33.74 24.36 32.06 21.97 32.08 C 18.94 32.1 17.37 34.56 17.4 39.18 C 17.44 43.52 18.91 45.68 21.87 45.66 C 23.57 45.64 24.6 44.81 24.59 43.46 C 24.59 42.64 24.13 42.26 23.19 42.27 L 22.33 42.28 L 22.29 37.97 L 30.94 37.9 L 31.04 50.1 L 27.15 50.13 L 27.15 50.13 Z M 27.15 50.13" /></svg></a></h1><div id="menuRight"><div id="logUser" class="menuItem noMenu"><a href="/default.aspx?zona=5" class="btn_head arrDwn"><span class="spMenu"><svg class="icoUser" width="28" height="30" version="1.1" baseProfile="full" viewBox="0 0 28 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:g="http://base.google.com/ns/1.0"><path class="stroke" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="2.093999862670898" stroke="#adadad" fill="none" opacity="0.9" fill-rule="evenodd" d="M 11.02 1.08 C 12.46 0.86 14.02 1.1 15.23 1.91 C 16.22 2.56 16.9 3.57 17.19 4.66 C 17.54 5.98 17.43 7.39 17.03 8.69 C 16.6 10.05 15.84 11.32 14.81 12.37 C 14.64 12.82 14.53 13.33 14.67 13.81 C 14.76 14.13 15.02 14.4 15.36 14.5 C 16.67 14.93 17.96 15.44 19.15 16.11 C 20.01 16.58 20.84 17.14 21.46 17.88 C 21.77 18.27 22.04 18.73 22.03 19.23 L 22.03 21.98 C 21.78 22.24 21.32 22.3 20.98 22.39 C 18.74 22.81 16.84 22.84 14.57 22.97 C 12.82 23.01 10.68 23.02 8.93 22.92 C 7.13 22.84 5.33 22.76 3.55 22.49 C 3.05 22.4 2.48 22.32 2.03 22.07 L 2.03 19.34 C 2.04 19.03 2.1 18.72 2.25 18.44 C 2.64 17.7 3.33 17.14 4.04 16.66 C 5.4 15.76 6.91 15.08 8.46 14.54 C 8.85 14.41 9.2 14.15 9.36 13.79 C 9.57 13.34 9.48 12.83 9.29 12.39 C 7.67 10.77 6.7 8.57 6.68 6.34 C 6.67 5.13 6.99 3.89 7.76 2.91 C 8.53 1.92 9.74 1.27 11.02 1.08 L 11.02 1.08 Z M 11.02 1.08" /></svg></span><span class="tit"><strong>Login</strong></span></a></div><div id="menuPreferiti" class="menuItem"><div class="btn_head"></div><div id="listPreferiti" class="subMenu"></div></div><div id="contCarrello" class="menuItem"><div class="btn_head"></div></div></div><form name="frmAction" class="liquidSpace" id="frmAction"><div id="inputBg" class="catMenu"><input type="hidden" id="pathSearch" value="http://shop.giallozafferano.it/search/qs="><input id="inputSearch" type="text" name="inputSearch" maxlength="120" alt="Che cosa stai cercando?" value="Che cosa stai cercando?" autocomplete="off"><span id="resSend" onclick="return search();"><svg class="icoLente" height="25" width="24" version="1.1" baseProfile="full" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:g="http://base.google.com/ns/1.0"><g class="fill" fill="#ffffff" fill-rule="evenodd"><path d="M 17.35 15.76 C 16.78 16.53 16.11 17.21 15.34 17.78 L 21.99 24.45 L 24 22.43 L 17.35 15.76" /><path d="M 9.75 0.5 C 4.52 0.5 0.28 4.78 0.28 10.07 C 0.28 15.36 4.52 19.64 9.75 19.64 C 11.84 19.64 13.77 18.94 15.34 17.78 C 16.11 17.21 16.78 16.53 17.35 15.76 C 18.51 14.16 19.21 12.2 19.21 10.07 C 19.21 4.78 14.97 0.5 9.75 0.5 L 9.75 0.5 Z M 9.75 16.93 C 6 16.93 2.96 13.86 2.96 10.07 C 2.96 6.28 6 3.21 9.75 3.21 C 13.49 3.21 16.53 6.28 16.53 10.07 C 16.53 13.86 13.49 16.93 9.75 16.93 L 9.75 16.93 Z M 9.75 16.93" /></g></svg></span><input type="hidden" value="" name="sp"><input type="hidden" value="" name="fsfe"><input type="hidden" value="" name="br"><input type="hidden" value="" name="sug"></div><div id="resSuggest" class="contSuggest"></div></form><div id="confirmBox" class="hide" style="display: none;"><div class="cont_cross"><div class="contTxt"><h2 class="roboto gzColor">Iscriviti a GZ Shop</h2><form class="leftSideError" name="formPopup" method="post" id="form-popup-login" action="default.aspx?zona=5"><input type="hidden" name="zona" value="5"><input type="hidden" name="dove" value="46"><input type="hidden" name="currentUrl" value="/index.aspx?meta=GZ_all_nav"><p>
+              Per continuare devi essere iscritto a GZ Shop. Cliccando su CONFERMA dichiari di volerti iscrivere a GZ Shop con le stesse credenziali di ePRICE. Prendi visione delle <a href="/p/myaccount/aiuto/contratto">CGV</a> e della <a href="/default.aspx?zona=1&amp;dove=24">Privacy policy</a> di GZ Shop.
+            </p><a onclick="javascript:document.forms['formPopup'].submit();" class="btn"><span>CONFERMA</span></a><p>
+              Se vuoi iscriverti con nuove credenziali vai a <a href="/registrazionelite.aspx?zona=5&amp;to=16&amp;dove=0">Registrati</a>.
+            </p></form></div></div></div><script type="text/javascript">
+      
+        $(document).ready(function(){
+          var firstTimeGZ = "0";
+          if(firstTimeGZ == 1){
+            FancyNoborderNoClose("confirmBox");
+          }
+        });
+       
+        window.onload = function() 
+        {
+          if(location.hash)
+            { 
+              var elId = location.hash.replace('#',''); 
+              var scrollToEl = document.getElementById(elId); 
+              scrollToEl.scrollIntoView(true);    
+            } 
+         } 
+
+
+              
+      
+    </script><link href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Cookie|Roboto+Slab:400,700" rel="stylesheet" type="text/css"></div></div><div id="content"><style type="text/css">
+  .rowHp .subtitle, #negoziInEvidenza .subtitle { color: #333; display: block; font-size: 18px; line-height: 28px; margin: 0 auto; text-align: center; width: 800px; }  
+.w_slider_prod .slick-slide .wrapper .imgWrap {margin-bottom: 5px;}
+  #topBanner{height: 370px; margin: 0 auto; max-width: 1140px; overflow: hidden; position: relative; width: 100%; z-index: 1; !important;}
+  .contNegozi .item h3 {font-size: 24px;}
+   .titolo.siteFont2 {clear: both; margin: 0 auto 50px;    width: 750px;font-size: 14px; font-weight: 400; color: #999; text-align: center;}
+  .w_widget.w_new.w_provati {display:table; margin:0 auto;  width:61%; text-align:center;}
+.w_widget.w_new.w_provati .item {display:table-cell; padding:0 10px !important;}
+.w_widget.w_new.w_provati .item > * {display:block; margin:0 auto; width:94%; max-width:250px; min-width:160px;}
+.w_widget.w_new.w_provati .item img {display:block; width:100%; padding-bottom:4px;}
+.w_widget.w_new.w_provati .item .videoRew {position:relative; margin-bottom:25px; padding:4px; font-size:16px; color:#FFF; background:#655f98;}
+.w_widget.w_new.w_provati .item .videoRew:after {content:" "; position:absolute; top:100%; left:50%; margin-left:-8px; display:inline-block; border:8px solid transparent; border-top:14px solid #655f98; border-bottom:0;}
+.w_widget.w_new.w_provati .item .videoRew a {display:block;}
+.w_widget.w_new.w_provati .item .videoRew .icoPlay {position:absolute; top:50%; left:50%; margin:-22px 0 0 -22px; width:44px;}
+.w_widget.w_new.w_provati .item .videoRew:hover {text-decoration:none;}
+.w_widget.w_new.w_provati .item .videoRew:hover .icoPlay {opacity:0.8;}
+.w_widget.w_new.w_provati .item .itemBrand {display:inline-block; width:auto; min-width:0;}
+.w_widget.w_new.w_provati .item .itemName {display:block; height:32px; margin:5px 0; font-size:13px; overflow:hidden;}
+.w_widget.w_new.w_provati .item del {padding-right:8px;}
+</style>
+
+<div id="topBanner">
+  <ul id="topBanner-wrap">
+    <!--[[EmbeddedContent:Telone_Tab_01]]-->
+    <div>
+<li><a href="/search/qs=pasta&oq=pasta?br=ILSA@OR@ELETTRO%20C@OR@STIL%20CASA@OR@HOME@OR@GHIDINI@OR@HOME%20PROFESSIONAL&vv=2&sd=rank&pp=1"><img src="https://images.banzaicommerce.it/img/_b/00_teloni_gz/1140x370_strumenti-pasta-fresca.jpg?v=2" alt="Pasta Fresca" /></a></li></div>
+<div>
+<li><a href="/search/qs=smeg&oq=smeg?br=SMEG&sa=dispo_ordinamento"><img src="https://images.banzaicommerce.it/img/_b/00_teloni_gz/1140x370_smeg-soluzioni.jpg" alt="Smeg Esclusivi" /></a></li></div>
+<!--[[EmbeddedContent:Telone_Tab_02]]-->
+    <div>
+<li><a href="/articoli/microimpresa-domestica/cucine?sd=rank"><img src="https://images.banzaicommerce.it/img/_b/00_teloni_gz/1140x370_cucine-inox.jpg?v=3" alt="Cucine Inox" /></a></li></div>
+<!--[[EmbeddedContent:Telone_Tab_03]]-->
+    <div>
+<li><a href="/articoli/utensili-da-cucina/taglieri?br=KNINDUSTRIE@OR@BOOS@OR@BARTSCHER@OR@LEGNOART@OR@SELETTI@OR@REMEMBER@OR@ALLEGRO@OR@BROLLOGROUP@OR@DIVERS@OR@DOBO®&vv=2&pp=1&sd=rank"><img src="https://images.banzaicommerce.it/img/_b/00_teloni_gz/1140x370_tagliere.jpg?v=2" alt="Tagliere" /></a></li></div>
+<!--[[EmbeddedContent:Telone_Tab_04]]-->
+    <!--[[EmbeddedContent:Telone_Tab_05]]-->
+    <!--[[EmbeddedContent:Telone_Tab_06]]-->
+  </ul>
+</div>
+
+<!-- /////////////////////// ZONA BRAND /////////////////////// -->
+<section id="marchiGz" class="rowHp">
+  <style type="text/css">
+    .w_marchi_new .item {display:inline-block; margin:0 -3px 15px 0; width:20%; min-width:130px; vertical-align:middle; text-align:center;}
+  </style>
+  <div class="container">
+    <h2 class="title"><span>I NOSTRI MIGLIORI BRAND:</span></h2>
+    <div class="w_marchi_new">
+      <a class="item" href="/p/piccoli-elettrodomestici-bosch">
+        <img src="https://images.banzaicommerce.it/img/_b/_loghi_brand/BOSCH.png" alt="Scopri tutti i prodotti">
+      </a>
+      <a class="item" href="/p/elettrodomestici-whirlpool">
+        <img src="https://images.banzaicommerce.it/img/_b/_loghi_brand/WHIRLPOOL.png" alt="Scopri tutti i prodotti">
+      </a>
+      <a class="item" href="/p/consigli-stellati">
+        <img src="https://images.banzaicommerce.it/img/_b/_loghi_brand/logo_consigli.jpg" alt="Scopri tutti i prodotti">
+      </a>
+      <a class="item" href="/p/davide-di-corato">
+        <img src="https://images.banzaicommerce.it/img/_b/_loghi_brand/SAMSUNG.png" alt="Scopri tutti i prodotti">
+      </a>
+      <a class="item" href="/p/elettrodomestici-smeg">
+        <img src="https://images.banzaicommerce.it/img/_b/_loghi_brand/SMEG.png" alt="Scopri tutti i prodotti">
+      </a>
+      <a class="item" href="/search/qs=scholtes?oq=SCHOLTES&sa=promo&br=SCHOLTES">
+        <img src="https://images.banzaicommerce.it/img/_b/_loghi_brand/SCHOLTES.png" alt="Scopri tutti i prodotti">
+      </a>
+      <a class="item" href="/p/elettrodomestici-hoover">
+        <img src="https://images.banzaicommerce.it/img/_b/_loghi_brand/HOOVER-GZ.png" alt="Scopri tutti i prodotti">
+      </a>
+      <a class="item" href="/p/elettrodomestici-aeg">
+        <img src="https://images.banzaicommerce.it/img/_b/_loghi_brand/AEG.png" alt="Scopri tutti i prodotti">
+      </a>
+	  <a class="item" href="/p/valeria-di-giacomo">
+        <img src="https://images.banzaicommerce.it/img/_b/_loghi_brand/ELECTROLUX.png" alt="Scopri tutti i prodotti">
+      </a>
+   <!--   <a class="item" href="/search/qs=weber?ee=QlpoOTFBWSZTWU-tpCMAAAgbgBAAQBBACisCmAogACKMm0hk9BTAATSCF8BBkd-Z/NVYu5IpwoSCfW0hG/&oq=WEBER&br=WEBER">
+        <img src="https://images.banzaicommerce.it/img/_b/_loghi_brand/WEBER.png" alt="Scopri tutti i prodotti">
+      </a>
+	  -->
+      <a class="item" href="/p/davide-di-corato-candy">
+        <img src="https://images.banzaicommerce.it/img/_b/_loghi_brand/CANDY.png" alt="Scopri tutti i prodotti">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- /////////////////////// OGGI IN OFFERTA!!! /////////////////////// -->
+<section id="inOfferta" class="rowHp">
+ <div class="container">
+    <!--<h2 class="title"><span>Speciale Halloween:</span></h2>
+    <!--<div class="w_slider_prod">
+      {contents.get('widget-item-slider5','').content}
+      {contents.get('widget-item-slider6','').content}
+      {contents.get('widget-item-slider7','').content}
+      {contents.get('widget-item-slider8','').content} 
+    </div>-->
+   <h2 class="title"><span>SCELTI PER TE:</span></h2>
+    <div class="w_orizontal_list_prod">
+      <div class="item">
+    <a href="/articoli/strumenti-pasta/spianatoie-e-stendipasta?sa=promo">
+      <img src="https://images.banzaicommerce.it/img/_b/gzshop/230x230-home-stendipasta.jpg" alt="Stendipasta" class="img-responsive">
+      <h3>Stendipasta</h3>
+      <div class="priceWrap">
+        <div class="ico">
+          <!-- ico_cart.svg -->
+          <svg class="icoCart" width="35" height="28" version="1.1" baseProfile="full" xmlns:xlink="//www.w3.org/1999/xlink" xmlns="//www.w3.org/2000/svg" viewBox="0 0 35 28">
+            <g class="fill" fill="#AEAEAE" opacity="0.9" fill-rule="evenodd">
+              <path d="M 30.42 20.43 L 12.42 20.43 C 11.95 20.43 11.54 20.13 11.39 19.7 L 6.47 4.8 L 0.81 2.38 C 0.26 2.18 -0.02 1.56 0.19 1.02 C 0.4 0.47 1.02 0.19 1.57 0.4 L 7.72 3 C 8.02 3.11 8.26 3.36 8.36 3.66 L 13.2 18.31 L 29.57 18.31 L 32.18 7.64 L 11.71 7.64 C 11.12 7.64 10.63 7.17 10.63 6.58 C 10.63 5.99 11.12 5.52 11.71 5.52 L 33.55 5.52 C 33.88 5.52 34.19 5.67 34.39 5.92 C 34.6 6.18 34.67 6.51 34.6 6.83 L 31.47 19.62 C 31.35 20.09 30.92 20.43 30.42 20.43" />
+              <path d="M 13.86 27.76 C 12.16 27.76 10.78 26.4 10.78 24.73 C 10.78 23.06 12.16 21.7 13.86 21.7 C 15.56 21.7 16.94 23.06 16.94 24.73 C 16.94 26.4 15.56 27.76 13.86 27.76 L 13.86 27.76 Z M 13.86 23.82 C 13.35 23.82 12.93 24.23 12.93 24.73 C 12.93 25.23 13.35 25.64 13.86 25.64 C 14.37 25.64 14.79 25.23 14.79 24.73 C 14.79 24.23 14.37 23.82 13.86 23.82 L 13.86 23.82 Z M 13.86 23.82" />
+              <path d="M 28.05 27.76 C 26.35 27.76 24.97 26.4 24.97 24.73 C 24.97 23.06 26.35 21.7 28.05 21.7 C 29.75 21.7 31.13 23.06 31.13 24.73 C 31.13 26.4 29.75 27.76 28.05 27.76 L 28.05 27.76 Z M 28.05 23.82 C 27.54 23.82 27.12 24.23 27.12 24.73 C 27.12 25.23 27.54 25.64 28.05 25.64 C 28.56 25.64 28.98 25.23 28.98 24.73 C 28.98 24.23 28.56 23.82 28.05 23.82 L 28.05 23.82 Z M 28.05 23.82" />
+            </g>
+          </svg>
+        </div>
+        <p class="price">
+          da
+          <span class="itemPrice" id="price_51707459">5,99 &euro;</span>
+        </p>
+      </div>
+    </a>
+  </div>
+ 
+  
+<script type="text/javascript">
+$(function () {InitServiceProductPrice ('{"skuItem":51707459, "idSito":0}|','widget-border1');});
+</script>
+      <div class="item">
+    <a href="/articoli/strumenti-pasta/mattarelli?sa=promo">
+      <img src="https://images.banzaicommerce.it/img/_b/gzshop/230x230-home-mattarelli.jpg" alt="Mattarelli" class="img-responsive">
+      <h3>Mattarelli</h3>
+      <div class="priceWrap">
+        <div class="ico">
+          <!-- ico_cart.svg -->
+          <svg class="icoCart" width="35" height="28" version="1.1" baseProfile="full" xmlns:xlink="//www.w3.org/1999/xlink" xmlns="//www.w3.org/2000/svg" viewBox="0 0 35 28">
+            <g class="fill" fill="#AEAEAE" opacity="0.9" fill-rule="evenodd">
+              <path d="M 30.42 20.43 L 12.42 20.43 C 11.95 20.43 11.54 20.13 11.39 19.7 L 6.47 4.8 L 0.81 2.38 C 0.26 2.18 -0.02 1.56 0.19 1.02 C 0.4 0.47 1.02 0.19 1.57 0.4 L 7.72 3 C 8.02 3.11 8.26 3.36 8.36 3.66 L 13.2 18.31 L 29.57 18.31 L 32.18 7.64 L 11.71 7.64 C 11.12 7.64 10.63 7.17 10.63 6.58 C 10.63 5.99 11.12 5.52 11.71 5.52 L 33.55 5.52 C 33.88 5.52 34.19 5.67 34.39 5.92 C 34.6 6.18 34.67 6.51 34.6 6.83 L 31.47 19.62 C 31.35 20.09 30.92 20.43 30.42 20.43" />
+              <path d="M 13.86 27.76 C 12.16 27.76 10.78 26.4 10.78 24.73 C 10.78 23.06 12.16 21.7 13.86 21.7 C 15.56 21.7 16.94 23.06 16.94 24.73 C 16.94 26.4 15.56 27.76 13.86 27.76 L 13.86 27.76 Z M 13.86 23.82 C 13.35 23.82 12.93 24.23 12.93 24.73 C 12.93 25.23 13.35 25.64 13.86 25.64 C 14.37 25.64 14.79 25.23 14.79 24.73 C 14.79 24.23 14.37 23.82 13.86 23.82 L 13.86 23.82 Z M 13.86 23.82" />
+              <path d="M 28.05 27.76 C 26.35 27.76 24.97 26.4 24.97 24.73 C 24.97 23.06 26.35 21.7 28.05 21.7 C 29.75 21.7 31.13 23.06 31.13 24.73 C 31.13 26.4 29.75 27.76 28.05 27.76 L 28.05 27.76 Z M 28.05 23.82 C 27.54 23.82 27.12 24.23 27.12 24.73 C 27.12 25.23 27.54 25.64 28.05 25.64 C 28.56 25.64 28.98 25.23 28.98 24.73 C 28.98 24.23 28.56 23.82 28.05 23.82 L 28.05 23.82 Z M 28.05 23.82" />
+            </g>
+          </svg>
+        </div>
+        <p class="price">
+          da
+          <span class="itemPrice" id="price_51708243">2,99 &euro;</span>
+        </p>
+      </div>
+    </a>
+  </div>
+ 
+  
+<script type="text/javascript">
+$(function () {InitServiceProductPrice ('{"skuItem":51708243, "idSito":0}|','widget-border2');});
+</script>
+      <div class="item">
+    <a href="/articoli/strumenti-pasta/sfogliatrici?sa=promo">
+      <img src="https://images.banzaicommerce.it/img/_b/gzshop/230x230-home-sfogliatrici.jpg" alt="Sfogliatrici" class="img-responsive">
+      <h3>Sfogliatrici</h3>
+      <div class="priceWrap">
+        <div class="ico">
+          <!-- ico_cart.svg -->
+          <svg class="icoCart" width="35" height="28" version="1.1" baseProfile="full" xmlns:xlink="//www.w3.org/1999/xlink" xmlns="//www.w3.org/2000/svg" viewBox="0 0 35 28">
+            <g class="fill" fill="#AEAEAE" opacity="0.9" fill-rule="evenodd">
+              <path d="M 30.42 20.43 L 12.42 20.43 C 11.95 20.43 11.54 20.13 11.39 19.7 L 6.47 4.8 L 0.81 2.38 C 0.26 2.18 -0.02 1.56 0.19 1.02 C 0.4 0.47 1.02 0.19 1.57 0.4 L 7.72 3 C 8.02 3.11 8.26 3.36 8.36 3.66 L 13.2 18.31 L 29.57 18.31 L 32.18 7.64 L 11.71 7.64 C 11.12 7.64 10.63 7.17 10.63 6.58 C 10.63 5.99 11.12 5.52 11.71 5.52 L 33.55 5.52 C 33.88 5.52 34.19 5.67 34.39 5.92 C 34.6 6.18 34.67 6.51 34.6 6.83 L 31.47 19.62 C 31.35 20.09 30.92 20.43 30.42 20.43" />
+              <path d="M 13.86 27.76 C 12.16 27.76 10.78 26.4 10.78 24.73 C 10.78 23.06 12.16 21.7 13.86 21.7 C 15.56 21.7 16.94 23.06 16.94 24.73 C 16.94 26.4 15.56 27.76 13.86 27.76 L 13.86 27.76 Z M 13.86 23.82 C 13.35 23.82 12.93 24.23 12.93 24.73 C 12.93 25.23 13.35 25.64 13.86 25.64 C 14.37 25.64 14.79 25.23 14.79 24.73 C 14.79 24.23 14.37 23.82 13.86 23.82 L 13.86 23.82 Z M 13.86 23.82" />
+              <path d="M 28.05 27.76 C 26.35 27.76 24.97 26.4 24.97 24.73 C 24.97 23.06 26.35 21.7 28.05 21.7 C 29.75 21.7 31.13 23.06 31.13 24.73 C 31.13 26.4 29.75 27.76 28.05 27.76 L 28.05 27.76 Z M 28.05 23.82 C 27.54 23.82 27.12 24.23 27.12 24.73 C 27.12 25.23 27.54 25.64 28.05 25.64 C 28.56 25.64 28.98 25.23 28.98 24.73 C 28.98 24.23 28.56 23.82 28.05 23.82 L 28.05 23.82 Z M 28.05 23.82" />
+            </g>
+          </svg>
+        </div>
+        <p class="price">
+          da
+          <span class="itemPrice" id="price_8755292">17,98 &euro;</span>
+        </p>
+      </div>
+    </a>
+  </div>
+ 
+  
+<script type="text/javascript">
+$(function () {InitServiceProductPrice ('{"skuItem":8755292, "idSito":0}|','widget-border3');});
+</script>
+      <div class="item">
+    <a href="/search/qs=ravioli?oq=ravioli&sa=promo&pp=1">
+      <img src="https://images.banzaicommerce.it/img/_b/gzshop/230x230-home-ravioli.jpg" alt="Tutto per ravioli" class="img-responsive">
+      <h3>Tutto per ravioli</h3>
+      <div class="priceWrap">
+        <div class="ico">
+          <!-- ico_cart.svg -->
+          <svg class="icoCart" width="35" height="28" version="1.1" baseProfile="full" xmlns:xlink="//www.w3.org/1999/xlink" xmlns="//www.w3.org/2000/svg" viewBox="0 0 35 28">
+            <g class="fill" fill="#AEAEAE" opacity="0.9" fill-rule="evenodd">
+              <path d="M 30.42 20.43 L 12.42 20.43 C 11.95 20.43 11.54 20.13 11.39 19.7 L 6.47 4.8 L 0.81 2.38 C 0.26 2.18 -0.02 1.56 0.19 1.02 C 0.4 0.47 1.02 0.19 1.57 0.4 L 7.72 3 C 8.02 3.11 8.26 3.36 8.36 3.66 L 13.2 18.31 L 29.57 18.31 L 32.18 7.64 L 11.71 7.64 C 11.12 7.64 10.63 7.17 10.63 6.58 C 10.63 5.99 11.12 5.52 11.71 5.52 L 33.55 5.52 C 33.88 5.52 34.19 5.67 34.39 5.92 C 34.6 6.18 34.67 6.51 34.6 6.83 L 31.47 19.62 C 31.35 20.09 30.92 20.43 30.42 20.43" />
+              <path d="M 13.86 27.76 C 12.16 27.76 10.78 26.4 10.78 24.73 C 10.78 23.06 12.16 21.7 13.86 21.7 C 15.56 21.7 16.94 23.06 16.94 24.73 C 16.94 26.4 15.56 27.76 13.86 27.76 L 13.86 27.76 Z M 13.86 23.82 C 13.35 23.82 12.93 24.23 12.93 24.73 C 12.93 25.23 13.35 25.64 13.86 25.64 C 14.37 25.64 14.79 25.23 14.79 24.73 C 14.79 24.23 14.37 23.82 13.86 23.82 L 13.86 23.82 Z M 13.86 23.82" />
+              <path d="M 28.05 27.76 C 26.35 27.76 24.97 26.4 24.97 24.73 C 24.97 23.06 26.35 21.7 28.05 21.7 C 29.75 21.7 31.13 23.06 31.13 24.73 C 31.13 26.4 29.75 27.76 28.05 27.76 L 28.05 27.76 Z M 28.05 23.82 C 27.54 23.82 27.12 24.23 27.12 24.73 C 27.12 25.23 27.54 25.64 28.05 25.64 C 28.56 25.64 28.98 25.23 28.98 24.73 C 28.98 24.23 28.56 23.82 28.05 23.82 L 28.05 23.82 Z M 28.05 23.82" />
+            </g>
+          </svg>
+        </div>
+        <p class="price">
+          da
+          <span class="itemPrice" id="price_51419709">2,99 &euro;</span>
+        </p>
+      </div>
+    </a>
+  </div>
+ 
+  
+<script type="text/javascript">
+$(function () {InitServiceProductPrice ('{"skuItem":51419709, "idSito":0}|','widget-border4');});
+</script>
+      <div class="item">
+    <a href="/articoli/strumenti-pasta/tagliapasta?sa=promo">
+      <img src="https://images.banzaicommerce.it/img/_b/gzshop/230x230-home-tagliapasta.jpg" alt="Tagliapasta" class="img-responsive">
+      <h3>Tagliapasta</h3>
+      <div class="priceWrap">
+        <div class="ico">
+          <!-- ico_cart.svg -->
+          <svg class="icoCart" width="35" height="28" version="1.1" baseProfile="full" xmlns:xlink="//www.w3.org/1999/xlink" xmlns="//www.w3.org/2000/svg" viewBox="0 0 35 28">
+            <g class="fill" fill="#AEAEAE" opacity="0.9" fill-rule="evenodd">
+              <path d="M 30.42 20.43 L 12.42 20.43 C 11.95 20.43 11.54 20.13 11.39 19.7 L 6.47 4.8 L 0.81 2.38 C 0.26 2.18 -0.02 1.56 0.19 1.02 C 0.4 0.47 1.02 0.19 1.57 0.4 L 7.72 3 C 8.02 3.11 8.26 3.36 8.36 3.66 L 13.2 18.31 L 29.57 18.31 L 32.18 7.64 L 11.71 7.64 C 11.12 7.64 10.63 7.17 10.63 6.58 C 10.63 5.99 11.12 5.52 11.71 5.52 L 33.55 5.52 C 33.88 5.52 34.19 5.67 34.39 5.92 C 34.6 6.18 34.67 6.51 34.6 6.83 L 31.47 19.62 C 31.35 20.09 30.92 20.43 30.42 20.43" />
+              <path d="M 13.86 27.76 C 12.16 27.76 10.78 26.4 10.78 24.73 C 10.78 23.06 12.16 21.7 13.86 21.7 C 15.56 21.7 16.94 23.06 16.94 24.73 C 16.94 26.4 15.56 27.76 13.86 27.76 L 13.86 27.76 Z M 13.86 23.82 C 13.35 23.82 12.93 24.23 12.93 24.73 C 12.93 25.23 13.35 25.64 13.86 25.64 C 14.37 25.64 14.79 25.23 14.79 24.73 C 14.79 24.23 14.37 23.82 13.86 23.82 L 13.86 23.82 Z M 13.86 23.82" />
+              <path d="M 28.05 27.76 C 26.35 27.76 24.97 26.4 24.97 24.73 C 24.97 23.06 26.35 21.7 28.05 21.7 C 29.75 21.7 31.13 23.06 31.13 24.73 C 31.13 26.4 29.75 27.76 28.05 27.76 L 28.05 27.76 Z M 28.05 23.82 C 27.54 23.82 27.12 24.23 27.12 24.73 C 27.12 25.23 27.54 25.64 28.05 25.64 C 28.56 25.64 28.98 25.23 28.98 24.73 C 28.98 24.23 28.56 23.82 28.05 23.82 L 28.05 23.82 Z M 28.05 23.82" />
+            </g>
+          </svg>
+        </div>
+        <p class="price">
+          da
+          <span class="itemPrice" id="price_7672632">4,0 &euro;</span>
+        </p>
+      </div>
+    </a>
+  </div>
+ 
+  
+<script type="text/javascript">
+$(function () {InitServiceProductPrice ('{"skuItem":7672632, "idSito":0}|','widget-border5');});
+</script>
+      <div class="item">
+    <a href="/articoli/piccoli-elettrodomestici/food-processor/robot-da-cucina?sa=promo">
+      <img src="https://images.banzaicommerce.it/img/_b/gzshop/230x230-home-impastatrici.jpg" alt="Impastatrici" class="img-responsive">
+      <h3>Impastatrici</h3>
+      <div class="priceWrap">
+        <div class="ico">
+          <!-- ico_cart.svg -->
+          <svg class="icoCart" width="35" height="28" version="1.1" baseProfile="full" xmlns:xlink="//www.w3.org/1999/xlink" xmlns="//www.w3.org/2000/svg" viewBox="0 0 35 28">
+            <g class="fill" fill="#AEAEAE" opacity="0.9" fill-rule="evenodd">
+              <path d="M 30.42 20.43 L 12.42 20.43 C 11.95 20.43 11.54 20.13 11.39 19.7 L 6.47 4.8 L 0.81 2.38 C 0.26 2.18 -0.02 1.56 0.19 1.02 C 0.4 0.47 1.02 0.19 1.57 0.4 L 7.72 3 C 8.02 3.11 8.26 3.36 8.36 3.66 L 13.2 18.31 L 29.57 18.31 L 32.18 7.64 L 11.71 7.64 C 11.12 7.64 10.63 7.17 10.63 6.58 C 10.63 5.99 11.12 5.52 11.71 5.52 L 33.55 5.52 C 33.88 5.52 34.19 5.67 34.39 5.92 C 34.6 6.18 34.67 6.51 34.6 6.83 L 31.47 19.62 C 31.35 20.09 30.92 20.43 30.42 20.43" />
+              <path d="M 13.86 27.76 C 12.16 27.76 10.78 26.4 10.78 24.73 C 10.78 23.06 12.16 21.7 13.86 21.7 C 15.56 21.7 16.94 23.06 16.94 24.73 C 16.94 26.4 15.56 27.76 13.86 27.76 L 13.86 27.76 Z M 13.86 23.82 C 13.35 23.82 12.93 24.23 12.93 24.73 C 12.93 25.23 13.35 25.64 13.86 25.64 C 14.37 25.64 14.79 25.23 14.79 24.73 C 14.79 24.23 14.37 23.82 13.86 23.82 L 13.86 23.82 Z M 13.86 23.82" />
+              <path d="M 28.05 27.76 C 26.35 27.76 24.97 26.4 24.97 24.73 C 24.97 23.06 26.35 21.7 28.05 21.7 C 29.75 21.7 31.13 23.06 31.13 24.73 C 31.13 26.4 29.75 27.76 28.05 27.76 L 28.05 27.76 Z M 28.05 23.82 C 27.54 23.82 27.12 24.23 27.12 24.73 C 27.12 25.23 27.54 25.64 28.05 25.64 C 28.56 25.64 28.98 25.23 28.98 24.73 C 28.98 24.23 28.56 23.82 28.05 23.82 L 28.05 23.82 Z M 28.05 23.82" />
+            </g>
+          </svg>
+        </div>
+        <p class="price">
+          da
+          <span class="itemPrice" id="price_51956474">51,99 &euro;</span>
+        </p>
+      </div>
+    </a>
+  </div>
+ 
+  
+<script type="text/javascript">
+$(function () {InitServiceProductPrice ('{"skuItem":51956474, "idSito":0}|','widget-border6');});
+</script>
+    </div>
+  </div>  
+    <div class="clear"></div>
+<h2 class="title"><span>GUARDA I VIDEO</span></h2>
+<div class="w_widget w_new w_provati">
+  <div class="item">
+  <div class="fakeLink videoRew siteFont" title="Guarda il video">
+    <a class="relative iframe" href="//www.youtube.com/embed/x8YQOLG0ixg?autoplay=1&autohide=1&controls=2&showinfo=0&rel=0"><img src="https://images.banzaicommerce.it/img/_b/gzshop/300x147-video-pasta-fresca.jpg?v=1" alt=""> <img class="icoPlay" src="https://images.banzaicommerce.it/layout/images/ico_play.png" alt=""> </a>Ravioli di pasta fresca
+  </div>
+  <a href="/search/qs=marcato&oq=marcato?br=MARCATO&sa=dispo_ordinamento&metb=-videoreview-gz-store-video1" rel="nofollow" title="Vai al prodotto">
+    <img src="https://images.banzaicommerce.it/nobrand/0/150/342/200518342/DAM200518342-1-d6490aa9-4fcf-4d17-848e-78478b520a2d.jpg" alt="">
+  </a>
+  <a class="itemBrand" href="/search/qs=marcato&oq=marcato?br=MARCATO&sa=dispo_ordinamento&metb=-videoreview-gz-store- " title="Vai al prodotto"> </a>
+  <a href="/search/qs=marcato&oq=marcato?br=MARCATO&sa=dispo_ordinamento&metb=-videoreview-gz-store-video1" title="Vai al prodotto">
+    <span class="itemName">Marcato Tutorial</span>
+    <!--<ins class="itemPrice" id="price_{child['sku']}">&euro; {str(item[campoPrezzo()]).replace('.',',')}</ins>-->
+  </a>
+</div>
+  <div class="item">
+  <div class="fakeLink videoRew siteFont" title="Guarda il video">
+    <a class="relative iframe" href="//www.youtube.com/embed/xzgo6exMKrI&t=12s?autoplay=1&autohide=1&controls=2&showinfo=0&rel=0"><img src="https://images.banzaicommerce.it/img/_b/gzshop/300x147-video-candy-watch.jpg?v=2" alt=""> <img class="icoPlay" src="https://images.banzaicommerce.it/layout/images/ico_play.png" alt=""> </a>Il forno rivoluzionario
+  </div>
+  <a href="/articoli//forni-elettrici-CANDY/prod-8H01I?metb=-videoreview2-gz-store-video1" rel="nofollow" title="Vai al prodotto">
+    <img src="https://images.banzaicommerce.it/nobrand/0/150/658/203545658/DAM203545658-0-8a9cebc8-2a48-40d6-8b2c-a5a0260966ec.jpg" alt="">
+  </a>
+  <a class="itemBrand" href="/articoli//forni-elettrici-CANDY/prod-8H01I?metb=-videoreview2-gz-store- " title="Vai al prodotto"> </a>
+  <a href="/articoli//forni-elettrici-CANDY/prod-8H01I?metb=-videoreview2-gz-store-video1" title="Vai al prodotto">
+    <span class="itemName">Candy Watch&Touch</span>
+    <!--<ins class="itemPrice" id="price_{child['sku']}">&euro; {str(item[campoPrezzo()]).replace('.',',')}</ins>-->
+  </a>
+</div>
+  <div class="item">
+  <div class="fakeLink videoRew siteFont" title="Guarda il video">
+    <a class="relative iframe" href="//www.youtube.com/embed/tA2B0x4jZHM?autoplay=1&autohide=1&controls=2&showinfo=0&rel=0"><img src="https://images.banzaicommerce.it/img/_b/gzshop/300x147-video-ruffoni.jpg?v=1" alt=""> <img class="icoPlay" src="https://images.banzaicommerce.it/layout/images/ico_play.png" alt=""> </a>Innovazione e tradizione
+  </div>
+  <a href="/search/qs=ruffoni?oq=ruffoni&br=RUFFONI&metb=-videoreview3-gz-store-video1" rel="nofollow" title="Vai al prodotto">
+    <img src="https://images.banzaicommerce.it/nobrand/0/150/758/202691758/2519RUFCA20PRDID.0.jpg" alt="">
+  </a>
+  <a class="itemBrand" href="/search/qs=ruffoni?oq=ruffoni&br=RUFFONI&metb=-videoreview3-gz-store- " title="Vai al prodotto"> </a>
+  <a href="/search/qs=ruffoni?oq=ruffoni&br=RUFFONI&metb=-videoreview3-gz-store-video1" title="Vai al prodotto">
+    <span class="itemName">Ruffoni Italy</span>
+    <!--<ins class="itemPrice" id="price_{child['sku']}">&euro; {str(item[campoPrezzo()]).replace('.',',')}</ins>-->
+  </a>
+</div>
+  <div class="item">
+  <div class="fakeLink videoRew siteFont" title="Guarda il video">
+    <a class="relative iframe" href="//www.youtube.com/embed/4q1OUpCJJzI?autoplay=1&autohide=1&controls=2&showinfo=0&rel=0"><img src="https://images.banzaicommerce.it/img/_b/gzshop/300x147-video-cook-processor.jpg?v=1" alt=""> <img class="icoPlay" src="https://images.banzaicommerce.it/layout/images/ico_play.png" alt=""> </a>Pronto per essere servito
+  </div>
+  <a href="/articoli/piccoli-elettrodomestici/food-processor/robot-con-cottura?br=KITCHENAID&sd=rank&metb=-videoreview4-gz-store-video1" rel="nofollow" title="Vai al prodotto">
+    <img src="https://images.banzaicommerce.it/nobrand/0/150/466/203086466/33685806_2609321516.jpg" alt="">
+  </a>
+  <a class="itemBrand" href="/articoli/piccoli-elettrodomestici/food-processor/robot-con-cottura?br=KITCHENAID&sd=rank&metb=-videoreview4-gz-store- " title="Vai al prodotto"> </a>
+  <a href="/articoli/piccoli-elettrodomestici/food-processor/robot-con-cottura?br=KITCHENAID&sd=rank&metb=-videoreview4-gz-store-video1" title="Vai al prodotto">
+    <span class="itemName">Cook Processor KitchenAid</span>
+    <!--<ins class="itemPrice" id="price_{child['sku']}">&euro; {str(item[campoPrezzo()]).replace('.',',')}</ins>-->
+  </a>
+</div>
+  <div class="item">
+  <div class="fakeLink videoRew siteFont" title="Guarda il video">
+    <a class="relative iframe" href="//www.youtube.com/embed/pSGZ9Kz1jF8?autoplay=1&autohide=1&controls=2&showinfo=0&rel=0"><img src="https://images.banzaicommerce.it/img/_b/gzshop/300x147-video-smeg.jpg?v=1" alt=""> <img class="icoPlay" src="https://images.banzaicommerce.it/layout/images/ico_play.png" alt=""> </a>Praticità con stile
+  </div>
+  <a href="/search/qs=smeg&oq=smeg?br=SMEG&attrid_208=Classica@:@14&metb=-videoreview5-gz-store-video1" rel="nofollow" title="Vai al prodotto">
+    <img src="https://images.banzaicommerce.it/nobrand/0/150/079/100227079/n616025.jpg" alt="">
+  </a>
+  <a class="itemBrand" href="/search/qs=smeg&oq=smeg?br=SMEG&attrid_208=Classica@:@14&metb=-videoreview5-gz-store- " title="Vai al prodotto"> </a>
+  <a href="/search/qs=smeg&oq=smeg?br=SMEG&attrid_208=Classica@:@14&metb=-videoreview5-gz-store-video1" title="Vai al prodotto">
+    <span class="itemName">Smeg Classic Aesthetic Line</span>
+    <!--<ins class="itemPrice" id="price_{child['sku']}">&euro; {str(item[campoPrezzo()]).replace('.',',')}</ins>-->
+  </a>
+</div>
+</div> 
+</section>
+
+<!-- /////////////////////// NEGOZI IN EVIDENZA /////////////////////// -->
+<section id="negoziInEvidenza" class="rowHp">
+  <div class="container">
+    <h2 class="title"><span>NEGOZI IN EVIDENZA</span></h2>
+    <p class="subtitle">I negozi di Giallo Zafferano Shop sono il tuo punto di partenza per completare le tue dotazioni in cucina. Non importa se sei quasi chef o se hai iniziato a cucinare ieri. Gli strumenti giusti possono essere d’aiuto al neofita come al professionista. Scegli il tuo negozio e prepara i fornelli!</p>
+    <div class="contNegozi clearfix">
+      <div class="item">
+  <a href="/p/consigli-stellati">
+    <img src="https://images.banzaicommerce.it/img/_b/gzshop/300x250_chef-consigli.jpg?v=1" alt="Consigli Stellati">
+    <h3>Consigli Stellati</h3>
+    <div class="boxOver">
+      <!-- ico_freccia_sx.svg -->
+      <svg class="arrowSx" height="13" width="26" version="1.1" baseProfile="full" xmlns:xlink="//www.w3.org/1999/xlink" xmlns="//www.w3.org/2000/svg" viewBox="0 0 26 13">
+        <path class="fill" fill="#ffffff" fill-rule="evenodd" d="M5 13 L 6 12 L 1.83 7 L 26 7 L 26 6 L 1.83 6 L 6 1 L 5 0 L 0 6 L 0 7 L 5 13" />
+      </svg>
+      <p>SCOPRI</p>
+    </div>
+  </a>
+</div>
+      <div class="item">
+	<a href="http://shop.giallozafferano.it/s/pentole">
+		<img src="https://images.banzaicommerce.it/img/_b/gzshop/pentole.jpg" alt="Pentole">
+		<h3>Pentole</h3> <em>5985 articoli</em>
+		<div class="boxOver">
+			<!-- ico_freccia_sx.svg -->
+			<svg class="arrowSx" height="13" width="26" version="1.1" baseProfile="full" xmlns:xlink="//www.w3.org/1999/xlink" xmlns="//www.w3.org/2000/svg" viewBox="0 0 26 13">
+				<path class="fill" fill="#ffffff" fill-rule="evenodd" d="M5 13 L 6 12 L 1.83 7 L 26 7 L 26 6 L 1.83 6 L 6 1 L 5 0 L 0 6 L 0 7 L 5 13" />
+			</svg>
+			<p>SCOPRI LA NOSTRA COLLEZIONE</p>
+		</div>
+	</a>
+</div>
+      <div class="item">
+	<a href="http://shop.giallozafferano.it/articoli/utensili-da-cucina">
+		<img src="https://images.banzaicommerce.it/img/_b/gzshop/utensili-home.jpg" alt="Utensili da cucina">
+		<h3>Utensili da cucina</h3> <em>7431 articoli</em>
+		<div class="boxOver">
+			<!-- ico_freccia_sx.svg -->
+			<svg class="arrowSx" height="13" width="26" version="1.1" baseProfile="full" xmlns:xlink="//www.w3.org/1999/xlink" xmlns="//www.w3.org/2000/svg" viewBox="0 0 26 13">
+				<path class="fill" fill="#ffffff" fill-rule="evenodd" d="M5 13 L 6 12 L 1.83 7 L 26 7 L 26 6 L 1.83 6 L 6 1 L 5 0 L 0 6 L 0 7 L 5 13" />
+			</svg>
+			<p>SCOPRI LA NOSTRA COLLEZIONE</p>
+		</div>
+	</a>
+</div>
+      <div class="item">
+	<a href="http://shop.giallozafferano.it/articoli/strumenti-pasta-pizza-e-dolci">
+		<img src="https://images.banzaicommerce.it/img/_b/gzshop/dolci-home.jpg" alt="Pasta Pizza e Dolci">
+		<h3>Pasta Pizza e Dolci</h3> <em>1925 articoli</em>
+		<div class="boxOver">
+			<!-- ico_freccia_sx.svg -->
+			<svg class="arrowSx" height="13" width="26" version="1.1" baseProfile="full" xmlns:xlink="//www.w3.org/1999/xlink" xmlns="//www.w3.org/2000/svg" viewBox="0 0 26 13">
+				<path class="fill" fill="#ffffff" fill-rule="evenodd" d="M5 13 L 6 12 L 1.83 7 L 26 7 L 26 6 L 1.83 6 L 6 1 L 5 0 L 0 6 L 0 7 L 5 13" />
+			</svg>
+			<p>SCOPRI LA NOSTRA COLLEZIONE</p>
+		</div>
+	</a>
+</div>
+      <div class="item">
+	<a href="http://shop.giallozafferano.it/articoli/coltelli-e-posate">
+		<img src="https://images.banzaicommerce.it/img/_b/gzshop/coltelli-home.jpg" alt="Coltelli e Posate">
+		<h3>Coltelli e Posate</h3> <em>1386 articoli</em>
+		<div class="boxOver">
+			<!-- ico_freccia_sx.svg -->
+			<svg class="arrowSx" height="13" width="26" version="1.1" baseProfile="full" xmlns:xlink="//www.w3.org/1999/xlink" xmlns="//www.w3.org/2000/svg" viewBox="0 0 26 13">
+				<path class="fill" fill="#ffffff" fill-rule="evenodd" d="M5 13 L 6 12 L 1.83 7 L 26 7 L 26 6 L 1.83 6 L 6 1 L 5 0 L 0 6 L 0 7 L 5 13" />
+			</svg>
+			<p>SCOPRI LA NOSTRA COLLEZIONE</p>
+		</div>
+	</a>
+</div>
+      <div class="item">
+	<a href="http://shop.giallozafferano.it/articoli/in-cucina">
+		<img src="https://images.banzaicommerce.it/img/_b/gzshop/cucina-home.jpg" alt="In Cucina">
+		<h3>In Cucina</h3> <em>11186 articoli</em>
+		<div class="boxOver">
+			<!-- ico_freccia_sx.svg -->
+			<svg class="arrowSx" height="13" width="26" version="1.1" baseProfile="full" xmlns:xlink="//www.w3.org/1999/xlink" xmlns="//www.w3.org/2000/svg" viewBox="0 0 26 13">
+				<path class="fill" fill="#ffffff" fill-rule="evenodd" d="M5 13 L 6 12 L 1.83 7 L 26 7 L 26 6 L 1.83 6 L 6 1 L 5 0 L 0 6 L 0 7 L 5 13" />
+			</svg>
+			<p>SCOPRI LA NOSTRA COLLEZIONE</p>
+		</div>
+	</a>
+</div>
+      <div class="item">
+	<a href="http://shop.giallozafferano.it/articoli/piccoli-elettrodomestici">
+		<img src="https://images.banzaicommerce.it/img/_b/gzshop/picc-elet-home.jpg" alt="Piccoli Elettrodomestici">
+		<h3>Piccoli Elettrodomestici</h3> <em>5096 articoli</em>
+		<div class="boxOver">
+			<!-- ico_freccia_sx.svg -->
+			<svg class="arrowSx" height="13" width="26" version="1.1" baseProfile="full" xmlns:xlink="//www.w3.org/1999/xlink" xmlns="//www.w3.org/2000/svg" viewBox="0 0 26 13">
+				<path class="fill" fill="#ffffff" fill-rule="evenodd" d="M5 13 L 6 12 L 1.83 7 L 26 7 L 26 6 L 1.83 6 L 6 1 L 5 0 L 0 6 L 0 7 L 5 13" />
+			</svg>
+			<p>SCOPRI LA NOSTRA COLLEZIONE</p>
+		</div>
+	</a>
+</div>
+      <div class="item">
+	<a href="http://shop.giallozafferano.it/s/in-tavola">
+		<img src="https://images.banzaicommerce.it/img/_b/gzshop/tavola-home.jpg" alt="In Tavola">
+		<h3>In Tavola</h3> <em>5272 articoli</em>
+		<div class="boxOver">
+			<!-- ico_freccia_sx.svg -->
+			<svg class="arrowSx" height="13" width="26" version="1.1" baseProfile="full" xmlns:xlink="//www.w3.org/1999/xlink" xmlns="//www.w3.org/2000/svg" viewBox="0 0 26 13">
+				<path class="fill" fill="#ffffff" fill-rule="evenodd" d="M5 13 L 6 12 L 1.83 7 L 26 7 L 26 6 L 1.83 6 L 6 1 L 5 0 L 0 6 L 0 7 L 5 13" />
+			</svg>
+			<p>SCOPRI LA NOSTRA COLLEZIONE</p>
+		</div>
+	</a>
+</div>
+      <div class="item">
+	<a href="http://shop.giallozafferano.it/articoli/allaperto">
+		<img src="https://images.banzaicommerce.it/img/_b/gzshop/aperto-home.jpg" alt="All'Aperto">
+		<h3>All'Aperto</h3> <em>5579 articoli</em>
+		<div class="boxOver">
+			<!-- ico_freccia_sx.svg -->
+			<svg class="arrowSx" height="13" width="26" version="1.1" baseProfile="full" xmlns:xlink="//www.w3.org/1999/xlink" xmlns="//www.w3.org/2000/svg" viewBox="0 0 26 13">
+				<path class="fill" fill="#ffffff" fill-rule="evenodd" d="M5 13 L 6 12 L 1.83 7 L 26 7 L 26 6 L 1.83 6 L 6 1 L 5 0 L 0 6 L 0 7 L 5 13" />
+			</svg>
+			<p>SCOPRI LA NOSTRA COLLEZIONE</p>
+		</div>
+	</a>
+</div>
+      <div class="item">
+	<a href="http://shop.giallozafferano.it/articoli/microimpresa-domestica">
+		<img src="https://images.banzaicommerce.it/img/_b/gzshop/impresa-home.jpg" alt="Microimpresa domestica">
+		<h3>Microimpresa domestica</h3> <em>1596 articoli</em>
+		<div class="boxOver">
+			<!-- ico_freccia_sx.svg -->
+			<svg class="arrowSx" height="13" width="26" version="1.1" baseProfile="full" xmlns:xlink="//www.w3.org/1999/xlink" xmlns="//www.w3.org/2000/svg" viewBox="0 0 26 13">
+				<path class="fill" fill="#ffffff" fill-rule="evenodd" d="M5 13 L 6 12 L 1.83 7 L 26 7 L 26 6 L 1.83 6 L 6 1 L 5 0 L 0 6 L 0 7 L 5 13" />
+			</svg>
+			<p>SCOPRI LA NOSTRA COLLEZIONE</p>
+		</div>
+	</a>
+</div>
+      <div class="item">
+	<a href="/p/marmellate-conserve">
+		<img src="https://images.banzaicommerce.it/img/_b/gzshop/conserve-home.jpg" alt="Marmellate e Conserve">
+		<h3>Marmellate e Conserve</h3> <em>5272 articoli</em>
+		<div class="boxOver">
+			<!-- ico_freccia_sx.svg -->
+			<svg class="arrowSx" height="13" width="26" version="1.1" baseProfile="full" xmlns:xlink="//www.w3.org/1999/xlink" xmlns="//www.w3.org/2000/svg" viewBox="0 0 26 13">
+				<path class="fill" fill="#ffffff" fill-rule="evenodd" d="M5 13 L 6 12 L 1.83 7 L 26 7 L 26 6 L 1.83 6 L 6 1 L 5 0 L 0 6 L 0 7 L 5 13" />
+			</svg>
+			<p>SCOPRI LA NOSTRA COLLEZIONE</p>
+		</div>
+	</a>
+</div>
+      <div class="item">
+	<a href="/p/buffet-finger-food">
+		<img src="https://images.banzaicommerce.it/img/_b/gzshop/buffet-home.jpg" alt="Buffet e Finger Food">
+		<h3>Buffet e Finger Food</h3> <em>5579 articoli</em>
+		<div class="boxOver">
+			<!-- ico_freccia_sx.svg -->
+			<svg class="arrowSx" height="13" width="26" version="1.1" baseProfile="full" xmlns:xlink="//www.w3.org/1999/xlink" xmlns="//www.w3.org/2000/svg" viewBox="0 0 26 13">
+				<path class="fill" fill="#ffffff" fill-rule="evenodd" d="M5 13 L 6 12 L 1.83 7 L 26 7 L 26 6 L 1.83 6 L 6 1 L 5 0 L 0 6 L 0 7 L 5 13" />
+			</svg>
+			<p>SCOPRI LA NOSTRA COLLEZIONE</p>
+		</div>
+	</a>
+</div>
+      
+           <!--<div class="item">
+		 <img alt="Materiali e metodi di cottura" src="https://images.banzaicommerce.it/img/_b/gzshop/cottura-home.jpg">
+		<!--<h3>Microimpresa Domestica</h3> <em>IN ARRIVO</em>
+</div> -->
+    </div>
+    </div>
+
+</section>
+
+<!-- /////////////////////// SCELTI PER VOI /////////////////////// -->
+<!--<section id="sceltiPerVoi" class="rowHp">
+  <div class="container">
+    <h2 class="title"><span>SCELTI PER VOI</span></h2>
+    <div class="w_orizontal_list_prod">
+      {contents.get('widget-border7','').content}
+      {contents.get('widget-border8','').content}
+      {contents.get('widget-border9','').content}
+      {contents.get('widget-border10','').content}
+      {contents.get('widget-border11','').content}
+      {contents.get('widget-border12','').content}
+    </div>
+  </div>  
+</section>-->
+<style>
+#videoGuide{background-image: url('https://images.banzaicommerce.it/img/_b/gzshop/speciali.jpg'); background-size: 100%;}
+.w_slider_video article .videoPlay{display:none;}
+.w_slider_video_wrapper{bottom:50px;}
+</style>
+
+<section class="videoGuide rowHp videoNo">
+    <header>
+      <h2 class="title titleTransp"><span>GUIDE ALL'ACQUISTO</span></h2>
+    </header>
+    <article class="cover container">
+      <div>
+        <h3>Conservare e trasportare il cibo</h3>
+        <h4>guida completa</h4>
+        <p>
+          <a href="//shop.giallozafferano.it/media/guide/conservare-e-trasortare-il-cibo" class="btn_transpBg">Vai alla guida</a>
+        </p>
+      </div>
+      <!-- <video preload="none" autoplay loop   >
+        <source  src="//vp.nyt.com/video/2014/11/04/31108_1_chopping-onion-app_wg_480p.mp4" type="video/mp4" / >
+      </video>-->
+      
+      <img src="https://images.banzaicommerce.it/img/_b/gzshop/bn-big-contenitori.jpg" class="imgBg">
+      
+    </article>
+    
+</section>
+
+<section id="specialiEditoriali" class="rowHp">
+   <p class="subtitle">Le guide all'acquisto e i consigli di GialloZafferano per scoprire i prodotti giusti per i tuoi acquisti in cucina. Tante idee e informazioni utili per cucinare divertendoti con gli strumenti di un vero chef.<br>Iscriviti a GZ Shop per rimanere sempre aggiornato su novit&agrave; e promozioni.</p>
+<div class="container">
+            <div class="contEditoriali clearfix">
+                <article class="item">
+                    <a href="/media/speciali/la-pasticceria">
+                        <img src="//www.giallozafferano.it/images/speciali/222/pasticceria-600.jpg" alt="La pasticceria" width="300" height="300">
+                        <h4>Speciale</h4>
+                        <h3>La pasticceria</h3>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="/media/speciali/fare-la-pasta-fresca">
+                        <img src="//www.giallozafferano.it/images/speciali/223/pasta-600.jpg" alt="Fare la pasta fresca" width="300" height="300">
+                        <h4>Speciale</h4>
+                        <h3>Fare la pasta fresca</h3>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="/media/speciali/la-pizza-che-passione">
+                        <img src="//www.giallozafferano.it/images/speciali/208/pizza-600.jpg" alt="La pizza, che passione!" width="300" height="300">
+                        <h4>Speciale</h4>
+                        <h3>La pizza, che passione!</h3>
+                    </a>
+                </article>
+				<article class="item">
+                    <a href="/media/speciali/l-ora-del-te">
+                      <img src="https://images.banzaicommerce.it/img/_b/speciali/gzshop/the-600.jpg" alt="L'ora del The" width="300" height="300">
+                        <h4>Speciale</h4>
+                        <h3>L'ora del The</h3>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="/media/speciali/decorare-una-torta">
+                        <img src="//www.giallozafferano.it/images/speciali/215/cakedesign-600.jpg" alt="L'arte del cake design" width="300" height="300">
+                        <h4>Speciale</h4>
+                        <h3>L'arte del cake design</h3>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="/media/speciali/crepe-e-pancake">
+                        <img src="//www.giallozafferano.it/images/speciali/218/crepe-600.jpg" alt="Crepe e pancake" width="300" height="300">
+                        <h4>Speciale</h4>
+                        <h3>Crepe e pancake</h3>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="/media/speciali/la-magia-del-cioccolato">
+                        <img src="https://images.banzaicommerce.it/img/_b/speciali/gzshop/600x600-cioccolato.jpg" alt="La magia del cioccolato" width="300" height="300">
+                        <h4>Speciale</h4>
+                        <h3>La magia del cioccolato</h3>
+                    </a>
+                </article>
+                                 <article class="item">
+                    <a href="/media/speciali/cucinare-al-forno">
+                        <img src="//www.giallozafferano.it/images/speciali/203/forno-600.jpg" alt="Al forno!" width="300" height="300">
+                        <h4>Speciale</h4>
+                        <h3>Al forno!</h3>
+                    </a>
+                </article>	
+				<article class="item">
+                    <a href="/media/guide/fare-il-pane">
+                        <img src="//www.giallozafferano.it/images/speciali/211/pane-600.jpg" alt="Il pane fatto in casa" width="300" height="300">
+                        <h4>Guida all'acquisto</h4>
+                        <h3>Il pane fatto in casa</h3>
+                    </a>
+                </article>		
+ <article class="item">
+                    <a href="/media/guide/il-set-di-coltelli-perfetto">
+                        <img src="https://images.banzaicommerce.it/img/_b/speciali/gzshop/coltelli-600.jpg" alt="Il Set di coltelli perfetto" width="300" height="300">
+                        <h4>Guida all'acquisto</h4>
+                        <h3>Il set di coltelli perfetto</h3>
+                    </a>
+                </article>	               
+				<article class="item">
+                    <a href="/media/guide/le-mie-prime-pentole">
+                        <img src="//www.giallozafferano.it/images/speciali/221/pentole-600.jpg" alt="Le mie prime pentole" width="300" height="300">
+                        <h4>Guida all'acquisto</h4>
+                        <h3>Le mie prime pentole</h3>
+                    </a>
+                </article>						
+				<article class="item last centered">
+                   <a href="//shop.giallozafferano.it/login.aspx">
+                        <h4>Tanti altri<br>
+                        in arrivo</h4>
+                        
+                        <div class="btn btn_borderRadiusBig orange_bg">Iscriviti</div>
+
+                        <p>Iscriviti a GZ Shop per<br> 
+                        conoscere tutte le novità</p>
+        </a>
+                 </article>
+                
+           </div>
+       </div>
+</section>
+
+<script>
+$(function(){
+ if($("#inOfferta .w_slider_prod").length){
+  $('#inOfferta .w_slider_prod').slick({
+    speed: 500,
+     slidesToShow: 4,
+     slidesToScroll: 4,
+   infinite: false,
+   arrows: true,
+   dots: false,
+     responsive: [
+    {
+     breakpoint: 1215,
+      settings: {
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false
+      }
+    }
+   ]
+  });
+ }
+  if($("#videoGuide .w_slider_video").length){
+    $('#videoGuide .w_slider_video').slick({
+      speed: 500,
+        slidesToShow: 6,
+        slidesToScroll: 6,
+      infinite: false,
+      arrows: true,
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 1215,
+            settings: {
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            arrows: true,
+            dots: false
+            }
+        }
+      ]
+    });
+  }
+ 
+ 
+});
+</script></div></div><div class="f_overlayer" id="TL_popup" xmlns:urlShaper="pda:UrlShaper"><div class="cont_TL_popup"><img class="left" src="https://images.banzaicommerce.it/layout/images/img_impostazioni.jpg" alt=""><div class="txt centered"><h2>È arrivata la <strong>Timeline</strong>!</h2><p>
+						Timeline ti aiuta a ritrovare i prodotti che hai visto, <br>
+						cercato o aggiunto al carrello.
+					</p><p>
+						E se navighi tra web e mobile, continui lo shopping<br>
+						senza ricominciare da capo.
+					</p><p>
+						Il tuo tempo è prezioso, per questo amerai Timeline.
+					</p><a href="#" class="btn big"><span>Continua</span></a><p class="note">
+						Continuando, attiviamo  Timeline sul tuo Profilo.<br>
+						Per disattivarla, vai alle <span class="fakeLink TL_openOpz">Impostazioni del servizio</span></p></div></div></div><style>
+	#footer .container {padding:60px 0 20px;}
+	#footer .contLoghi {padding-top:50px; font-size:16px;}
+	#footer .contLoghi > * {display:inline-block; vertical-align:middle;}
+	#footer .contLoghi .logo {width:100px;}
+</style>
+<div id="footer">
+	<p class="centered contLoghi">
+		<!-- logo.svg -->
+<svg class="logo" height="59" width="143" version="1.1" baseProfile="full" xmlns:xlink="//www.w3.org/1999/xlink" xmlns="//www.w3.org/2000/svg" viewBox="0 0 143 59">
+	<path class="fill" fill="#f7972c" fill-rule="evenodd" d="M 52.22 42.66 L 57.34 42.66 C 58.05 44.72 59.12 45.62 60.82 45.62 C 61.93 45.62 62.63 45.06 62.63 44.16 C 62.63 43.73 62.5 43.4 62.06 42.96 C 60.59 41.5 56.57 40.87 54.13 38.45 C 52.69 37.02 52.05 35.53 52.05 33.73 C 52.05 29.75 54.93 27.06 59.18 27.06 C 61.12 27.06 62.9 27.66 64.24 28.75 L 64.24 27.36 L 69.36 27.36 L 69.36 33.77 L 64.24 33.77 L 64.14 33.47 C 63.47 31.88 62.46 31.11 60.96 31.11 C 59.92 31.11 59.28 31.64 59.28 32.51 C 59.28 32.87 59.45 33.27 59.68 33.5 C 60.72 34.53 65.64 35.86 68.29 38.48 C 69.16 39.35 70.26 41.17 70.26 43.36 C 70.26 47.25 67.05 50.2 62.8 50.2 C 60.92 50.2 58.88 49.54 57.34 48.41 L 57.34 49.9 L 52.22 49.9 L 52.22 42.66" />
+	<path class="fill" fill="#f7972c" fill-rule="evenodd" d="M 71.46 44.96 L 73.54 44.96 L 73.54 32.31 L 71.46 32.31 L 71.46 27.36 L 81.77 27.36 L 81.77 36.09 C 83.88 34.66 86.19 33.9 88.37 33.9 C 91.75 33.9 94.29 35.83 94.29 40.64 L 94.29 44.96 L 96.16 44.96 L 96.16 49.9 L 86.06 49.9 L 86.06 41.5 C 86.06 40.11 85.42 39.21 84.08 39.21 C 83.35 39.21 82.68 39.44 81.77 39.88 L 81.77 44.96 L 83.98 44.96 L 83.98 49.9 L 71.46 49.9 L 71.46 44.96" />
+	<path class="fill" fill="#f7972c" fill-rule="evenodd" d="M 107.37 33.7 C 112.46 33.7 118.49 36.09 118.49 42.03 C 118.49 47.45 113.16 50.37 107.37 50.37 C 101.55 50.37 96.26 47.51 96.26 42.03 C 96.26 36.59 101.62 33.7 107.37 33.7 L 107.37 33.7 Z M 107.31 45.72 C 109.12 45.72 110.15 44.36 110.15 41.94 C 110.15 39.68 109.15 38.35 107.44 38.35 C 105.63 38.35 104.6 39.71 104.6 42.07 C 104.6 44.39 105.57 45.72 107.31 45.72 L 107.31 45.72 Z M 107.31 45.72" />
+	<path class="fill" fill="#f7972c" fill-rule="evenodd" d="M 129.03 34.17 L 129.03 35.59 C 129.53 35.2 131.34 33.9 134.38 33.9 C 139.33 33.9 142.98 37.39 142.98 42.13 C 142.98 47.05 139.4 50.2 134.15 50.2 C 132.01 50.2 130.33 49.74 129.03 48.91 L 129.03 52.19 L 131.1 52.19 L 131.1 57.14 L 118.89 57.14 L 118.89 52.19 L 120.79 52.19 L 120.79 39.11 L 118.89 39.11 L 118.89 34.17 L 129.03 34.17 L 129.03 34.17 Z M 131.74 45.55 C 133.24 45.55 134.65 44.62 134.65 41.9 C 134.65 39.71 133.68 38.58 131.84 38.58 C 130.03 38.58 129.03 39.88 129.03 42.07 C 129.03 44.26 130 45.55 131.74 45.55 L 131.74 45.55 Z M 131.74 45.55" />
+	<path class="fill" fill="#7b69a3" fill-rule="evenodd" d="M 49.1 49.87 L 32.95 49.9 L 32.91 45.23 L 42.34 32.46 L 37.66 32.5 L 36.65 36.98 L 32.84 37.01 L 32.77 27.48 L 51.89 27.48 L 51.93 32.15 L 42.44 44.92 L 47.05 44.88 L 48.29 39.76 L 52.23 38.9 L 52.21 45.77 C 56.38 39.47 59.06 31.25 55.43 21.88 C 51.73 12.3 50.16 8.24 50.16 8.24 C 50.16 8.24 40.25 12.32 34.83 21.42 L 36.16 5.96 C 37.07 5.47 37.68 4.51 37.65 3.4 C 37.62 1.84 36.32 0.6 34.74 0.63 C 33.16 0.66 31.9 1.95 31.94 3.52 C 31.96 4.64 32.63 5.58 33.58 6.03 L 33.82 22.84 L 29.15 11.43 C 29.85 10.65 30.1 9.52 29.68 8.48 C 29.1 7.03 27.43 6.32 25.97 6.9 C 24.5 7.48 23.79 9.13 24.37 10.58 C 24.78 11.6 25.72 12.26 26.75 12.36 L 31.15 20.65 C 23.44 14.17 13.56 13.15 13.56 13.15 C 13.56 13.15 13.31 16.4 12.73 23.89 C 5.9 22.87 0.28 24.14 0.28 24.14 C 0.28 24.14 1.37 28.35 3.94 38.3 C 9.69 60.56 38.95 58.94 38.95 58.94 C 38.95 58.94 38.92 58.83 38.87 58.63 C 38.92 58.76 38.94 58.83 38.94 58.83 C 38.94 58.83 44.22 55.53 49.1 49.87 L 49.1 49.87 Z M 27.15 50.13 L 26.55 48.75 C 25.31 50.07 23.71 50.6 20.97 50.63 C 17.57 50.65 14.75 49.74 12.75 48.04 C 10.27 45.89 8.78 42.35 8.75 38.63 C 8.69 31.7 13.34 26.8 20.08 26.75 C 22.27 26.73 23.56 27.1 24.85 28.13 L 25.33 27.16 L 29.91 27.12 L 30 36.81 L 25.89 36.84 L 25.89 36.39 C 25.87 33.74 24.36 32.06 21.97 32.08 C 18.94 32.1 17.37 34.56 17.4 39.18 C 17.44 43.52 18.91 45.68 21.87 45.66 C 23.57 45.64 24.6 44.81 24.59 43.46 C 24.59 42.64 24.13 42.26 23.19 42.27 L 22.33 42.28 L 22.29 37.97 L 30.94 37.9 L 31.04 50.1 L 27.15 50.13 L 27.15 50.13 Z M 27.15 50.13" />
+</svg>&reg;  <span class="txt">&Egrave; lo shop di GialloZafferano powered by</span> <!-- logo_ep.svg -->
+<a href="/" target="_blank">
+<svg class="logo_ep" height="57" width="87" xmlns:xlink="//www.w3.org/1999/xlink" xmlns="//www.w3.org/2000/svg" viewBox="0 0 87 57">
+	<path fill="#fdbe10" fill-rule="evenodd" d="M 84.83 43.28 L 9.27 56.6 C 7.38 45.87 2.43 46.74 0.54 36 C -1.35 25.27 3.59 24.39 1.7 13.66 L 77.26 0.33 C 79.15 11.07 84.1 10.19 85.99 20.93 C 87.88 31.67 82.94 32.54 84.83 43.28" />
+	<path fill="#000000" fill-rule="evenodd" d="M 25.61 23.01 L 22.01 23.64 L 24.65 38.7 L 27.21 38.25 L 26.12 32.06 L 27.63 31.8 C 28.73 31.61 29.68 31 30.25 30.06 C 30.82 29.13 31.02 27.9 30.77 26.5 C 30.55 25.21 29.97 24.17 29.05 23.56 C 28.13 22.94 26.94 22.78 25.61 23.01 L 25.61 23.01 Z M 28.03 28.71 C 27.83 29.08 27.56 29.29 27.06 29.39 L 25.7 29.65 L 24.99 25.61 L 26.01 25.43 C 26.68 25.31 27.13 25.39 27.44 25.6 C 27.75 25.81 28.02 26.21 28.15 26.96 C 28.29 27.76 28.22 28.35 28.03 28.71 L 28.03 28.71 Z M 42.06 27.26 C 42.36 26.38 42.39 25.42 42.22 24.49 C 41.98 23.11 41.3 22.1 40.46 21.51 C 39.62 20.92 38.64 20.72 37.79 20.87 L 33.46 21.63 L 36.11 36.69 L 38.66 36.24 L 37.58 30.05 L 38.19 29.94 L 42.58 36.03 L 44.68 34.52 L 40.77 29.08 C 41.4 28.59 41.82 27.95 42.06 27.26 L 42.06 27.26 Z M 39.5 26.77 C 39.32 27.11 39.08 27.29 38.61 27.38 L 37.15 27.64 L 36.44 23.59 L 37.57 23.39 C 38.2 23.28 38.62 23.35 38.91 23.55 C 39.19 23.74 39.46 24.13 39.6 24.95 C 39.76 25.81 39.68 26.41 39.5 26.77 L 39.5 26.77 Z M 45.63 21.98 L 47.5 21.65 L 49.3 31.88 L 47.43 32.21 L 47.85 34.62 L 54.18 33.51 L 53.75 31.1 L 51.86 31.43 L 50.06 21.2 L 51.96 20.87 L 51.53 18.46 L 45.21 19.57 L 45.63 21.98 L 45.63 21.98 Z M 63.67 27.43 L 63.45 28.01 C 63.28 28.43 63.04 28.87 62.75 29.21 C 62.45 29.54 62.12 29.76 61.74 29.82 C 61.26 29.9 60.94 29.8 60.59 29.54 C 59.54 28.8 58.91 26.29 58.7 24.97 C 58.54 24.07 58.34 22.64 58.47 21.46 C 58.53 20.87 58.68 20.35 58.92 19.99 C 59.15 19.64 59.42 19.43 59.9 19.34 C 60.29 19.28 60.61 19.35 60.93 19.53 C 61.25 19.71 61.56 20.01 61.82 20.37 L 62.2 20.88 L 64.17 19.18 L 63.82 18.73 C 62.8 17.42 61.3 16.53 59.47 16.87 C 58.45 17.04 57.64 17.52 57.07 18.17 C 56.22 19.15 55.91 20.45 55.82 21.74 C 55.74 23.04 55.89 24.36 56.08 25.43 C 56.33 26.84 56.78 28.65 57.69 30.1 C 58.15 30.83 58.73 31.47 59.49 31.89 C 60.23 32.31 61.15 32.48 62.17 32.3 L 62.18 32.3 C 64.02 31.98 65.21 30.6 65.83 29.03 L 66.04 28.51 L 65.53 28.28 L 63.67 27.43 L 63.67 27.43 Z M 75.46 16.73 L 75.03 14.32 L 67.1 15.72 L 69.75 30.77 L 77.68 29.38 L 77.25 26.97 L 71.88 27.91 L 71.11 23.51 L 75.54 22.73 L 75.12 20.32 L 70.69 21.1 L 70.08 17.68 L 75.46 16.73 L 75.46 16.73 Z M 75.46 16.73" />
+	<path fill="#000000" fill-rule="evenodd" d="M 15.45 39 C 12.74 39.48 11.8 35.23 11.46 33.29 L 11.46 33.29 L 17.22 32.28 L 17.22 32.28 L 18.78 32.01 C 18.26 29.05 16.86 24.49 13.02 25.13 L 13.02 25.13 C 13.01 25.13 13 25.13 13 25.13 C 12.99 25.14 12.98 25.14 12.97 25.14 C 9.14 25.85 9.38 30.61 9.9 33.56 C 10.42 36.51 11.82 41.09 15.7 40.41 C 17.4 40.11 18.51 38.86 19.13 37.3 L 17.76 36.67 C 17.36 37.68 16.62 38.8 15.45 39 L 15.45 39 Z M 13.24 26.54 C 15.4 26.18 16.43 28.81 16.93 30.88 L 11.26 31.87 C 11.02 29.76 11.09 26.94 13.24 26.54 L 13.24 26.54 Z M 13.24 26.54" />
+</svg>
+</a>
+	</p>
+	<div class="container">
+		<div class="list">
+			<div class="col">
+				<h4 class="gzColor">INFO</h4>
+				<ul>
+					<li><a href="/p/myaccount/aiuto/chisiamo">Chi siamo</a> </li>
+					<li><a href="/default.aspx?zona=1&amp;dove=21">Contatti</a> </li>
+				</ul>
+			</div>
+			<div class="col">
+				<h4 class="gzColor">ORDINI E SPEDIZIONI</h4>
+				<ul>
+					<li><a href="/p/myaccount/aiuto/sicurezza">Sicurezza dei pagamenti</a></li>
+					<li><a href="/p/myaccount/aiuto/recesso">Diritto di recesso</a></li>
+					<li><a href="/p/myaccount/aiuto/garanzie">Garanzia legale</a></li>
+					<li><a href="/p/myaccount/aiuto/pagamenti">Pagamenti e limitazioni</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<ul>
+					<li><a href="/p/myaccount/aiuto/spedizioni">Consegne e limitazioni</a></li>
+					<li><a href="/p/myaccount/aiuto/contratto">Condizioni di vendita</a></li>
+					<li><a href="/p/myaccount/aiuto/controversie-adr-odr">Controversie-ADR/ODR</a></li>
+				  <li><a href="/default.aspx?zona=1&amp;dove=24" style="display:inline !important;">Privacy</a> | <a href="//www.iubenda.com/privacy-policy/923967/cookie-policy" target="_blank" style="display:inline !important;">Cookie Policy</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<ul>
+					<li><a href="/default.aspx?zona=5&amp;dove=6">Gestione Profilo</a></li>
+					<li><a href="/default.aspx?zona=5&amp;dove=1">Situazione ordini</a></li>
+					<li><a href="/p/pick-and-pay">Punti di ritiro Pick&amp;Pay&reg;</a></li>
+					<li><a href="/p/myaccount/aiuto/consegnapiano">Consegna al piano</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<div class="footer_bottom">
+	<div class="loghi">
+		<a href="/p/myaccount/aiuto/sicurezza"><img src="https://images.banzaicommerce.it/img/_b/gzshop/logo-verisign.png" alt="Verisign"></a>
+		<a href="/p/myaccount/aiuto/acquisto"><img src="https://images.banzaicommerce.it/img/_b/gzshop/loghi-carte-gz.png" class="imgcarte" alt=""></a>
+		<!-- <a href="//www.consorzionetcomm.it/Consorzio_Netcomm/Soci/Elenco_Soci/Eprice/Eprice.kl" title="ePRICE fa parte del consorzio Netcomm" target="_blank"><img src="https://images.banzaicommerce.it/img/_b/layout/images/logo_netcomm_grey.png" alt="Netcomm"></a> -->
+	</div>
+	<!-- <div class="loghi">
+		<a href="/p/myaccount/aiuto/acquisto">
+			<img alt="" class="imgcarte" src="https://images.banzaicommerce.it/layout/images/ico_carte.png"></a>
+	</div> -->
+</div>
+<div class="banzai_ft">
+	<div class="container centered">
+		
+</svg>
+		</a>
+		<p class="txt">*Promozioni valide solo per prodotti venduti da ePRICE.<br> Tutti i prodotti sono venduti e spediti da ePRICE Operations S.r.l., sede legale via degli Olivetani 10/12, 20123 Milano, iscritta al Registro Imprese di Milano, n. 1698778 - PIVA 02574890121 - Copyright 2000-2017 - Tutti i diritti riservati, vietata la riproduzione anche parziale - Pick&Pay è un marchio registrato di ePRICE. Informazioni e condizioni soggette a variazioni senza preavviso.<br>(*) Corrisponde al 'prezzo di listino al pubblico' indicatoci dal produttore o fornitore. Può darti un'indicazione del valore del prodotto, ma in alcuni negozi il prezzo effettivo potrebbe risultare più basso.
+		</p>
+	</div>
+</div>
+
+
+    <!-- LITEBOX REGISTRAZIONE -->
+       <div class="f_overlayer" id="loginOverlayer" style="display:none">
+        <div class="login_overlayer">
+          <h3 class="tit"></h3>
+          <div class="box_azur box_login">
+            <div class="box_head">
+              <div class="box_head_right"></div>
+            </div>
+            <h4 class="tit bg_azur"> <strong>Sei già registrato?</strong>
+              Effettua l'accesso al tuo profilo
+            </h4>
+            <div class="box_center lightGray">
+              <form method="POST" action="/login.aspx" id="formLogin">
+                <label class="txt"> <strong>Email</strong>
+                  <input type="text" name="user" class="lightGray" id="user"></label>
+                <label class="txt">
+                  <strong>Password</strong>
+                  <input type="password" name="" class="lightGray" id="pwd_in" autocomplete="off"></label>
+                <input type="hidden" value="" name="pwd" id="pwd">             
+                <input type="hidden" value="" name="zona" id="zona">             
+                <input type="hidden" value="" name="dove" id="dove">             
+                <input type="hidden" value="" name="isdetail" id="isdetail">             
+                <input type="hidden" value="" name="spv" id="spv">             
+                <input type="hidden" value="" name="price" id="price">             
+                <input type="hidden" value="" name="sku4wish" id="sku4wish">             
+                <label class="checkBox">
+                  <input type="checkbox" name="">Ricordami</label>
+                <div class="forgot">
+                  <a href="default.aspx?zona=1&dove=4">Password dimenticata?</a>
+                  |
+                  <div class="gestOverlayer">
+                    <span class="fakeLink">Email dimenticata?</span>
+                    <div class="overlayer">
+                      Se hai dimenticato l'email è necessario procedere a una nuova
+                      <a href="/registrazionelite.aspx">registrazione</a>
+                    </div>
+                  </div>
+                </div>
+                <span id="submitForm" class="btn arrowRigh">
+                  <span>Accedi</span>
+                </span>
+              </form>
+              <div class="clear"></div>
+            </div>
+            <div class="box_bottom">
+              <div class="box_bottom_right"></div>
+            </div>
+          </div>
+
+          <div class="box_azur box_registrati">
+            <div class="box_head">
+              <div class="box_head_right"></div>
+            </div>
+            <h4 class="tit bg_azur">Sei un nuovo Cliente?</h4>
+            <div class="box_center lightGray">
+              <p><a href="registrazioneLite.aspx">Registrati subito</a> per avere offerte speciali, sconti e novità. Già oltre 500.000 clienti ci hanno scelto!</p>
+              <a class="btn arrowRight" href="registrazionelite.aspx">
+                <span>Registrati</span>
+              </a>
+            </div>
+            <div class="box_bottom">
+              <div class="box_bottom_right"></div>
+            </div>
+          </div>
+
+        </div>
+       </div><!-- /FINE LITEBOX REGISTRAZIONE --><script type="text/javascript">
+  
+  var opnenmobile= (document.cookie.indexOf("pmcl")>-1)? 1:0;
+
+if ((navigator.userAgent.match(/Android/i) ||
+navigator.userAgent.match(/webOS/i) ||
+navigator.userAgent.match(/iPhone/i) ||
+navigator.userAgent.match(/iPod/i) ||
+navigator.userAgent.match(/BlackBerry/) ||
+navigator.userAgent.match(/Windows Phone/i) ||
+navigator.userAgent.match(/ZuneWP7/i)
+) && opnenmobile==0) {
+$(function(){
+  //$("#footer").append('<style type="text/css"> body {padding-top:120px!important; /*background-position:50% 60px;*/} #scopriMobile {overflow: hidden; position:fixed; z-index:9999; top:0; left:0; width:100%; height: 122px; text-align: center; background-color:#ffffff; border-bottom:1px solid #646464;} #scopriMobile img {display:inline-block; /*margin:0 auto;*/} /*#scopriMobile.close .contOpen, #scopriMobile.open .contClose {height:0; overflow:hidden;} #scopriMobile .contClose .bottom {margin-bottom:-10px;}*/ </style> <div id="scopriMobile"> <a href="//m.eprice.it"><img src="https://images.banzaicommerce.it/img/_b/speciali/accedi_eprice_mobile_big.gif" alt="Scopri ePRICE Mobile" border="0" /></a> </div>');
+  $("#footer").append('<style type="text/css"> body {padding-top:120px; /*background-position:50% 60px;*/} #scopriMobile {overflow: hidden; position:fixed; z-index:9999; top:0; left:0; width:100%; height: 122px; text-align: center; background-color:#ffffff; border-bottom:1px solid #646464;} #scopriMobile img {display:inline-block; /*margin:0 auto;*/} #scopriMobile a {padding:0;} /*#scopriMobile.close .contOpen, #scopriMobile.open .contClose {height:0; overflow:hidden;} #scopriMobile .contClose .bottom {margin-bottom:-10px;}*/ </style> <div id="scopriMobile"> <span id="goToMobile" class="fakeLink"><img src="https://images.banzaicommerce.it/img/_b/gzshop/accedi_gz_mobile_01.gif" alt="Scopri GZ Shop Mobile" border="0" /></span><span class="fakeLink" id="closeSkin" ><img src="https://images.banzaicommerce.it/img/_b/speciali/accedi_eprice_mobile_02.gif" alt="GZ Shop Desktop" border="0" /></span> </div>');
+  $("#closeSkin").live("click", function(){
+      $("#scopriMobile").hide();
+      document.cookie="pmcl=true";
+      var testVar5=109;
+  });
+  $("#goToMobile").live("click", function(){
+    document.cookie = "check_canale=;path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC"; 
+    document.cookie = "SelectedCanale=;path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+    document.cookie = "pmcl=;path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+    window.location.href = $('link[rel=alternate]').attr('href');
+  });
+  
+  //checkOpen();
+});
+  //self.location="//staging.eprice.it/";
+}
+</script><div align="center"></div><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-2TF6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script type="text/javascript">
+				
+				(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-2TF6');
+				
+			</script><script language="JavaScript" type="text/javascript">
+      
+			function getCookieFP() 
+			{
+				var start = document.cookie.indexOf( "fp=" );
+				var len = start + 3;
+				if ( ( !start ) && ( name != document.cookie.substring( 0, 2 ) ) ) {
+					return null;
+				}
+				if ( start == -1 ) return null;
+				var end = document.cookie.indexOf( ';', len );
+				if ( end == -1 ) end = document.cookie.length;
+				return unescape( document.cookie.substring( len, end ) );
+			}
+			
+			var OmnitureTrackingTAG = "GZS:";
+			var OmnitureTrackingAreaPersonale = "Mio ePRICE";
+			var OmnitureTrackingAreaPersonaleChannel = "MioEprice";
+    </script><script language="JavaScript" type="text/javascript">
+      var valorePagina = OmnitureTrackingTAG + "Homepage";
+      s.pageName=valorePagina; // Nome di Pagina
+      s.channel=valorePagina; // Sezione di contenuto
+      s.hier1=valorePagina;     // Content Category Hierarchy
+      s.hier2="";   // Content Category Hierarchy
+      s.prop1=valorePagina; 	//Page Type
+      s.prop4="00000000-0000-0000-0000-000000000000";	//Id Utente
+      s.prop5=getCookieFP(); //Fingerprint
+      s.prop14=window.document.title.substring(0,99); //Titolo della pagina
+		
+		
+				var pageViewData = new Object(); 
+				
+				_satellite.pageBottom();
+			</script><script language="JavaScript" type="text/javascript"><!--
+        if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')//
+      --></script><noscript><a href="//www.omniture.com" title="Web Analytics"><img src="//eprice.122.2o7.net/b/ss/epriceproduction/1/H.20.3--NS/0" border="0" height="1" alt="" width="1"></a></noscript><!--/DO NOT REMOVE/--><!-- End SiteCatalyst code version: H.20.3. --></body></html>

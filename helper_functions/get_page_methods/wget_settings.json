@@ -1,0 +1,13 @@
+{
+    "random_wait": true,
+    "max_wait_time": 2,
+
+    "use_cookies": false,
+    "cookies_file": "cookies.txt",
+
+    "use_headers": false,
+    "headers_file":"headers.txt",
+
+    "log": true,
+    "log_file": "wget.log"
+}
