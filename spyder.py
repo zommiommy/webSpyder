@@ -25,6 +25,9 @@ class Spyder():
         "log_format": '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     }
 
+    # Costructor
+    #---------------------------------------------------------------------------
+
     def __init__(self,start_url):
         self.settings["start_url"] = start_url
         self.filter_functions  = []
@@ -42,16 +45,32 @@ class Spyder():
         # Enable or disable the logger
         self.logger.disabled = not self.settings["log"]
 
+
+    # Observers
+    #---------------------------------------------------------------------------
+
     def __str__(self):
-        return "settings:\n%s\n\nindex: %s\n\nurls:\n%s"%(self.settings,self.index,self.urls)
+        return self.get_status()
 
-    def _url_filer(self,url):
-        for filter in self.filter_functions:
-            result = filter(url)
-            if result == False:
-                return False
+    def get_status(self):
+        status = "Current Status:\n"
+        status += "settings:\n%s\n"%self.settings
+        status += "index: %s\n"%self.index
+        status += "urls:\n%s"%self.urls
+        return status
 
-        return True
+    def get_settings(self):
+        return self.settings
+
+    def get_index(self):
+        return self.index
+
+    def get_urls(self):
+        return self.urls
+
+
+    # Modifiers
+    #---------------------------------------------------------------------------
 
     def set_filter(self,f):
         if is_not_function(f):
@@ -64,6 +83,44 @@ class Spyder():
             raise Exception("set_function except a function but the parameter passed is %s"%type(f))
 
         self.functionList.append(f)
+
+    # Settings Modifiers
+    #---------------------------------------------------------------------------
+
+    def set_mode(self,value):
+        self.settings["mode"] = value
+
+    def set_start_url(self,value):
+        self.settings["start_url"] = value
+        self.urls.append(value)
+
+    def set_cache(self,value):
+        self.settings["cache"] = value
+
+    def set_cache_path(self,value):
+        self.settings["cache_path"] = value
+
+    def set_log(self,value):
+        self.settings["log"] = value
+
+    def set_log_path(self,value):
+        self.settings["log_path"] = value
+
+    def set_log_format(self,value):
+        self.settings["log_format"] = value
+
+
+
+    # Main methods
+    #---------------------------------------------------------------------------
+
+    def _url_filer(self,url):
+        for filter in self.filter_functions:
+            result = filter(url)
+            if result == False:
+                return False
+
+        return True
 
     def iteration(self):
         url = self.urls[self.index]

@@ -4,15 +4,10 @@ from . import files_function
 
 import string
 import os
+from urllib.parse import urljoin
 
 def url_normalize(link,url):
-    if link.startswith("/"):
-        if url.endswith("/"):
-            return url + link
-        else:
-            return url + "/" + link
-    else:
-        return link
+        return urljoin(url,link)
 
 
 def get_links(soup):
