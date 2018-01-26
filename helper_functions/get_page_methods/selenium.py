@@ -1,3 +1,3 @@
 
-def selenium_get_page(url,name,directory):
+def selenium_get_page(url,name,directory,logger):
     print("TO IMPLEMENT")

@@ -662,3 +662,1736 @@ Saving to: ‘/home/zommiommy/Desktop/webspyder/pagecaches/httpwwwgiallozafferan
 
 2018-01-25 17:24:43 (1,24 MB/s) - ‘/home/zommiommy/Desktop/webspyder/pagecaches/httpwwwgiallozafferanoitricettecatpagericettecatMarmellateeConserveConserve.html’ saved [35113/35113]
 
+--2018-01-26 21:16:24--  http://ricette-calorie.com/valori-nutrizionali/categorie.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘/home/zommiommy/Desktop/webSpyder/pagecaches/httpricettecaloriecomvalorinutrizionalicategoriephp.html’
+
+     0K .......... .......... .......... .......... .......    3,86M=0,01s
+
+2018-01-26 21:16:24 (3,86 MB/s) - ‘/home/zommiommy/Desktop/webSpyder/pagecaches/httpricettecaloriecomvalorinutrizionalicategoriephp.html’ saved [49050]
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/antipasti.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/antipasti-light.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/antipasti-ipocalorici.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/antipasti-meno-carboidrati.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/antipasti-meno-grassi.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/antipasti-piu-proteine.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/antipasti-facili.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/antipasti-veloci.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/antipasti-economici.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/primi-piatti.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/primi-piatti-light.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/primi-piatti-ipocalorici.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/primi-piatti-meno-carboidrati.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/primi-piatti-meno-grassi.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/primi-piatti-piu-proteine.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/primi-piatti-facili.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/primi-piatti-veloci.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/primi-piatti-economici.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/secondi-piatti.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/secondi-piatti-light.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/secondi-piatti-ipocalorici.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/secondi-piatti-meno-carboidrati.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/secondi-piatti-meno-grassi.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/secondi-piatti-piu-proteine.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/secondi-piatti-facili.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/secondi-piatti-veloci.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/secondi-piatti-economici.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/contorni.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/piatti-unici.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/dolci.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/dolci-light.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/dolci-ipocalorici.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/dolci-meno-carboidrati.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/dolci-meno-grassi.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/dolci-piu-proteine.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:33 ERROR 404: Not Found.
+
+--2018-01-26 21:16:33--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/dolci-facili.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/dolci-veloci.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/dolci-economici.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/salse-e-condimenti.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/centrifugati-e-frullati.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/meno-calorie.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/meno-carboidrati.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/meno-grassi.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/piu-proteine.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/light.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/facili.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/veloci.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/economiche.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/bimby.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/video.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/categorie.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/carne/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/pesce/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/verdura/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/frutta/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/info.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//strumenti/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//strumenti/fabbisogno-calorico.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//strumenti/imc.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//strumenti/calorie-ricetta.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//strumenti/confronto.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//strumenti/consumi-sport.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//strumenti/consumi-attivita.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//chi-siamo.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/bovino/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/ovino/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/suino/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/selvaggina/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/carni-bianche/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/cereali-e-derivati/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/prima-colazione/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/snacks/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:34 ERROR 404: Not Found.
+
+--2018-01-26 21:16:34--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/pane/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/farine/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/pasta/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/riso/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/patate/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/cipolle/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/pomodori/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/cavoli/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/peperoni/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/asparagi/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/funghi/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/verdura-a-foglia/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/altri-ortaggi/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/crostacei/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/frutti-di-mare/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/pesci/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/fast-food/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/legumi/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/latticini/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/latte/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/yogurt/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/formaggi/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/bevande/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/gassate/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/alcolici-e-cocktails/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/succhi-di-frutta/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/vini-bianchi/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/vini-rossi/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/the-e-caffe/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/condimenti-e-spezie/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/spezie/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/olii-e-grassi/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/salse/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/aceti/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/dolci/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/cacao-e-cioccolato/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/dolcificanti/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/biscotti/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/gelati/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/torte/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/paste/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/caramelle/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/dolci-al-cucchiaio/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/marmellate-e-creme/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:35 ERROR 404: Not Found.
+
+--2018-01-26 21:16:35--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/frutta-secca/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/frutti-di-bosco/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/frutta-esotica/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/mele/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/uova/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/piatti-etnici/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/altro/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/agenti-lievitanti/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/calorie.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/piu-calorie.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/meno-calorie.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/grassi.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/piu-grassi.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/meno-grassi.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/carboidrati.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/piu-carboidrati.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/meno-carboidrati.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/proteine.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/piu-proteine.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/meno-proteine.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/colesterolo.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/piu-colesterolo.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/meno-colesterolo.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/sodio.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/piu-sodio.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/meno-sodio.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/calcio.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/piu-calcio.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/meno-calcio.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/ferro.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/piu-ferro.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/meno-ferro.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/info-acqua.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/fibre.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/fosforo.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/potassio.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/magnesio.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:36--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/zinco.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:36 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/rame.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/fluoro.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/manganese.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/selenio.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/retinolo-vit-a.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/betaina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/vitamina-b1.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/vitamina-pp.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/acido-folico-vit-b9-o-m-o-folacina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/vitamina-c.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/vitamina-d.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/vitamina-e.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/fillochinone-vit-k.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/colina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/licopene.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/luteina-zeaxantina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/fitosteroli.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/acido-aspartico.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/acido-glutammico.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/alanina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/arginina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/cisteina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/fenilalanina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/glicina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/idrossiprolina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/isoleucina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/istidina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/leucina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/lisina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/metionina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/prolina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/serina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/tirosina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/treonina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/triptofano.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/valina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/alcol-etilico.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/caffeina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:37 ERROR 404: Not Found.
+
+--2018-01-26 21:16:37--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/teobromina.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/glucosio-destrosio.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/fruttosio.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/galattosio.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/lattosio.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/maltosio.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/saccarosio.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//utenti/recupera-password.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//opauth/facebook/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//opauth/google/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//opauth/twitter/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//utenti/registrazione.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/suppli-di-riso.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/risotto-con-zucca-e-salsiccia.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/pollo-al-curry.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/pasta-frolla.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/parrozzo-abruzzese.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/altri-ortaggi/zucchine.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/altri-ortaggi/melanzane.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/peperoni/peperoni-rossi-dolci.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//condizioni.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//privacy.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:16:38--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//contatti.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:16:38 ERROR 404: Not Found.
+
+--2018-01-26 21:34:09--  http://ricette-calorie.com/valori-nutrizionali/categorie.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘/home/zommiommy/Desktop/webSpyder/pagecaches/httpricettecaloriecomvalorinutrizionalicategoriephp.html’
+
+     0K .......... .......... .......... .......... .......    3,68M=0,01s
+
+2018-01-26 21:34:09 (3,68 MB/s) - ‘/home/zommiommy/Desktop/webSpyder/pagecaches/httpricettecaloriecomvalorinutrizionalicategoriephp.html’ saved [49050]
+
+--2018-01-26 21:34:09--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:09 ERROR 404: Not Found.
+
+--2018-01-26 21:34:09--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/antipasti.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:09 ERROR 404: Not Found.
+
+--2018-01-26 21:34:09--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/antipasti-light.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:09 ERROR 404: Not Found.
+
+--2018-01-26 21:34:09--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/antipasti-ipocalorici.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:10 ERROR 404: Not Found.
+
+--2018-01-26 21:34:10--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/antipasti-meno-carboidrati.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:10 ERROR 404: Not Found.
+
+--2018-01-26 21:34:10--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/antipasti-meno-grassi.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:10 ERROR 404: Not Found.
+
+--2018-01-26 21:34:10--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/antipasti-piu-proteine.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:10 ERROR 404: Not Found.
+
+--2018-01-26 21:34:10--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/antipasti-facili.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:10 ERROR 404: Not Found.
+
+--2018-01-26 21:34:10--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/antipasti-veloci.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:10 ERROR 404: Not Found.
+
+--2018-01-26 21:34:10--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/antipasti-economici.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:10 ERROR 404: Not Found.
+
+--2018-01-26 21:34:10--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/primi-piatti.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:10 ERROR 404: Not Found.
+
+--2018-01-26 21:34:10--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/primi-piatti-light.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/primi-piatti-ipocalorici.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/primi-piatti-meno-carboidrati.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/primi-piatti-meno-grassi.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/primi-piatti-piu-proteine.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/primi-piatti-facili.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/primi-piatti-veloci.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/primi-piatti-economici.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/secondi-piatti.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/secondi-piatti-light.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/secondi-piatti-ipocalorici.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/secondi-piatti-meno-carboidrati.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/secondi-piatti-meno-grassi.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/secondi-piatti-piu-proteine.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/secondi-piatti-facili.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/secondi-piatti-veloci.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/secondi-piatti-economici.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/contorni.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/piatti-unici.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/dolci.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/dolci-light.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/dolci-ipocalorici.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/dolci-meno-carboidrati.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/dolci-meno-grassi.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... --2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/dolci-piu-proteine.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/dolci-facili.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/dolci-veloci.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/dolci-economici.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/salse-e-condimenti.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:11 ERROR 404: Not Found.
+
+--2018-01-26 21:34:11--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/centrifugati-e-frullati.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/meno-calorie.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/meno-carboidrati.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/meno-grassi.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/piu-proteine.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/light.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/facili.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/veloci.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/economiche.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/bimby.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//ricette/video.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/categorie.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/carne/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/pesce/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/verdura/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/frutta/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//valori-nutrizionali/info.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//strumenti/
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//strumenti/fabbisogno-calorico.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//strumenti/imc.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//strumenti/calorie-ricetta.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//strumenti/confronto.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//strumenti/consumi-sport.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//strumenti/consumi-attivita.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:34:12--  http://ricette-calorie.com/valori-nutrizionali/categorie.php//chi-siamo.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2018-01-26 21:34:12 ERROR 404: Not Found.
+
+--2018-01-26 21:37:27--  http://ricette-calorie.com/valori-nutrizionali/categorie.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘/home/zommiommy/Desktop/webSpyder/pagecaches/httpricettecaloriecomvalorinutrizionalicategoriephp.html’
+
+     0K .......... .......... .......... .......... .......    3,29M=0,01s
+
+2018-01-26 21:37:27 (3,29 MB/s) - ‘/home/zommiommy/Desktop/webSpyder/pagecaches/httpricettecaloriecomvalorinutrizionalicategoriephp.html’ saved [49050]
+
+--2018-01-26 21:40:03--  http://ricette-calorie.com/valori-nutrizionali/categorie.php
+Resolving ricette-calorie.com (ricette-calorie.com)... 95.141.36.118
+Connecting to ricette-calorie.com (ricette-calorie.com)|95.141.36.118|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘/home/zommiommy/Desktop/webSpyder/pagecaches/httpricettecaloriecomvalorinutrizionalicategoriephp.html’
+
+     0K .......... .......... .......... .......... .......    1,60M=0,03s
+
+2018-01-26 21:40:03 (1,60 MB/s) - ‘/home/zommiommy/Desktop/webSpyder/pagecaches/httpricettecaloriecomvalorinutrizionalicategoriephp.html’ saved [49050]
+

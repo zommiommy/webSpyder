@@ -2,10 +2,11 @@
 import webSpyder.helper_functions as hf
 import webSpyder.helper_functions.urls_function as uf
 import bs4
+import logging
 from tqdm import tqdm
-
 from . import __path__ as package_path
 
+# Horrible workaround, TODO do it in the right way
 def is_not_function(f):
     return str(type(f)) != "<class 'function'>"
 
@@ -15,8 +16,13 @@ class Spyder():
     settings = {
         "mode":"wget",
         "start_url":"",
-        "directory":"%s/pagecaches/"%package_path[0],
-        "cache":True
+
+        "cache":True,
+        "cache_path":"%s/pagecaches/"%package_path[0],
+
+        "log": True,
+        "log_path":"%s/log/"%package_path[0],
+        "log_format": '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     }
 
     def __init__(self,start_url):
@@ -24,6 +30,17 @@ class Spyder():
         self.filter_functions  = []
         self.functionList = []
         self.urls, self.index = [start_url] , 0
+
+        # Setup the logger
+        self.logger = logging.getLogger('webSpyder')
+        self.file_handler = logging.FileHandler(self.settings["log_path"] + 'spyder.log')
+        self.formatter = logging.Formatter(self.settings["log_format"])
+        self.file_handler.setFormatter(self.formatter)
+        self.logger.addHandler(self.file_handler)
+        self.logger.setLevel(logging.INFO)
+
+        # Enable or disable the logger
+        self.logger.disabled = not self.settings["log"]
 
     def __str__(self):
         return "settings:\n%s\n\nindex: %s\n\nurls:\n%s"%(self.settings,self.index,self.urls)
@@ -50,10 +67,10 @@ class Spyder():
 
     def iteration(self):
         url = self.urls[self.index]
-        print(url)
+        self.logger.info("current url: %s"%url)
 
         if self._url_filer(url):
-            html = uf.get_page(url,self.settings)
+            html = uf.get_page(url,self.settings,self.logger)
 
             soup = bs4.BeautifulSoup(html, "lxml")
 

@@ -32,13 +32,13 @@ if settings["log"] == True:
     setting_arg += "--append-output %s/%s "%(path,settings["log_file"])
 
 
-def wget_get_page(url,name,directory):
+def wget_get_page(url,name,directory,logger):
     # TODO json settings
 
     command = "wget  "
     command += setting_arg
     command +=  "--output-document %s%s %s"%(directory,name,url)
-    print("executing : %s"%command)
+    logger.info("executing : %s"%command)
     os.system(command)
 
     # Wait for the wget to finish
