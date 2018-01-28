@@ -1,8 +1,10 @@
 
 import webSpyder.helper_functions as hf
 import webSpyder.helper_functions.urls_function as uf
+
 import bs4
 import logging
+import validators
 from tqdm import tqdm
 from . import __path__ as package_path
 
@@ -15,10 +17,16 @@ class Spyder():
 
     settings = {
         "mode":"wget",
+        "permessive_exception":True
         "start_url":"",
         "project":"webSpyder",
 
-        "cache":True,
+        "clear_html":False,
+        "clear_comments":True,
+        "useless_tags":["svg","input","noscript","link","img","script","style"],
+        "useless_attributes":["style", "href", "role", "src"],
+
+        "cache":False,
         "cache_path":"%s/pagecaches/"%package_path[0],
 
         "log": True,
@@ -48,9 +56,30 @@ class Spyder():
         # Enable or disable the logger
         self.logger.disabled = not self.settings["log"]
 
+    def __contains__(self,item):
+        return item in self.urls
 
     def __iter__(self):
         return self
+
+    def __len__(self):
+        return len(self.urls)
+
+    def __getitem__(self,key):
+        return self.urls[key]
+
+    def __setitem__(self,key,value):
+        self.urls[key] = value
+
+    def __add__(self,other):
+        return self.urls + other.get_urls()
+
+    def __sub__(self,other):
+        result = []
+        for element in (self + other):
+            if element in self and element not in other:
+                result.append(element)
+        return result
 
     # Observers
     #---------------------------------------------------------------------------
@@ -74,6 +103,8 @@ class Spyder():
     def get_urls(self):
         return self.urls
 
+    def get_useless_tags(self):
+        return self.settings["useless_tags"]
 
     # Modifiers
     #---------------------------------------------------------------------------
@@ -90,8 +121,42 @@ class Spyder():
 
         self.functionList.append(f)
 
+    def set_useless_attributes(self,attributes):
+        self.settings["useless_attributes"] = attributes
+        self.enable_clear_html()
+
+    def set_useless_tags(self,tags):
+        self.settings["useless_tags"] += tags
+        self.enable_clear_html()
+
     # Settings Modifiers
     #---------------------------------------------------------------------------
+
+    def enable_permessive_exception(self):
+        self.settings["permessive_exception"] = True
+    def disable_permessive_exception(self):
+        self.settings["permessive_exception"] = False
+
+    def enable_clear_html(self):
+        self.settings["clear_html"] = True
+    def disable_clear_html(self):
+        self.settings["clear_html"] = False
+
+    def enable_clear_comments(self):
+        self.settings["clear_comments"] = True
+    def disable_clear_comments(self):
+        self.settings["clear_comments"] = False
+
+    def enable_cache(self):
+        self.settings["cache"] = True
+    def disable_cache(self):
+        self.settings["cache"] = False
+
+    def enable_log(self):
+        self.settings["log"] = True
+    def disable_log(self):
+        self.settings["log"] = False
+
 
     def set_mode(self,value):
         self.settings["mode"] = value
@@ -100,14 +165,8 @@ class Spyder():
         self.settings["start_url"] = value
         self.urls.append(value)
 
-    def set_cache(self,value):
-        self.settings["cache"] = value
-
     def set_cache_path(self,value):
         self.settings["cache_path"] = value
-
-    def set_log(self,value):
-        self.settings["log"] = value
 
     def set_log_path(self,value):
         self.settings["log_path"] = value
@@ -128,6 +187,28 @@ class Spyder():
 
         return True
 
+    def clear_useless_stuff(self,soup):
+        # Remove all the comments
+        if self.settings["clear_comments"] == True:
+            comments = soup.findAll(text=lambda text:isinstance(text, bs4.Comment))
+            for comment in comments:
+                comment.extract()
+
+        # Remove useless tag
+        for tag in self.settings["useless_tags"]:
+            for item in soup(tag):
+                item.decompose()
+
+        # Remove useless attributes
+        for tag in soup():
+            for attribute in self.settings["useless_attributes"]:
+                del tag[attribute]
+
+        html = str(soup)
+        html = "".join(line.strip() for line in html.split("\n"))
+
+        return bs4.BeautifulSoup(html, "lxml")
+
     def iteration(self):
         url = self.urls[self.index]
         self.logger.info("current url: %s"%url)
@@ -137,19 +218,35 @@ class Spyder():
 
                 soup = bs4.BeautifulSoup(html, "lxml")
 
-                for function in self.functionList:
-                    function(soup,url)
-
                 links = uf.get_links(soup)
 
+                # construct relative urls
                 for i,link in enumerate(links):
                     links[i] = uf.url_normalize(link,url)
 
+                # add only valid urls that are not already in list and won't be filtered out
                 for link in uf.links_not_in_urls(self.urls,links):
-                    self.urls.append(link)
+                    try:
+                        if validators.url(link) and self._url_filer(link):
+                            self.urls.append(link)
+                    except ValidationFailure:
+                        self.logger.warning("Found a non valid url %s"%link)
 
-        except Exception e:
+                # Clear the soup
+                if self.settings["clear_html"] == True:
+                    soup = self.clear_useless_stuff(soup)
+
+                # Call the user functions
+                for function in self.functionList:
+                    function(soup,url)
+
+
+        except Exception as e:
+            self.logger.error("ERROR At the iteration over %s"%url)
             self.logger.error(e.message)
+            # If the execution is not permessive, if there is an exception don't catch it
+            if self.settings["permessive_exception"] == False:
+                raise e
 
         self.index += 1
 

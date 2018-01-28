@@ -43,4 +43,4 @@ def wget_get_page(url,name,directory,logger):
 
     # Wait for the wget to finish
     while name not in os.listdir(directory):
-        time.sleep(0.3)
+        time.sleep(0.1)

@@ -2,8 +2,8 @@
 from . import get_page_methods
 from . import files_function
 
-import string
 import os
+import string
 from urllib.parse import urljoin
 
 def url_normalize(link,url):
