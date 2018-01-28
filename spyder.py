@@ -16,6 +16,7 @@ class Spyder():
     settings = {
         "mode":"wget",
         "start_url":"",
+        "project":"webSpyder",
 
         "cache":True,
         "cache_path":"%s/pagecaches/"%package_path[0],
@@ -28,15 +29,17 @@ class Spyder():
     # Costructor
     #---------------------------------------------------------------------------
 
-    def __init__(self,start_url):
-        self.settings["start_url"] = start_url
+    def __init__(self,project=None):
+        if project != None:
+            self.settings["project"] = project
+
         self.filter_functions  = []
         self.functionList = []
-        self.urls, self.index = [start_url] , 0
+        self.urls, self.index = [] , 0
 
         # Setup the logger
-        self.logger = logging.getLogger('webSpyder')
-        self.file_handler = logging.FileHandler(self.settings["log_path"] + 'spyder.log')
+        self.logger = logging.getLogger(self.settings["project"])
+        self.file_handler = logging.FileHandler(self.settings["log_path"] + self.settings["project"] + '.log')
         self.formatter = logging.Formatter(self.settings["log_format"])
         self.file_handler.setFormatter(self.formatter)
         self.logger.addHandler(self.file_handler)
@@ -45,6 +48,9 @@ class Spyder():
         # Enable or disable the logger
         self.logger.disabled = not self.settings["log"]
 
+
+    def __iter__(self):
+        return self
 
     # Observers
     #---------------------------------------------------------------------------
@@ -125,21 +131,34 @@ class Spyder():
     def iteration(self):
         url = self.urls[self.index]
         self.logger.info("current url: %s"%url)
+        try:
+            if self._url_filer(url):
+                html = uf.get_page(url,self.settings,self.logger)
 
-        if self._url_filer(url):
-            html = uf.get_page(url,self.settings,self.logger)
+                soup = bs4.BeautifulSoup(html, "lxml")
 
-            soup = bs4.BeautifulSoup(html, "lxml")
+                for function in self.functionList:
+                    function(soup,url)
 
-            for function in self.functionList:
-                function(soup,url)
+                links = uf.get_links(soup)
 
-            links = uf.get_links(soup)
+                for i,link in enumerate(links):
+                    links[i] = uf.url_normalize(link,url)
 
-            for link in uf.links_not_in_urls(self.urls,links):
-                self.urls.append(uf.url_normalize(link,url))
+                for link in uf.links_not_in_urls(self.urls,links):
+                    self.urls.append(link)
+
+        except Exception e:
+            self.logger.error(e.message)
 
         self.index += 1
+
+    def next(self):
+        if self.index <= len(self.urls):
+            self.iteration()
+            return self.urls[self.index]
+        else:
+            raise StopIteration()
 
     def run(self):
         pbar = tqdm()

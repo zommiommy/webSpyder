@@ -1,2 +1,0 @@
-2018-01-26 21:40:03,857 - webSpyder - INFO - current url: http://ricette-calorie.com/valori-nutrizionali/categorie.php
-2018-01-26 21:40:03,857 - webSpyder - INFO - executing : wget  --random-wait --wait 2 --append-output /home/zommiommy/Desktop/webSpyder/helper_functions/get_page_methods/wget.log --output-document /home/zommiommy/Desktop/webSpyder/pagecaches/httpricettecaloriecomvalorinutrizionalicategoriephp.html http://ricette-calorie.com/valori-nutrizionali/categorie.php
