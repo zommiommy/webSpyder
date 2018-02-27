@@ -1,4 +1,5 @@
 import json
+from functools import reduce
 
 class linkGraph:
 # Attributes -------------------------------------------------------------------
@@ -51,12 +52,12 @@ class linkGraph:
     def add_edge(self,start,end):
         """Add the edge to the graph add_edge(a,b) add an edge that goes a ---> b"""
         # if there is no start it's an error
-        if start not in node_dic.keys():
+        if start not in self.node_dic.keys():
             self.logger.error("[Error] There Is No start node %s"%start)
             return
 
         # if there is no end create it
-        if end not in node_dic.keys():
+        if end not in self.node_dic.keys():
             self.logger.error("[Error] There Is No end node %s"%end)
             return
 
@@ -88,7 +89,7 @@ class linkGraph:
                 self.node_without_chidrens.remove(start)
             # else just add the end to the list
             else:
-                self.edge_dic[link].append(end)
+                self.edge_dic[start].append(end)
 
             self.logger.info("Added the edge from %s to %s"%(start,end))
         # else if it's a worse path do nothing
@@ -106,7 +107,7 @@ class linkGraph:
         # Get unparsed leaf
         #  the fact that a node has children implies that it has been parsed except
         #  if it is a page with no links , Unprobabile but possible.
-        leaf    = list(filter( lambda x: x if self.node_dic[x].is_parsed() else None,self.node_without_chidrens))
+        leaf    = list(filter( lambda x: x if not self.node_dic[x].is_parsed() else None,self.node_without_chidrens))
 
         # if there are no node you can't go on searching
         if len(leaf) == 0:
@@ -114,20 +115,19 @@ class linkGraph:
             return
         # if there is only one node use it.
         if len(leaf) == 1:
-            leaf[0].set_parsed()
-            return leaf[0].get_link()
+            self.node_dic[leaf[0]].set_parsed()
+            return self.node_dic[leaf[0]].get_link()
         # if there are at least two node search for the best
 
         # Get Leaf into tuples of node and cost to get easy compares
-        tuples  = list(map(   lambda x  : (x,x.get_path_cost())))
+        tuples  = list(map(   lambda x  : (x, self.node_dic[x].get_path_cost()),leaf))
         # Find the minimum
         minimum  = list(reduce(lambda x,y: x if x[1] <= y[1] else y,tuples))
-        min_node = minimum[0]
+        min_link = minimum[0]
         min_cost = minimum[1]
-        min_link = min_node.get_link()
         self.logger.info("The best node is %s with cost %s"%(min_link,min_cost))
         # Set the node as parsed
-        min_node.set_parsed()
+        self.node_dic[min_link].set_parsed()
         # Return the max utility url
         return min_link
 

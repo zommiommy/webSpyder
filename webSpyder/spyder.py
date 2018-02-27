@@ -270,16 +270,27 @@ class Spyder():
             if flag == False:
                 raise StopIteration()
 
-    def run(self):
-        pbar = tqdm()
+    def run(self,num_of_iteration=None):
+        if num_of_iteration == None:
+            pbar = tqdm()
 
-        flag = True
-        try:
-            while flag:
-                flag = self.iteration()
-                pbar.update(1)
-        except KeyboardInterrupt:
-            print("Stopping")
+            flag = True
+            try:
+                while flag:
+                    flag = self.iteration()
+                    pbar.update(1)
+            except KeyboardInterrupt:
+                print("Stopping")
 
-        pbar.close()
+            pbar.close()
+        else:
+            try:
+                for i in range(num_of_iteration):
+                    flag = self.iteration()
+                    if flag == False:
+                        break
+            except KeyboardInterrupt:
+                print("Stopping")
+
+
 
