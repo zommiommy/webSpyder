@@ -5,10 +5,13 @@ import webSpyder.helper_functions.urls_function as uf
 import bs4
 import logging
 import validators
+from linkGraph import linkGraph
 from tqdm import tqdm
+
+# Horrible workaround TODO find a not stupid way
 from . import __path__ as package_path
 
-# Horrible workaround, TODO do it in the right way
+# Horrible workaround part 2, TODO do it in the right way
 def is_not_function(f):
     return str(type(f)) != "<class 'function'>"
 
@@ -43,7 +46,7 @@ class Spyder():
 
         self.filter_functions  = []
         self.functionList = []
-        self.urls, self.index = [] , 0
+        start_url = settings["start_url"]
 
         # Setup the logger
         self.logger = logging.getLogger(self.settings["project"])
@@ -55,6 +58,8 @@ class Spyder():
 
         # Enable or disable the logger
         self.logger.disabled = not self.settings["log"]
+
+        self.urls = linkGraph(start_url,self.logger)
 
     def __contains__(self,item):
         return item in self.urls
@@ -71,21 +76,12 @@ class Spyder():
     def __setitem__(self,key,value):
         self.urls[key] = value
 
-    def __add__(self,other):
-        return self.urls + other.get_urls()
-
-    def __sub__(self,other):
-        result = []
-        for element in (self + other):
-            if element in self and element not in other:
-                result.append(element)
-        return result
+    def __str__(self):
+        return self.get_status()
 
     # Observers
     #---------------------------------------------------------------------------
 
-    def __str__(self):
-        return self.get_status()
 
     def get_status(self):
         status = "Current Status:\n"
@@ -120,6 +116,13 @@ class Spyder():
             raise Exception("set_function except a function but the parameter passed is %s"%type(f))
 
         self.functionList.append(f)
+
+    def set_cost_function(self,f):
+        if is_not_function(f):
+            raise Exception("set_function except a function but the parameter passed is %s"%type(f))
+
+         self.cost_function = f
+
 
     def set_useless_attributes(self,attributes):
         self.settings["useless_attributes"] = attributes
@@ -163,7 +166,7 @@ class Spyder():
 
     def set_start_url(self,value):
         self.settings["start_url"] = value
-        self.urls.append(value)
+        self.urls = linkGraph(value,self.logger)
 
     def set_cache_path(self,value):
         self.settings["cache_path"] = value
@@ -210,7 +213,11 @@ class Spyder():
         return bs4.BeautifulSoup(html, "lxml")
 
     def iteration(self):
-        url = self.urls[self.index]
+        url = self.urls.get_next_page()
+
+        if url == None:
+            return False
+
         self.logger.info("current url: %s"%url)
         try:
             if self._url_filer(url):
@@ -227,8 +234,15 @@ class Spyder():
                 # add only valid urls that are not already in list and won't be filtered out
                 for link in uf.links_not_in_urls(self.urls,links):
                     try:
+                        #if a valid link and it has not to be filtered
                         if validators.url(link) and self._url_filer(link):
-                            self.urls.append(link)
+                            # if the link is new create the node
+                            if link not in self.urls:
+                                cost = self.cost_function(soup,link)
+                                self.urls.add_node(link,cost)
+                            # create the link between the page and the link
+                            self.urls.add_edge(url,link)
+                    #if everything goes bad the url is not valid
                     except ValidationFailure:
                         self.logger.warning("Found a non valid url %s"%link)
 
@@ -247,20 +261,23 @@ class Spyder():
             # If the execution is not permessive, if there is an exception don't catch it
             if self.settings["permessive_exception"] == False:
                 raise e
-
-        self.index += 1
+        return True
 
     def next(self):
-        if self.index <= len(self.urls):
-            self.iteration()
-            return self.urls[self.index]
-        else:
-            raise StopIteration()
+            flag = self.iteration()
+            if flag == False:
+                raise StopIteration()
 
     def run(self):
         pbar = tqdm()
-        while self.index < len(self.urls):
-            self.iteration()
-            pbar.update(1)
+
+        flag = True
+        try:
+            while flag:
+                flag = self.iteration()
+                pbar.update(1)
+        except KeyboardInterrupt:
+            print("Stopping")
+
         pbar.close()
 
