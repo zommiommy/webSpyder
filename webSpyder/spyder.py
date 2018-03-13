@@ -1,6 +1,5 @@
 
-import webSpyder.helper_functions as hf
-import webSpyder.helper_functions.urls_function as uf
+from . import urls_function as uf
 
 import bs4
 import json
@@ -14,12 +13,13 @@ from . import __path__ as package_path
 
 # Horrible workaround part 2, TODO do it in the right way
 def is_not_function(f):
-    return str(type(f)) != "<class 'function'>"
-
+#    return str(type(f)) != "<class 'function'>"
+    return type(f) != type(lambda x: x)
 
 class Spyder():
 
     settings = {
+        "data_type":"list",
         "mode":"wget",
         "permessive_exception":True,
         "start_url":"",
@@ -27,8 +27,11 @@ class Spyder():
 
         "clear_html":False,
         "clear_comments":True,
-        "useless_tags":["svg","input","noscript","link","img","script","style"],
-        "useless_attributes":["style", "href", "role", "src"],
+        "useless_tags":["svg","input","noscript","link","script","style","iframe","canvas"],
+        "useless_attributes":["style", "href", "role", "src","target","type","lang","async","crossorigin"],
+
+        "skip_estensions":True,
+        "not_skip_estensions_list":["html","htm","php","aspx","asp","axd","asx","asmx","ashx","cfm","xml","rss","cgi","jsp","jspx",],
 
         "cache":False,
         "cache_path":"%s/pagecaches/"%package_path[0],
@@ -45,11 +48,16 @@ class Spyder():
         if project != None:
             self.settings["project"] = project
 
-        self.filter_functions  = []
+        self.filter_functions  = [self.extension_filter]
         self.functionList = []
         self.cost_function = self.default_cost_function
         start_url = self.settings["start_url"]
 
+        self.initialize_logger()
+
+        self.update_data_structure()
+
+    def initialize_logger(self):
         # Setup the logger
         self.logger = logging.getLogger(self.settings["project"].replace(" ",""))
         self.file_handler = logging.FileHandler(self.settings["log_path"] + self.settings["project"] + '.log')
@@ -60,8 +68,6 @@ class Spyder():
 
         # Enable or disable the logger
         self.logger.disabled = not self.settings["log"]
-
-        self.urls = linkGraph.linkGraph(self.logger)
 
     def __contains__(self,item):
         return item in self.urls
@@ -162,9 +168,13 @@ class Spyder():
     def set_mode(self,value):
         self.settings["mode"] = value
 
+    def set_data_type(self,value):
+        self.settings["data_type"] = value
+        self.update_data_structure()
+
     def set_start_url(self,value):
         self.settings["start_url"] = value
-        self.urls = linkGraph.linkGraph(self.logger)
+        self.update_data_structure()
         self.urls.add_root(value)
 
     def set_cache_path(self,value):
@@ -181,38 +191,128 @@ class Spyder():
     # Main methods
     #---------------------------------------------------------------------------
 
+    def update_data_structure(self):
+        if self.settings["data_type"] == "list":
+            self.logger.info("Starting with list data structure")
+            self.urls = WebList(self.logger)
+        else:
+            self.logger.info("Starting with graph data structure")
+            self.urls = linkGraph.linkGraph(self.logger)
+
     def default_cost_function(self,soup,link):
         return 1
 
+    def extension_filter(self,url):
+        if self.settings["skip_estensions"]:
+            extension = url.split(".")[-1]
+            for ext in self.settings["not_skip_estensions_list"]:
+                if  extension.lower() == ext.lower():
+                    return False
+        return True
+
     def _url_filer(self,url):
-        for filter in self.filter_functions:
-            result = filter(url)
+        for ffilter in self.filter_functions:
+            result = ffilter(url)
             if result == False:
                 return False
 
         return True
 
-    def clear_useless_stuff(self,soup):
-        # Remove all the comments
-        if self.settings["clear_comments"] == True:
-            comments = soup.findAll(text=lambda text:isinstance(text, bs4.Comment))
-            for comment in comments:
-                comment.extract()
+    #---------------------------------------------------------------------------
+    def remove_comments_from_soup(self,soup):
+        comments = soup.findAll(text=lambda text:isinstance(text, bs4.Comment))
+        for comment in comments:
+            comment.extract()
+        return soup
 
-        # Remove useless tag
+    def remove_useless_tags(self,soup):
         for tag in self.settings["useless_tags"]:
             for item in soup(tag):
                 item.decompose()
+        return soup
 
-        # Remove useless attributes
+    def remove_useless_attributes(self,soup):
         for tag in soup():
             for attribute in self.settings["useless_attributes"]:
                 del tag[attribute]
+        return soup
 
+    def remove_white_spaces(self,soup):
         html = str(soup)
         html = "".join(line.strip() for line in html.split("\n"))
+        soup = bs4.BeautifulSoup(html, "lxml")
+        return soup
 
-        return bs4.BeautifulSoup(html, "lxml")
+    def clear_useless_stuff(self,soup):
+        # Remove all the comments
+        if self.settings["clear_comments"] == True:
+            soup = self.remove_comments_from_soup(soup)
+
+        # Remove useless tag
+        soup = self.remove_useless_tags(soup)
+
+        # Remove useless attributes
+        soup = self.remove_useless_attributes(soup)
+
+        # Remove White Spaces
+        soup = self.remove_white_spaces(soup)
+
+        return soup
+
+    #---------------------------------------------------------------------------
+
+    def normalize_links(self,links):
+        for i,link in enumerate(links):
+            links[i] = uf.url_normalize(link,url)
+        return links
+
+    def add_link_to_urls(self,fahter,link):
+            self.urls.add_node(father,link)
+
+    def parse_links(self,soup,url):
+
+        links = uf.get_links(soup)
+
+        # construct relative urls
+        links = self.normalize_links(links)
+
+        # add only valid urls that are not already in list and won't be filtered out
+        for link in uf.links_not_in_urls(self.urls,links):
+            try:
+                #if a valid link and it has not to be filtered
+                if validators.url(link) and self._url_filer(link):
+                    self.add_link_to_urls(url,link)
+            #if everything goes bad the url is not valid
+            except ValidationFailure:
+                self.logger.warning("Found a non valid url %s"%link)
+
+    def check_and_parse(self,url):
+        if self._url_filer(url):
+            html = uf.get_page(url,self.settings,self.logger)
+
+            soup = bs4.BeautifulSoup(html, "lxml")
+
+            # Clear the soup
+            if self.settings["clear_html"] == True:
+                soup = self.clear_useless_stuff(soup)
+
+            # Update the cost of the node
+            cost = self.cost_function(soup,link)
+            self.urls.set_and_update_cost(link,cost)
+
+            # Get the links into the graph
+            self.parse_links(soup,url)
+
+            # Call the user functions
+            for function in self.functionList:
+                function(soup,url)
+
+    def permissive_check_and_parse(self,url):
+        try:
+            self.check_and_parse(url)
+        except Exception as e:
+            self.logger.error("ERROR At the iteration over %s"%url)
+            self.logger.error(e.message)
 
     def iteration(self):
         url = self.urls.get_next_page()
@@ -221,48 +321,12 @@ class Spyder():
             return False
 
         self.logger.info("current url: %s"%url)
-        try:
-            if self._url_filer(url):
-                html = uf.get_page(url,self.settings,self.logger)
 
-                soup = bs4.BeautifulSoup(html, "lxml")
+        if self.settings["permessive_exception"]:
+            self.permissive_check_and_parse(url)
+        else:
+            self.check_and_parse(urls)
 
-                links = uf.get_links(soup)
-
-                # construct relative urls
-                for i,link in enumerate(links):
-                    links[i] = uf.url_normalize(link,url)
-
-                # add only valid urls that are not already in list and won't be filtered out
-                for link in uf.links_not_in_urls(self.urls,links):
-                    try:
-                        #if a valid link and it has not to be filtered
-                        if validators.url(link) and self._url_filer(link):
-                            # if the link is new create the node
-                            if link not in self.urls:
-                                cost = self.cost_function(soup,link)
-                                self.urls.add_node(link,cost)
-                            # create the link between the page and the link
-                            self.urls.add_edge(url,link)
-                    #if everything goes bad the url is not valid
-                    except ValidationFailure:
-                        self.logger.warning("Found a non valid url %s"%link)
-
-                # Clear the soup
-                if self.settings["clear_html"] == True:
-                    soup = self.clear_useless_stuff(soup)
-
-                # Call the user functions
-                for function in self.functionList:
-                    function(soup,url)
-
-
-        except Exception as e:
-            self.logger.error("ERROR At the iteration over %s"%url)
-            self.logger.error(e.message)
-            # If the execution is not permessive, if there is an exception don't catch it
-            if self.settings["permessive_exception"] == False:
-                raise e
         return True
 
     def next(self):
@@ -283,3 +347,36 @@ class Spyder():
 
         pbar.close()
 
+class WebList():
+    index = 0
+    urls = []
+
+    def __init__(self,logger):
+        self.logger = logger
+
+    def add_node(self,father,link):
+        self.urls.append(link)
+        self.logger.info("Added Node %s"%link)
+
+    def __len__(self):
+        return len(self.urls)
+
+    def __contains__(self,item):
+        return item in self.urls
+
+    def __str__(self):
+        return str(self.urls)
+
+    def get_next_page(self):
+        if self.index < len(self.urls):
+            url = self.urls[self.index]
+            self.index += 1
+            return url
+        else:
+            self.logger("There are no more nodes left")
+            return None
+
+    def set_and_update_cost(self,link,cost):
+        return None
+    def add_root(self,node):
+        self.add_node("",node)
