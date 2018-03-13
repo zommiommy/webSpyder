@@ -272,12 +272,12 @@ class Spyder():
 
     #---------------------------------------------------------------------------
 
-    def normalize_links(self,links):
+    def normalize_links(self,links,url):
         for i,link in enumerate(links):
             links[i] = uf.url_normalize(link,url)
         return links
 
-    def add_link_to_urls(self,fahter,link):
+    def add_link_to_urls(self,father,link):
             self.urls.add_node(father,link)
 
     def parse_links(self,soup,url):
@@ -285,7 +285,7 @@ class Spyder():
         links = uf.get_links(soup)
 
         # construct relative urls
-        links = self.normalize_links(links)
+        links = self.normalize_links(links,url)
 
         # add only valid urls that are not already in list and won't be filtered out
         for link in uf.links_not_in_urls(self.urls,links):
@@ -308,8 +308,8 @@ class Spyder():
                 soup = self.clear_useless_stuff(soup)
 
             # Update the cost of the node
-            cost = self.cost_function(soup,link)
-            self.urls.set_and_update_cost(link,cost)
+            cost = self.cost_function(soup,url)
+            self.urls.set_and_update_cost(url,cost)
 
             # Get the links into the graph
             self.parse_links(soup,url)
@@ -323,7 +323,7 @@ class Spyder():
             self.check_and_parse(url)
         except Exception as e:
             self.logger.error("ERROR At the iteration over %s"%url)
-            self.logger.error(e.message)
+            self.logger.error(str(e))
 
     def iteration(self):
         url = self.urls.get_next_page()
@@ -336,7 +336,7 @@ class Spyder():
         if self.settings["permessive_exception"]:
             self.permissive_check_and_parse(url)
         else:
-            self.check_and_parse(urls)
+            self.check_and_parse(url)
 
         return True
 
@@ -395,7 +395,7 @@ class WebList():
             self.index += 1
             return url
         else:
-            self.logger("There are no more nodes left")
+            self.logger.info("There are no more nodes left")
             return None
 
     def set_and_update_cost(self,link,cost):
