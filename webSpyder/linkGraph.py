@@ -41,7 +41,6 @@ class linkGraph:
         return self.node_dic.keys()
 
 # Main methods------------------------------------------------------------------
-<<<<<<< HEAD
     def update_node(self,father,link,cost,childs_list):
         c = self.node_dic[link]
         c["node"].set_node_cost(cost)
@@ -70,7 +69,6 @@ class linkGraph:
 
 
 
-=======
     def add_root(self,root_link):
         self.edge_dic = {}
         self.node_dic = {}
@@ -194,7 +192,6 @@ class linkGraph:
 
             # Propagate the modification
             self.recalculate_cost(child)
->>>>>>> 3ec0a249951186c2b8f801c3ac8b712bdbcfe6c3
 
 class node:
     # Static Constant

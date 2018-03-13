@@ -53,16 +53,13 @@ class Spyder():
         self.functionList = []
         self.cost_function = self.default_cost_function
         start_url = self.settings["start_url"]
-<<<<<<< HEAD
 
         self.initialize_logger()
 
         self.update_data_structure()
 
     def initialize_logger(self):
-=======
         self.create_needed_folders()
->>>>>>> 3ec0a249951186c2b8f801c3ac8b712bdbcfe6c3
         # Setup the logger
         self.logger = logging.getLogger(self.settings["project"].replace(" ",""))
         self.file_handler = logging.FileHandler(self.settings["log_path"] + self.settings["project"] + '.log')
@@ -196,7 +193,6 @@ class Spyder():
     # Main methods
     #---------------------------------------------------------------------------
 
-<<<<<<< HEAD
     def update_data_structure(self):
         if self.settings["data_type"] == "list":
             self.logger.info("Starting with list data structure")
@@ -204,7 +200,7 @@ class Spyder():
         else:
             self.logger.info("Starting with graph data structure")
             self.urls = linkGraph.linkGraph(self.logger)
-=======
+
     def create_needed_folders(self):
         cp = self.settings["cache_path"]
         if not os.path.isdir(cp):
@@ -213,7 +209,6 @@ class Spyder():
         lp = self.settings["log_path"]
         if self.settings["log"] and not os.path.isdir(lp):
             os.mkdir(lp)
->>>>>>> 3ec0a249951186c2b8f801c3ac8b712bdbcfe6c3
 
     def default_cost_function(self,soup,link):
         return 1
