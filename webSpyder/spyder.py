@@ -1,6 +1,7 @@
 
 from . import urls_function as uf
 
+import os
 import bs4
 import json
 import logging
@@ -34,10 +35,10 @@ class Spyder():
         "not_skip_estensions_list":["html","htm","php","aspx","asp","axd","asx","asmx","ashx","cfm","xml","rss","cgi","jsp","jspx",],
 
         "cache":False,
-        "cache_path":"%s/pagecaches/"%package_path[0],
+        "cache_path":"%s/pagecaches/"%os.getcwd(),
 
         "log": True,
-        "log_path":"%s/log/"%package_path[0].replace("\\\\","\\"),
+        "log_path":"%s/log/"%os.getcwd(),
         "log_format": '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     }
 
@@ -52,12 +53,16 @@ class Spyder():
         self.functionList = []
         self.cost_function = self.default_cost_function
         start_url = self.settings["start_url"]
+<<<<<<< HEAD
 
         self.initialize_logger()
 
         self.update_data_structure()
 
     def initialize_logger(self):
+=======
+        self.create_needed_folders()
+>>>>>>> 3ec0a249951186c2b8f801c3ac8b712bdbcfe6c3
         # Setup the logger
         self.logger = logging.getLogger(self.settings["project"].replace(" ",""))
         self.file_handler = logging.FileHandler(self.settings["log_path"] + self.settings["project"] + '.log')
@@ -191,6 +196,7 @@ class Spyder():
     # Main methods
     #---------------------------------------------------------------------------
 
+<<<<<<< HEAD
     def update_data_structure(self):
         if self.settings["data_type"] == "list":
             self.logger.info("Starting with list data structure")
@@ -198,6 +204,16 @@ class Spyder():
         else:
             self.logger.info("Starting with graph data structure")
             self.urls = linkGraph.linkGraph(self.logger)
+=======
+    def create_needed_folders(self):
+        cp = self.settings["cache_path"]
+        if not os.path.isdir(cp):
+            os.mkdir(cp)
+
+        lp = self.settings["log_path"]
+        if self.settings["log"] and not os.path.isdir(lp):
+            os.mkdir(lp)
+>>>>>>> 3ec0a249951186c2b8f801c3ac8b712bdbcfe6c3
 
     def default_cost_function(self,soup,link):
         return 1
@@ -334,18 +350,29 @@ class Spyder():
             if flag == False:
                 raise StopIteration()
 
-    def run(self):
-        pbar = tqdm()
+    def run(self,num_of_iteration=None):
+        if num_of_iteration == None:
+            pbar = tqdm()
 
-        flag = True
-        try:
-            while flag:
-                flag = self.iteration()
-                pbar.update(1)
-        except KeyboardInterrupt:
-            print("Stopping")
+            flag = True
+            try:
+                while flag:
+                    flag = self.iteration()
+                    pbar.update(1)
+            except KeyboardInterrupt:
+                print("Stopping")
 
-        pbar.close()
+            pbar.close()
+        else:
+            try:
+                for i in range(num_of_iteration):
+                    flag = self.iteration()
+                    if flag == False:
+                        break
+            except KeyboardInterrupt:
+                print("Stopping")
+
+
 
 class WebList():
     index = 0
