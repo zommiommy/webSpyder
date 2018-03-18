@@ -12,6 +12,7 @@ def url_normalize(link,url):
 
 
 def get_links(soup):
+    soup = bs4.BeautifulSoup(soup,"lxml")
     results = soup.find_all("a")
     links = []
     for link in results:
@@ -71,6 +72,8 @@ def get_page(url,settings,logger):
     # Clear the soup
     if settings["clear_html"] == True:
         soup = clear_useless_stuff(soup)
+        with open("%s%s"%(directory,name),"w") as f:
+            f.write(str(soup))
 
     return soup
 
