@@ -74,6 +74,7 @@ def get_page(url,settings,logger):
         soup = clear_useless_stuff(soup)
         with open("%s%s"%(directory,name),"w") as f:
             f.write(str(soup))
+        logger.info("cleaned the html and rewritten %s"%name)
 
     return soup
 
