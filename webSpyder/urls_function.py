@@ -79,42 +79,42 @@ def get_page(url,settings,logger):
     return soup
 
 
-    def remove_comments_from_soup(soup):
-        comments = soup.findAll(text=lambda text:isinstance(text, bs4.Comment))
-        for comment in comments:
-            comment.extract()
-        return soup
+def remove_comments_from_soup(soup):
+    comments = soup.findAll(text=lambda text:isinstance(text, bs4.Comment))
+    for comment in comments:
+        comment.extract()
+    return soup
 
-    def remove_useless_tags(soup,settings):
-        for tag in settings["useless_tags"]:
-            for item in soup(tag):
-                item.decompose()
-        return soup
+def remove_useless_tags(soup,settings):
+    for tag in settings["useless_tags"]:
+        for item in soup(tag):
+            item.decompose()
+    return soup
 
-    def remove_useless_attributes(soup,settings):
-        for tag in soup():
-            for attribute in settings["useless_attributes"]:
-                del tag[attribute]
-        return soup
+def remove_useless_attributes(soup,settings):
+    for tag in soup():
+        for attribute in settings["useless_attributes"]:
+            del tag[attribute]
+    return soup
 
-    def remove_white_spaces(soup,settings):
-        html = str(soup)
-        html = "".join(line.strip() for line in html.split("\n"))
-        soup = bs4.BeautifulSoup(html, "lxml")
-        return soup
+def remove_white_spaces(soup,settings):
+    html = str(soup)
+    html = "".join(line.strip() for line in html.split("\n"))
+    soup = bs4.BeautifulSoup(html, "lxml")
+    return soup
 
-    def clear_useless_stuff(soup,settings):
-        # Remove all the comments
-        if settings["clear_comments"] == True:
-            soup = remove_comments_from_soup(soup,settings)
+def clear_useless_stuff(soup,settings):
+    # Remove all the comments
+    if settings["clear_comments"] == True:
+        soup = remove_comments_from_soup(soup,settings)
 
-        # Remove useless tag
-        soup = remove_useless_tags(soup,settings)
+    # Remove useless tag
+    soup = remove_useless_tags(soup,settings)
 
-        # Remove useless attributes
-        soup = remove_useless_attributes(soup,settings)
+    # Remove useless attributes
+    soup = remove_useless_attributes(soup,settings)
 
-        # Remove White Spaces
-        soup = remove_white_spaces(soup,settings)
+    # Remove White Spaces
+    soup = remove_white_spaces(soup,settings)
 
-        return soup
+    return soup
