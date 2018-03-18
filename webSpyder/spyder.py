@@ -230,45 +230,6 @@ class Spyder():
         return True
 
     #---------------------------------------------------------------------------
-    def remove_comments_from_soup(self,soup):
-        comments = soup.findAll(text=lambda text:isinstance(text, bs4.Comment))
-        for comment in comments:
-            comment.extract()
-        return soup
-
-    def remove_useless_tags(self,soup):
-        for tag in self.settings["useless_tags"]:
-            for item in soup(tag):
-                item.decompose()
-        return soup
-
-    def remove_useless_attributes(self,soup):
-        for tag in soup():
-            for attribute in self.settings["useless_attributes"]:
-                del tag[attribute]
-        return soup
-
-    def remove_white_spaces(self,soup):
-        html = str(soup)
-        html = "".join(line.strip() for line in html.split("\n"))
-        soup = bs4.BeautifulSoup(html, "lxml")
-        return soup
-
-    def clear_useless_stuff(self,soup):
-        # Remove all the comments
-        if self.settings["clear_comments"] == True:
-            soup = self.remove_comments_from_soup(soup)
-
-        # Remove useless tag
-        soup = self.remove_useless_tags(soup)
-
-        # Remove useless attributes
-        soup = self.remove_useless_attributes(soup)
-
-        # Remove White Spaces
-        soup = self.remove_white_spaces(soup)
-
-        return soup
 
     #---------------------------------------------------------------------------
 
@@ -299,13 +260,7 @@ class Spyder():
 
     def check_and_parse(self,url):
         if self._url_filer(url):
-            html = uf.get_page(url,self.settings,self.logger)
-
-            soup = bs4.BeautifulSoup(html, "lxml")
-
-            # Clear the soup
-            if self.settings["clear_html"] == True:
-                soup = self.clear_useless_stuff(soup)
+            soup = uf.get_page(url,self.settings,self.logger)
 
             # Update the cost of the node
             cost = self.cost_function(soup,link)
