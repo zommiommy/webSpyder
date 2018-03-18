@@ -2,6 +2,7 @@
 from . import get_page_methods
 from . import files_function
 
+import bs4
 import os
 import string
 from urllib.parse import urljoin
