@@ -1,7 +1,8 @@
 import json
 from functools import reduce
+from . import data_interface.DataInterface
 
-class linkGraph:
+class linkGraph(DataInterface):
         # Attributes -------------------------------------------------------------------
             # { "node_link" : {"node":,node,parsed_childs":[node,node],"unparsed_childs":[node,node\] } }
     node_dic = {}
