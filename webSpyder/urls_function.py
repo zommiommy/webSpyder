@@ -33,28 +33,29 @@ def hash_url(url):
             new_url += character
     return new_url
 
-def page_download(url,mode,name,directory,logger):
+def page_download(url,mode,name,settings,logger):
     # aviable download modes
     modes = {
         "wget":get_page_methods.wget.wget_get_page,
         #"urllib":get_page_methods.urllib.urllib_get_page,
         #"selenium":get_page_methods.selenium.selenium_get_page,
-        #"requests":get_page_methods.requests.requests_get_page
+        "requests":get_page_methods.requests.requests_get_page
     }
     # check if the mode is avaiable
     if mode in modes.keys():
         # if it is call it
         logger.info("downloading using %s mode"%mode)
-        modes[mode](url,name,directory,logger)
+        modes[mode](url,name,settings,logger)
     else:
         # else raise an exception
         logger.error('Unkown get_page mode %s the aviable one are %s'%(mode,modes.keys()))
         raise Exception('Unkown get_page mode %s the aviable one are %s'%(mode,modes.keys()))
 
-def get_soup_and_html(url,mode,name,directory,logger):
+def get_soup_and_html(url,mode,name,settings,logger):
     name = "temp.html"
+    directory = settings["cache_path"]
     # if there isen't download it
-    page_download(url,mode,name,directory,logger)
+    page_download(url,mode,name,settings,logger)
 
     html = files_function.read_file("%s%s"%(directory,name))
 
@@ -85,7 +86,7 @@ def get_page(url,settings,logger):
 
         logger.info("no cache found so it has to be downloaded, %s"%url)
         # if there the page is note there download it
-        soup,html = get_soup_and_html(url,mode,name,directory,logger)
+        soup,html = get_soup_and_html(url,mode,name,settings,logger)
 
         # if it has to be cleared clear it
         if settings["clear_html"] == True:

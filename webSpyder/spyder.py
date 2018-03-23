@@ -1,12 +1,12 @@
 
 from webSpyder import urls_function as uf
+from webSpyder.data_strucutre.initialize import initialize_data_structure
 
 import os
 import bs4
 import json
 import logging
 import validators
-from webSpyder.data_strucutre.initialize import initialize_data_structure
 from tqdm import tqdm
 
 # Horrible workaround TODO find a not stupid way
@@ -39,7 +39,16 @@ class Spyder():
 
         "log": True,
         "log_path":"%s/log/"%os.getcwd(),
-        "log_format": '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+        "log_format": '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+
+        "random_wait": True,
+        "max_wait_sec": 5,
+        "use_cookies": False,
+        "cookies_file":"cookies.txt",
+        "use_headers": False,
+        "headers_file": "headers.json",
+
+        "tqdm_run":True
     }
 
     # Costructor
@@ -306,7 +315,12 @@ class Spyder():
             pbar.close()
         else:
             try:
-                for i in range(num_of_iteration):
+                r = range(num_of_iteration)
+
+                if self.settings["tqdm_run"] == True:
+                    r = tqdm(r)
+
+                for i in r:
                     flag = self.iteration()
                     if flag == False:
                         break

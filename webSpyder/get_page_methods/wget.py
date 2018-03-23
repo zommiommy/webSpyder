@@ -1,46 +1,36 @@
+
+
 import os
 import json
 import time
+import subprocess
 
-from . import __path__ as path
+def wget_get_page(url,name,settings,logger):
 
-path = path[0]
-
-
-with open("%s/wget_settings.json"%path,"r") as f:
-    settings = json.load(f)
-
-setting_arg = ""
-
-if settings["random_wait"] == True:
-    setting_arg += "--random-wait --wait %d "%(settings["max_wait_time"])
-
-
-if settings["use_cookies"] == True:
-    with open("%s/%s"%(path,settings["cookies_file"]),"r") as f:
-        cookies = f.read()
-
-    setting_arg += "--load-cookies %s "%cookies
-
-if settings["use_headers"] == True:
-    with open("%s/%s"%(path,settings["headers_file"]),"r") as f:
-        headers = f.read()
-
-    setting_arg += "--headers %s "%headers
-
-if settings["log"] == True:
-    setting_arg += "--append-output %s/%s "%(path,settings["log_file"])
-
-
-def wget_get_page(url,name,directory,logger):
-    # TODO json settings
+    cache_path = settings["cache_path"]
 
     command = "wget  "
-    command += setting_arg
-    command +=  "--output-document %s%s %s"%(directory,name,url)
-    logger.info("executing : %s"%command)
-    os.system(command)
 
-    # Wait for the wget to finish
-    while name not in os.listdir(directory):
-        time.sleep(0.1)
+    if settings["random_wait"] == True:
+        command += "--random-wait --wait %d "%(settings["max_wait_sec"])
+
+
+    if settings["use_cookies"] == True:
+        with open("%s/%s"%(path,settings["cookies_file"]),"r") as f:
+            cookies = f.read()
+        command += "--load-cookies %s "%cookies
+
+    if settings["use_headers"] == True:
+        with open("%s/%s"%(path,settings["headers_file"]),"r") as f:
+            headers = f.read()
+        command += "--headers %s "%headers
+
+    if settings["log"] == True:
+        command += "--append-output %s/wget.log "%( settings["log_path"])
+
+    command +=  "--output-document %s%s %s"%(cache_path,name,url)
+    logger.info("executing : %s"%command)
+
+    process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
+    process.wait()
+    logger.info("process result %s"%process.returncode)

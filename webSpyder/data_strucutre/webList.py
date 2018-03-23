@@ -10,7 +10,7 @@ class WebList(DataInterface):
 
     def add_node(self,father,link):
         self.urls.append(link)
-        self.logger.info("Added Node %s"%link)
+        #self.logger.info("Added Node %s"%link)
 
     def __len__(self):
         return len(self.urls)
