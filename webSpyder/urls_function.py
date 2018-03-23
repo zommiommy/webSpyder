@@ -5,9 +5,10 @@ from webSpyder import files_function
 import bs4
 import os
 import string
-from urllib.parse import urljoin
+from urllib.parse import urljoin,unquote
 
 def url_normalize(link,url):
+    link = unquote(link)
     # join the url and the father so if it is a relative link it get resolved to absolute
     return urljoin(url,link)
 
