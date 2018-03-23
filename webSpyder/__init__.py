@@ -1,4 +1,4 @@
 
-__all__ = ["spyder","helper_functions","linkGraph"]
+__all__ = ["spyder","helper_functions","urls_function","data_strucutre","files_function"]
 
-from .spyder import Spyder
+from webSpyder.spyder import Spyder

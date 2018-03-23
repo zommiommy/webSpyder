@@ -1,16 +1,16 @@
 
-from . import urls_function as uf
+from webSpyder import urls_function as uf
 
 import os
 import bs4
 import json
 import logging
 import validators
-from . import linkGraph
+from webSpyder.data_strucutre.initialize import initialize_data_structure
 from tqdm import tqdm
 
 # Horrible workaround TODO find a not stupid way
-from . import __path__ as package_path
+from webSpyder import __path__ as package_path
 
 # Horrible workaround part 2, TODO do it in the right way
 def is_not_function(f):
@@ -20,7 +20,7 @@ def is_not_function(f):
 class Spyder():
 
     settings = {
-        "data_type":"list",
+        "data_type":"webList",
         "mode":"wget",
         "permessive_exception":True,
         "start_url":"",
@@ -55,8 +55,7 @@ class Spyder():
         start_url = self.settings["start_url"]
 
         self.initialize_logger()
-
-        self.update_data_structure()
+        self.urls = initialize_data_structure(self.logger,self.settings["data_type"])
 
     def initialize_logger(self):
         self.create_needed_folders()
@@ -172,11 +171,11 @@ class Spyder():
 
     def set_data_type(self,value):
         self.settings["data_type"] = value
-        self.update_data_structure()
+        self.urls = initialize_data_structure(self.logger,self.settings["data_type"])
 
     def set_start_url(self,value):
         self.settings["start_url"] = value
-        self.update_data_structure()
+        self.urls = initialize_data_structure(self.logger,self.settings["data_type"])
         self.urls.add_root(value)
 
     def set_cache_path(self,value):
@@ -192,14 +191,6 @@ class Spyder():
 
     # Main methods
     #---------------------------------------------------------------------------
-
-    def update_data_structure(self):
-        if self.settings["data_type"] == "list":
-            self.logger.info("Starting with list data structure")
-            self.urls = WebList(self.logger)
-        else:
-            self.logger.info("Starting with graph data structure")
-            self.urls = linkGraph.linkGraph(self.logger)
 
     def create_needed_folders(self):
         cp = self.settings["cache_path"]

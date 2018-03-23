@@ -1,8 +1,8 @@
 import json
 from functools import reduce
-from . import data_interface.DataInterface
+from webSpyder.data_strucutre.data_interface import DataInterface
 
-class linkGraph(DataInterface):
+class LinkGraph(DataInterface):
         # Attributes -------------------------------------------------------------------
             # { "node_link" : {"node":,node,parsed_childs":[node,node],"unparsed_childs":[node,node\] } }
     node_dic = {}

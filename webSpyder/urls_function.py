@@ -1,6 +1,6 @@
 
-from . import get_page_methods
-from . import files_function
+from webSpyder import get_page_methods
+from webSpyder import files_function
 
 import bs4
 import os
@@ -47,7 +47,7 @@ def page_download(url,mode,name,directory,logger):
         modes[mode](url,name,directory,logger)
     else:
         # else raise an exception
-        logger.info('Unkown get_page mode %s the aviable one are %s'%(mode,modes.keys()))
+        logger.error('Unkown get_page mode %s the aviable one are %s'%(mode,modes.keys()))
         raise Exception('Unkown get_page mode %s the aviable one are %s'%(mode,modes.keys()))
 
 def get_soup_and_html(url,mode,name,directory,logger):

@@ -1,5 +1,5 @@
 
-from . import data_interface.DataInterface
+from webSpyder.data_strucutre.data_interface import DataInterface
 
 class WebList(DataInterface):
     index = 0
