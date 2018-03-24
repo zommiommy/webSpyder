@@ -1,12 +1,14 @@
 
+
 from webSpyder.data_strucutre.data_interface import DataInterface
 
 class WebList(DataInterface):
     index = 0
     urls = []
 
-    def __init__(self,logger):
+    def __init__(self,logger,settings):
         self.logger = logger
+        self.settings = settings
 
     def add_node(self,father,link):
         self.urls.append(link)

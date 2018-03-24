@@ -1,5 +1,8 @@
+
+
 from webSpyder.data_strucutre.linkGraph import LinkGraph
 from webSpyder.data_strucutre.webList import WebList
 from webSpyder.data_strucutre.distribuitedWebList import DistribuitedWebList
 
 __all__ = ["linkGraph","webList","distribuitedWebList"]
+data_type_list = __all__

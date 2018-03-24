@@ -2,8 +2,12 @@
 
 class DataInterface():
 
-    def __init__(self,logger):
+    def __init__(self,logger,settings):
         self.logger = logger
+        self.settings = settings
+
+    def add_root(self,node):
+        raise Exception("add_root not implemented!")
 
     def add_node(self,father,link):
         raise Exception("add_node not implemented!")
@@ -22,6 +26,3 @@ class DataInterface():
 
     def set_and_update_cost(self,link,cost):
         raise Exception("set_and_update_cost not implemented!")
-
-    def add_root(self,node):
-        raise Exception("add_root not implemented!")

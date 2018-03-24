@@ -9,9 +9,10 @@ class LinkGraph(DataInterface):
 
 
 # Costructor -------------------------------------------------------------------
-    def __init__(self,logger):
+    def __init__(self,logger,settings):
         """Initialize the linkGraph with the root link and use logger to log"""
         self.logger = logger
+        self.settings = settings
 # Python methods overloads------------------------------------------------------
     def __contains__(self,item):
         return

@@ -1,5 +1,6 @@
 
 from webSpyder import urls_function as uf
+from webSpyder.files_function import check_file_existance
 from webSpyder.data_strucutre.initialize import initialize_data_structure
 
 import os
@@ -20,6 +21,7 @@ def is_not_function(f):
 class Spyder():
 
     settings = {
+        "identifier":"0",
         "data_type":"webList",
         "mode":"wget",
         "permessive_exception":True,
@@ -34,6 +36,8 @@ class Spyder():
         "skip_estensions":True,
         "not_skip_estensions_list":["html","htm","php","aspx","asp","axd","asx","asmx","ashx","cfm","xml","rss","cgi","jsp","jspx",],
 
+        "state_path":"%s/state/"%os.getcwd(),
+
         "cache":False,
         "cache_path":"%s/pagecaches/"%os.getcwd(),
 
@@ -44,7 +48,7 @@ class Spyder():
         "random_wait": True,
         "max_wait_sec": 5,
         "use_cookies": False,
-        "cookies_file":"cookies.txt",
+        "cookies_file":"cookies.json",
         "use_headers": False,
         "headers_file": "headers.json",
 
@@ -64,13 +68,14 @@ class Spyder():
         start_url = self.settings["start_url"]
 
         self.initialize_logger()
-        self.urls = initialize_data_structure(self.logger,self.settings["data_type"])
+        self.urls = initialize_data_structure(self.logger,self.settings)
 
     def initialize_logger(self):
         self.create_needed_folders()
+        self.find_identifier()
         # Setup the logger
         self.logger = logging.getLogger(self.settings["project"].replace(" ",""))
-        self.file_handler = logging.FileHandler(self.settings["log_path"] + self.settings["project"] + '.log')
+        self.file_handler = logging.FileHandler(self.settings["log_path"] + self.settings["project"] + self.settings["identifier"] + '.log')
         self.formatter = logging.Formatter(self.settings["log_format"])
         self.file_handler.setFormatter(self.formatter)
         self.logger.addHandler(self.file_handler)
@@ -78,6 +83,12 @@ class Spyder():
 
         # Enable or disable the logger
         self.logger.disabled = not self.settings["log"]
+
+    def find_identifier(self):
+        identifier = 0
+        while check_file_existance(self.settings["log_path"] + self.settings["project"] + str(identifier) + '.log'):
+            identifier += 1
+        self.settings["identifier"] = str(identifier)
 
     def __contains__(self,item):
         return item in self.urls
@@ -180,11 +191,12 @@ class Spyder():
 
     def set_data_type(self,value):
         self.settings["data_type"] = value
-        self.urls = initialize_data_structure(self.logger,self.settings["data_type"])
+        self.urls = initialize_data_structure(self.logger,self.settings)
+        self.urls.add_root(self.settings["start_url"])
 
     def set_start_url(self,value):
         self.settings["start_url"] = value
-        self.urls = initialize_data_structure(self.logger,self.settings["data_type"])
+        self.urls = initialize_data_structure(self.logger,self.settings)
         self.urls.add_root(value)
 
     def set_cache_path(self,value):
@@ -196,7 +208,8 @@ class Spyder():
     def set_log_format(self,value):
         self.settings["log_format"] = value
 
-
+    def set_state_path(self,value):
+        self.settings["state_path"] = value
 
     # Main methods
     #---------------------------------------------------------------------------
@@ -209,6 +222,11 @@ class Spyder():
         lp = self.settings["log_path"]
         if self.settings["log"] and not os.path.isdir(lp):
             os.mkdir(lp)
+
+        sp = self.settings["state_path"]
+        if not os.path.isdir(sp):
+            os.mkdir(sp)
+
 
     def default_cost_function(self,soup,link):
         return 1
@@ -283,10 +301,10 @@ class Spyder():
     def iteration(self):
         url = self.urls.get_next_page()
 
+        self.logger.info("current url: %s"%url)
+
         if url == None:
             return False
-
-        self.logger.info("current url: %s"%url)
 
         if self.settings["permessive_exception"]:
             self.permissive_check_and_parse(url)
