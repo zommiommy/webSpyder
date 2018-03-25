@@ -191,6 +191,11 @@ class Settings():
     def get_log_format(self):
         return self.settings["log_format"]
 
+    def set_not_skip_estensions_list(self,value):
+        self.settings["not_skip_estensions_list"] = value
+    def get_not_skip_estensions_list(self):
+        return self.settings["not_skip_estensions_list"]
+
     def set_max_wait_sec(self,value):
         self.settings["max_wait_sec"] = value
     def get_max_wait_sec(self):

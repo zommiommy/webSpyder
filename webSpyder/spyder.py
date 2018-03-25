@@ -34,21 +34,21 @@ class Spyder():
         self.create_needed_folders()
         self.find_identifier()
         # Setup the logger
-        self.logger = logging.getLogger(self.settings["project"].replace(" ",""))
-        self.file_handler = logging.FileHandler(self.settings["log_path"] + self.settings["project"] + self.settings["identifier"] + '.log')
-        self.formatter = logging.Formatter(self.settings["log_format"])
+        self.logger = logging.getLogger(self.settings.get_project().replace(" ",""))
+        self.file_handler = logging.FileHandler(self.settings.get_log_path() + self.settings.get_project() + self.settings.get_identifier() + '.log')
+        self.formatter = logging.Formatter(self.settings.get_log_format())
         self.file_handler.setFormatter(self.formatter)
         self.logger.addHandler(self.file_handler)
         self.logger.setLevel(logging.INFO)
 
         # Enable or disable the logger
-        self.logger.disabled = not self.settings["log"]
+        self.logger.disabled = not self.settings.is_log_enabled()
 
     def find_identifier(self):
         identifier = 0
-        while check_file_existance(self.settings["log_path"] + self.settings["project"] + str(identifier) + '.log'):
+        while check_file_existance(self.settings.get_log_path() + self.settings.get_project() + str(identifier) + '.log'):
             identifier += 1
-        self.settings["identifier"] = str(identifier)
+        self.settings.set_identifier(str(identifier))
 
     def __contains__(self,item):
         return item in self.urls
@@ -111,15 +111,15 @@ class Spyder():
     #---------------------------------------------------------------------------
 
     def create_needed_folders(self):
-        cp = self.settings["cache_path"]
+        cp = self.settings.get_cache_path()
         if not os.path.isdir(cp):
             os.mkdir(cp)
 
-        lp = self.settings["log_path"]
-        if self.settings["log"] and not os.path.isdir(lp):
+        lp = self.settings.get_log_path()
+        if self.settings.is_log_enabled() and not os.path.isdir(lp):
             os.mkdir(lp)
 
-        sp = self.settings["state_path"]
+        sp = self.settings.get_state_path()
         if not os.path.isdir(sp):
             os.mkdir(sp)
 
@@ -128,9 +128,9 @@ class Spyder():
         return 1
 
     def extension_filter(self,url):
-        if self.settings["skip_estensions"]:
+        if self.settings.is_skip_estensions_enabled():
             extension = url.split(".")[-1]
-            for ext in self.settings["not_skip_estensions_list"]:
+            for ext in self.settings.get_not_skip_estensions_list():
                 if  extension.lower() == ext.lower():
                     return False
         return True
@@ -231,7 +231,7 @@ class Spyder():
             try:
                 r = range(num_of_iteration)
 
-                if self.settings["tqdm_run"] == True:
+                if self.settings.is_tqdm_run_enabled():
                     r = tqdm(r)
 
                 for i in r:
