@@ -67,6 +67,9 @@ class Spyder():
     def __str__(self):
         return self.get_status()
 
+    def __rep__(self):
+        return self.__str__()
+
     # Observers
     #---------------------------------------------------------------------------
 
@@ -155,7 +158,7 @@ class Spyder():
         return links
 
     def add_link_to_urls(self,father,link):
-            self.urls.add_node(father,link)
+        self.urls.add_node(father,link)
 
     def parse_links(self,soup,url):
 

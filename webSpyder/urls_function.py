@@ -66,12 +66,12 @@ def get_soup_and_html(url,mode,name,settings,logger):
 
 def get_page(url,settings,logger):
 
-    mode, cache, directory = settings.get_mode(), settings.is_cache_enabled(), settings.get_cache_path()
+    mode, directory = settings.get_mode(), settings.get_cache_path()
 
-    if cache == False:
+    if not settings.is_cache_enabled():
         # just download the page
         logger.info("just downloading %s"%url)
-        soup,html = get_soup_and_html(url,mode,name,directory,logger)
+        soup,html = get_soup_and_html(url,mode,"temp.html",directory,logger)
         return soup
 
     # Else if cache == True
