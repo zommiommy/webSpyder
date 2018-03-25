@@ -2,8 +2,8 @@ import os
 import sys
 import json
 
-def check_file_existance(file_name):
-    if file_name in os.listdir():
+def check_file_existance(path,file_name):
+    if file_name in os.listdir(path):
         return True
     else:
         return False

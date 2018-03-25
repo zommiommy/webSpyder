@@ -25,7 +25,6 @@ class Spyder():
         self.filter_functions  = [self.extension_filter]
         self.functionList = []
         self.cost_function = self.default_cost_function
-        start_url = self.settings.get_start_url()
 
         self.initialize_logger()
         self.urls = initialize_data_structure(self.logger,self.settings)
@@ -46,7 +45,7 @@ class Spyder():
 
     def find_identifier(self):
         identifier = 0
-        while check_file_existance(self.settings.get_log_path() + self.settings.get_project() + str(identifier) + '.log'):
+        while check_file_existance(self.settings.get_log_path(), self.settings.get_project() + str(identifier) + '.log'):
             identifier += 1
         self.settings.set_identifier(str(identifier))
 
@@ -105,6 +104,9 @@ class Spyder():
             raise Exception("set_function except a function but the parameter passed is %s"%type(f))
 
         self.cost_function = f
+
+    def add_url(self,url):
+        self.urls.add_node("",url)
 
 
     # Main methods
@@ -202,7 +204,7 @@ class Spyder():
         if url == None:
             return False
 
-        if self.settings["permessive_exception"]:
+        if self.settings.is_permessive_exception_enabled():
             self.permissive_check_and_parse(url)
         else:
             self.check_and_parse(url)

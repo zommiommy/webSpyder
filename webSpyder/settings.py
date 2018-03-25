@@ -10,7 +10,6 @@ class Settings():
         "data_type":"webList",
         "mode":"wget",
         "permessive_exception":True,
-        "start_url":"",
         "project":"webSpyder",
 
         "clear_html":False,
@@ -54,14 +53,14 @@ class Settings():
         self.settings["permessive_exception"] = True
     def disable_permessive_exception(self):
         self.settings["permessive_exception"] = False
-    def disable_permessive_exception_enabled(self):
+    def is_permessive_exception_enabled(self):
         return self.settings["permessive_exception"] == True
 
     def enable_clear_html(self):
         self.settings["clear_html"] = True
     def disable_clear_html(self):
         self.settings["clear_html"] = False
-    def disable_clear_html_enabled(self):
+    def is_clear_html_enabled(self):
         return self.settings["clear_html"] == True
 
     def enable_clear_comments(self):
@@ -163,12 +162,6 @@ class Settings():
         self.settings["mode"] = value
     def get_mode(self):
         return self.settings["mode"]
-
-    def set_start_url(self,value):
-        self.settings["start_url"] = value
-    def get_start_url(self):
-        return self.settings["start_url"]
-
     def set_project(self,value):
         self.settings["project"] = value
     def get_project(self):

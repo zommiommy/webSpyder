@@ -1,5 +1,6 @@
 
 
+from functools import reduce
 from webSpyder.data_strucutre.data_interface import DataInterface
 from webSpyder.files_function import check_file_existance,create_file
 
@@ -12,7 +13,9 @@ class DistribuitedWebList(DataInterface):
     fp_list = []
 
     def hash(self,value):
-        return hash(value)%self.n_of_chunk
+        values = map(lambda x: ord(x),list(value))
+        sum = reduce((lambda x, y: x + y), values)
+        return sum%self.n_of_chunk
 
     def __init__(self,logger,settings):
         self.logger = logger
@@ -25,15 +28,15 @@ class DistribuitedWebList(DataInterface):
             self.check_and_create_file(i)
 
     def check_and_create_file(self,i):
-        name = self.settings["state_path"]+"%d.txt"%i
-        if check_file_existance(name) == False:
+        name = self.settings.get_state_path()+"%d.txt"%i
+        if check_file_existance(self.settings.get_state_path(),"%d.txt"%i) == False:
             self.logger.info("the file %s does not exist so now it will be created"%name)
             create_file(name)
 
     def create_fp_list(self):
         self.fp_list = []
         for i in range(self.n_of_chunk):
-            self.fp_list.append(open(self.settings["state_path"]+"%d.txt"%i,"r+"))
+            self.fp_list.append(open(self.settings.get_state_path()+"%d.txt"%i,"r+"))
 
     def close_fp_list(self):
         for f in self.fp_list:
@@ -64,6 +67,10 @@ class DistribuitedWebList(DataInterface):
         return None
 
     def add_node(self,father,link):
+        if self.__contains__(link):
+            self.logger.info("The url %s already exist"%link)
+            return
+
         h = self.hash(link)
         self.logger.info("Adding %s in the %d chunk"%(link,h))
         fp = self.fp_list[h]
@@ -90,7 +97,7 @@ class DistribuitedWebList(DataInterface):
                     break
                 else:
                     last_position += len(line)
-
+            self.logger.info("did i found node? %s"%(found))
             if found == 1:
                 f.seek(last_position,0)#come back to the start of the line
                 f.write(self.parsed_symbol)
