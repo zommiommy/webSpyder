@@ -53,7 +53,7 @@ def page_download(url,mode,name,settings,logger):
 
 def get_soup_and_html(url,mode,name,settings,logger):
     name = "temp.html"
-    directory = settings["cache_path"]
+    directory = settings.get_cache_path()
     # if there isen't download it
     page_download(url,mode,name,settings,logger)
 
@@ -66,7 +66,7 @@ def get_soup_and_html(url,mode,name,settings,logger):
 
 def get_page(url,settings,logger):
 
-    mode, cache, directory = settings["mode"], settings["cache"], settings["cache_path"]
+    mode, cache, directory = settings.get_mode(), settings.is_cache_enabled(), settings.get_cache_path()
 
     if cache == False:
         # just download the page
@@ -89,7 +89,7 @@ def get_page(url,settings,logger):
         soup,html = get_soup_and_html(url,mode,name,settings,logger)
 
         # if it has to be cleared clear it
-        if settings["clear_html"] == True:
+        if settings.is_clear_html_enabled():
             # Clear the soup
             soup = clear_useless_stuff(soup,settings)
             # Remove White Spaces
@@ -114,14 +114,14 @@ def remove_comments_from_soup(soup):
     return soup
 
 def remove_useless_tags(soup,settings):
-    for tag in settings["useless_tags"]:
+    for tag in settings.get_useless_tags():
         for item in soup(tag):
             item.decompose()
     return soup
 
 def remove_useless_attributes(soup,settings):
     for tag in soup():
-        for attribute in settings["useless_attributes"]:
+        for attribute in settings.get_useless_attributes():
             del tag[attribute]
     return soup
 
@@ -132,7 +132,7 @@ def remove_white_spaces(soup):
 
 def clear_useless_stuff(soup,settings):
     # Remove all the comments
-    if settings["clear_comments"] == True:
+    if settings.is_clear_comments_enabled():
         soup = remove_comments_from_soup(soup)
 
     # Remove useless tag

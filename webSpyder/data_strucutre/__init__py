@@ -3,7 +3,9 @@
 from webSpyder.data_strucutre.linkGraph import LinkGraph
 from webSpyder.data_strucutre.webList import WebList
 from webSpyder.data_strucutre.distribuitedWebList import DistribuitedWebList
+from webSpyder.data_strucutre.initialize import initialize_data_structure
+from webSpyder.data_strucutre.data_interface import DataInterface
 
-__all__ = ["linkGraph","webList","distribuitedWebList"]
+__all__ = ["linkGraph","webList","distribuitedWebList","initialize","data_interface"]
 
 data_type_list = __all__

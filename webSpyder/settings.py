@@ -1,5 +1,8 @@
 
 
+import os
+import json
+
 class Settings():
 
     settings = {
@@ -37,11 +40,11 @@ class Settings():
         "tqdm_run":True
     }
 
-     def __init__(self):
-         pass
+    def __init__(self):
+        pass
 
-     def __str__(self):
-         return json.dumps(self.settings, indent=4)
+    def __str__(self):
+        return json.dumps(self.settings, indent=4)
 #---------------------------------------------------------------------------
 # Modifiers and Observers
 #---------------------------------------------------------------------------

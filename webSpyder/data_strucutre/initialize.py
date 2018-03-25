@@ -8,7 +8,7 @@ def initialize_data_structure(logger,settings):
     "webList":WebList,
     "distribuitedWebList":DistribuitedWebList
   }
-  data_type = settings["data_type"]
+  data_type = settings.get_data_type()
   if  data_type in data_types.keys():
     logger.info("Starting using %s data_type"%data_type)
     return data_types[data_type](logger,settings)
