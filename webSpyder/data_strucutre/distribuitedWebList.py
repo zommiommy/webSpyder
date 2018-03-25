@@ -74,7 +74,7 @@ class DistribuitedWebList(DataInterface):
             return
 
         h = self.hash(link)
-        self.logger.info("Adding %s in the %d chunk"%(link,h))
+        self.logger.info("Adding to the %d chunk %s"%(h,link))
         fp = self.fp_list[h]
         fp.seek(0,2)# End of the file
         fp.write(self.unparsed_symbol+str(link)+"\n")
@@ -89,12 +89,10 @@ class DistribuitedWebList(DataInterface):
     def get_next_page(self):
         found = 0
         for i,f in enumerate(self.fp_list):
-            self.logger.info("Checking the %d chunk for unparsed lines"%(i))
             f.seek(0,0) # Start of the file
             last_position = 0
             lines = f.read().split("\n")
             for line in lines:
-                self.logger.info("checking for unparsed line %s"%line)
                 if line not in ["",None] and line[0] == self.unparsed_symbol:
                     found = 1
                     break
@@ -102,7 +100,7 @@ class DistribuitedWebList(DataInterface):
                     last_position += len(line)
             if found == 1:
                 break
-        self.logger.info("did i found node? %s"%(found))
+
         if found == 1:
             f.seek(last_position,0)#come back to the start of the line
             f.write(self.parsed_symbol)
