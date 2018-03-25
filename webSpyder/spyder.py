@@ -20,52 +20,18 @@ def is_not_function(f):
 
 class Spyder():
 
-    settings = {
-        "identifier":"0",
-        "data_type":"webList",
-        "mode":"wget",
-        "permessive_exception":True,
-        "start_url":"",
-        "project":"webSpyder",
-
-        "clear_html":False,
-        "clear_comments":True,
-        "useless_tags":["svg","input","noscript","link","script","style","iframe","canvas"],
-        "useless_attributes":["style", "href", "role", "src","target","type","lang","async","crossorigin"],
-
-        "skip_estensions":True,
-        "not_skip_estensions_list":["html","htm","php","aspx","asp","axd","asx","asmx","ashx","cfm","xml","rss","cgi","jsp","jspx",],
-
-        "state_path":"%s/state/"%os.getcwd(),
-
-        "cache":False,
-        "cache_path":"%s/pagecaches/"%os.getcwd(),
-
-        "log": True,
-        "log_path":"%s/log/"%os.getcwd(),
-        "log_format": '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-
-        "random_wait": True,
-        "max_wait_sec": 5,
-        "use_cookies": False,
-        "cookies_file":"cookies.json",
-        "use_headers": False,
-        "headers_file": "headers.json",
-
-        "tqdm_run":True
-    }
-
     # Costructor
     #---------------------------------------------------------------------------
 
-    def __init__(self,project=None):
+    def __init__(self,settings,project=None):
+        self.settings = settings
         if project != None:
-            self.settings["project"] = project
+            self.settings.set_project(project)
 
         self.filter_functions  = [self.extension_filter]
         self.functionList = []
         self.cost_function = self.default_cost_function
-        start_url = self.settings["start_url"]
+        start_url = self.settings.get_start_url()
 
         self.initialize_logger()
         self.urls = initialize_data_structure(self.logger,self.settings)
@@ -114,7 +80,7 @@ class Spyder():
 
     def get_status(self):
         status = "Current Status:\n"
-        status += "settings:\n%s\n"%json.dumps(self.settings, indent=4)
+        status += "settings:\n%s\n"%self.settings
         status += "urls:\n%s"%self.urls
         return status
 
@@ -124,8 +90,6 @@ class Spyder():
     def get_urls(self):
         return self.urls
 
-    def get_useless_tags(self):
-        return self.settings["useless_tags"]
 
     # Modifiers
     #---------------------------------------------------------------------------
@@ -148,68 +112,6 @@ class Spyder():
 
         self.cost_function = f
 
-
-    def set_useless_attributes(self,attributes):
-        self.settings["useless_attributes"] = attributes
-        self.enable_clear_html()
-
-    def set_useless_tags(self,tags):
-        self.settings["useless_tags"] += tags
-        self.enable_clear_html()
-
-    # Settings Modifiers
-    #---------------------------------------------------------------------------
-
-    def enable_permessive_exception(self):
-        self.settings["permessive_exception"] = True
-    def disable_permessive_exception(self):
-        self.settings["permessive_exception"] = False
-
-    def enable_clear_html(self):
-        self.settings["clear_html"] = True
-    def disable_clear_html(self):
-        self.settings["clear_html"] = False
-
-    def enable_clear_comments(self):
-        self.settings["clear_comments"] = True
-    def disable_clear_comments(self):
-        self.settings["clear_comments"] = False
-
-    def enable_cache(self):
-        self.settings["cache"] = True
-    def disable_cache(self):
-        self.settings["cache"] = False
-
-    def enable_log(self):
-        self.settings["log"] = True
-    def disable_log(self):
-        self.settings["log"] = False
-
-
-    def set_mode(self,value):
-        self.settings["mode"] = value
-
-    def set_data_type(self,value):
-        self.settings["data_type"] = value
-        self.urls = initialize_data_structure(self.logger,self.settings)
-        self.urls.add_root(self.settings["start_url"])
-
-    def set_start_url(self,value):
-        self.settings["start_url"] = value
-        self.urls = initialize_data_structure(self.logger,self.settings)
-        self.urls.add_root(value)
-
-    def set_cache_path(self,value):
-        self.settings["cache_path"] = value
-
-    def set_log_path(self,value):
-        self.settings["log_path"] = value
-
-    def set_log_format(self,value):
-        self.settings["log_format"] = value
-
-    def set_state_path(self,value):
-        self.settings["state_path"] = value
 
     # Main methods
     #---------------------------------------------------------------------------
