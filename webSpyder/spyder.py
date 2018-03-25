@@ -1,4 +1,5 @@
 
+
 from webSpyder import urls_function as uf
 from webSpyder.files_function import check_file_existance
 from webSpyder.data_strucutre.initialize import initialize_data_structure
@@ -10,13 +11,6 @@ import logging
 import validators
 from tqdm import tqdm
 
-# Horrible workaround TODO find a not stupid way
-from webSpyder import __path__ as package_path
-
-# Horrible workaround part 2, TODO do it in the right way
-def is_not_function(f):
-#    return str(type(f)) != "<class 'function'>"
-    return type(f) != type(lambda x: x)
 
 class Spyder():
 
@@ -95,19 +89,19 @@ class Spyder():
     #---------------------------------------------------------------------------
 
     def set_filter(self,f):
-        if is_not_function(f):
+        if not callable(f):
             raise Exception("set_filter except a function but the parameter passed is %s"%type(f))
 
         self.filter_functions.append(f)
 
     def set_function(self,f):
-        if is_not_function(f):
+        if not callable(f):
             raise Exception("set_function except a function but the parameter passed is %s"%type(f))
 
         self.functionList.append(f)
 
     def set_cost_function(self,f):
-        if is_not_function(f):
+        if not callable(f):
             raise Exception("set_function except a function but the parameter passed is %s"%type(f))
 
         self.cost_function = f
