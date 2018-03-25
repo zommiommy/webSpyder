@@ -44,6 +44,12 @@ class Settings():
 
     def __str__(self):
         return json.dumps(self.settings, indent=4)
+
+    def __getitem__(self,name):
+        return self.settings[name]
+
+    def __setitem__(self,name,value):
+        self.settings[name] = value
 #---------------------------------------------------------------------------
 # Modifiers and Observers
 #---------------------------------------------------------------------------
